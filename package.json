@@ -4,6 +4,7 @@
   "description": "",
   "scripts": {
     "fetch": "cd commands && ts-node fetch.ts",
+    "stats": "cd commands && ts-node stats.ts",
     "dev": "vite",
     "build": "tsc --skipLibCheck && vite build",
     "preview": "vite preview",

@@ -36,8 +36,15 @@
   {
     "id": 2,
     "name": "Spitalgasse/Lazarettgasse",
-    "bezirk": 5,
+    "bezirk": 9,
     "type": "transFlag",
+    "sources": [
+      {
+        "type": "news",
+        "url": "https://www.meinbezirk.at/alsergrund/c-lokales/erster-trans-pride-zebrastreifen-in-wien_a4559450",
+        "date": "2021-03-31"
+      }
+    ],
     "geosource": {
       "type": "OSMnodes",
       "nodes": [
@@ -463,6 +470,108 @@
         ]
       ],
       "length": 13.05
+    }
+  },
+  {
+    "id": 14,
+    "name": "Simmeringer Platz",
+    "bezirk": 11,
+    "type": "prideFlag",
+    "sources": [
+      {
+        "type": "news",
+        "url": "https://www.ggg.at/2021/06/11/erster-regenbogen-zebrastreifen-in-wien-simmering/",
+        "date": "2021-06-11"
+      }
+    ],
+    "geosource": {
+      "type": "OSMnodes",
+      "nodes": [
+        3635936885,
+        1187573973,
+        3635936886
+      ]
+    },
+    "geo": {
+      "coords": [
+        [
+          16.4204776,
+          48.1699476
+        ],
+        [
+          16.4207196,
+          48.1697158
+        ]
+      ],
+      "length": 31.41
+    }
+  },
+  {
+    "id": 15,
+    "name": "Mauer Hauptplatz",
+    "bezirk": 23,
+    "type": "prideFlag",
+    "sources": [
+      {
+        "type": "news",
+        "url": "https://www.meinbezirk.at/liesing/c-lokales/der-erste-regenbogenschutzweg-im-23-bezirk-wurde-eingeweiht_a4867192#gallery=null",
+        "date": "2021-09-07"
+      }
+    ],
+    "geosource": {
+      "type": "OSMnodes",
+      "nodes": [
+        4813210229,
+        3324119404,
+        4813210228
+      ]
+    },
+    "geo": {
+      "coords": [
+        [
+          16.2687464,
+          48.1507156
+        ],
+        [
+          16.2686484,
+          48.1505228
+        ]
+      ],
+      "length": 22.64
+    }
+  },
+  {
+    "id": 16,
+    "name": "Elterleinplatz/Kalvarienberggasse",
+    "bezirk": 17,
+    "type": "prideFlag",
+    "sources": [
+      {
+        "type": "official",
+        "url": "https://www.wien.gv.at/bezirke/hernals/politik/regenbogen-schutzweg.html",
+        "date": "2021-05-05"
+      }
+    ],
+    "geosource": {
+      "type": "OSMnodes",
+      "nodes": [
+        2888584160,
+        2560176397,
+        2560176389
+      ]
+    },
+    "geo": {
+      "coords": [
+        [
+          16.3323528,
+          48.2182154
+        ],
+        [
+          16.3324665,
+          48.2181988
+        ]
+      ],
+      "length": 8.62
     }
   }
 ]

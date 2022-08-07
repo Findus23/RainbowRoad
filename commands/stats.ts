@@ -1,0 +1,18 @@
+import * as fs from "fs";
+import type {Crossing} from "../interfaces";
+
+function runstats() {
+    const data: Crossing[] = JSON.parse(fs.readFileSync("../data/data.json", 'utf8'));
+
+
+    const bezirke = data.map(c => c.bezirk)
+    const counts: { [key: number]: number } = {};
+
+    for (const num of bezirke) {
+        counts[num] = counts[num] ? counts[num] + 1 : 1;
+    }
+    console.log(counts)
+
+}
+
+runstats()

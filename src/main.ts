@@ -46,7 +46,8 @@ const map = new Map({
     view: new View({
         center: fromLonLat([16.3787, 48.2089]),
         zoom: 13,
-        extent: transformExtent([16.2988, 48.1353, 16.4986, 48.2974], 'EPSG:4326', 'EPSG:3857'),
+        // https://www.wien.gv.at/statistik/lebensraum/tabellen/stadtgebiet-eckdaten.html
+        extent: transformExtent([16.18278, 48.11833, 16.58, 48.32306], 'EPSG:4326', 'EPSG:3857'),
         constrainOnlyCenter: true
     })
 });

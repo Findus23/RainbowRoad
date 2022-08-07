@@ -30,7 +30,7 @@
           48.217809
         ]
       ],
-      "length": 30.88
+      "length": 20.76
     }
   },
   {
@@ -61,7 +61,408 @@
           48.2190409
         ]
       ],
-      "length": 42.77
+      "length": 30.58
+    }
+  },
+  {
+    "id": 3,
+    "name": "Gumpendorfer Straße/Kaunitzgasse",
+    "bezirk": 6,
+    "type": "prideFlag",
+    "comment": "dritte in Wien",
+    "sources": [
+      {
+        "type": "official",
+        "url": "https://www.mariahilf.spoe.wien/regenbogen-monat/regenbogen-zebrastreifen/",
+        "date": "2020-06-16"
+      }
+    ],
+    "geosource": {
+      "type": "OSMnodes",
+      "nodes": [
+        2592758282,
+        2592758289,
+        2592758298
+      ]
+    },
+    "geo": {
+      "coords": [
+        [
+          16.354169,
+          48.1976139
+        ],
+        [
+          16.3541143,
+          48.1977524
+        ]
+      ],
+      "length": 15.93
+    }
+  },
+  {
+    "id": 4,
+    "name": "Schönbrunner Straße/Pilgramgasse",
+    "bezirk": 5,
+    "type": "prideFlag",
+    "sources": [
+      {
+        "type": "official",
+        "url": "https://www.margareten.spoe.wien/2020/09/14/margareten-bekommt-den-1-regenbogen-zebrastreifen/",
+        "date": "2020-09-16"
+      }
+    ],
+    "comment": "Erster im 5. Bezirk",
+    "geosource": {
+      "type": "OSMnodes",
+      "nodes": [
+        2592738844,
+        1361284702,
+        2592738857
+      ]
+    },
+    "geo": {
+      "coords": [
+        [
+          16.3564331,
+          48.1919498
+        ],
+        [
+          16.3565701,
+          48.1920867
+        ]
+      ],
+      "length": 18.3
+    }
+  },
+  {
+    "id": 5,
+    "name": "Burgtheater/Rathausplatz",
+    "bezirk": 1,
+    "type": "prideFlag",
+    "comment": "erster in Wien",
+    "sources": [
+      {
+        "type": "news",
+        "url": "https://www.derstandard.at/story/2000104455943/wiener-zebrastreifen-erstrahlt-als-regenbogen",
+        "date": "2019-06-06"
+      }
+    ],
+    "geosource": {
+      "type": "OSMnodes",
+      "nodes": [
+        1958327004,
+        715774888,
+        1958327005,
+        4683382974
+      ]
+    },
+    "geo": {
+      "coords": [
+        [
+          16.3607486,
+          48.2105078
+        ],
+        [
+          16.3605668,
+          48.2105315
+        ]
+      ],
+      "length": 13.73
+    }
+  },
+  {
+    "id": 6,
+    "name": "Meidlinger Markt",
+    "bezirk": 12,
+    "type": "prideFlag",
+    "sources": [
+      {
+        "type": "news",
+        "url": "https://kurier.at/chronik/wien/zwei-neue-regenbogen-schutzwege-nur-einer-steht-fuer-toleranz/401329509",
+        "date": "2021-03-23"
+      }
+    ],
+    "geosource": {
+      "type": "RawCoords",
+      "coords": [
+        [
+          16.33268,
+          48.18118
+        ],
+        [
+          16.33268,
+          48.18129
+        ]
+      ]
+    },
+    "geo": {
+      "coords": [
+        [
+          16.33268,
+          48.18118
+        ],
+        [
+          16.33268,
+          48.18129
+        ]
+      ],
+      "length": 12.23
+    }
+  },
+  {
+    "id": 7,
+    "name": "Laaer-Berg-Straße",
+    "bezirk": 12,
+    "type": "prideFlag",
+    "sources": [
+      {
+        "type": "news",
+        "url": "https://kurier.at/chronik/wien/zwei-neue-regenbogen-schutzwege-nur-einer-steht-fuer-toleranz/401329509",
+        "date": "2021-03-23"
+      },
+      {
+        "type": "news",
+        "url": "https://www.vienna.at/regenbogen-zebrastreifen-fuer-mehr-sicherheit-vor-volksschule-laaer-berg/6936217",
+        "date": "2021-03-23"
+      }
+    ],
+    "comment": "\"Farbenfroh\", um \"den Schulweg für die Schülerinnen und Schüler so sicher wie möglich zu gestalten\"",
+    "geosource": {
+      "type": "RawCoords",
+      "coords": [
+        [
+          16.39615,
+          48.15504
+        ],
+        [
+          16.396,
+          48.15501
+        ]
+      ]
+    },
+    "geo": {
+      "coords": [
+        [
+          16.39615,
+          48.15504
+        ],
+        [
+          16.396,
+          48.15501
+        ]
+      ],
+      "length": 11.62
+    }
+  },
+  {
+    "id": 8,
+    "name": "Währinger Straße/Kutschkermarkt",
+    "bezirk": 18,
+    "type": "prideFlag",
+    "comment": "Zweiter in Wien",
+    "sources": [
+      {
+        "type": "news",
+        "url": "https://www.ggg.at/2020/05/27/wien-waehring-hat-seinen-ersten-regenbogen-zebrastreifen/",
+        "date": "2020-05-27"
+      }
+    ],
+    "geosource": {
+      "type": "OSMnodes",
+      "nodes": [
+        4759873241,
+        251207332,
+        4070298580,
+        2423479553,
+        4070298581,
+        4759873240,
+        4759873233
+      ]
+    },
+    "geo": {
+      "coords": [
+        [
+          16.3447646,
+          48.2261005
+        ],
+        [
+          16.3447848,
+          48.2262367
+        ]
+      ],
+      "length": 15.22
+    }
+  },
+  {
+    "id": 9,
+    "name": "Landstraßer Hauptstraße",
+    "bezirk": 3,
+    "type": "prideFlag",
+    "sources": [
+      {
+        "type": "news",
+        "url": "https://kurier.at/chronik/wien/neuer-regenbogen-zebrastreifen-im-3-bezirk/401024645",
+        "date": "2020-09-09"
+      }
+    ],
+    "comment": "Vierte in Wien",
+    "geosource": {
+      "type": "OSMway",
+      "wayID": 492141776
+    },
+    "geo": {
+      "coords": [
+        [
+          16.3876052,
+          48.2050736
+        ],
+        [
+          16.3874681,
+          48.2049374
+        ]
+      ],
+      "length": 18.24
+    }
+  },
+  {
+    "id": 10,
+    "name": "Operngasse/Schleifmühlgasse",
+    "bezirk": 4,
+    "type": "prideFlag",
+    "sources": [
+      {
+        "type": "news",
+        "url": "https://wienerbezirksblatt.at/ein-regenbogenzebrastreifen-fuer-die-wieden/",
+        "date": "2021-06-21"
+      }
+    ],
+    "geosource": {
+      "type": "RawCoords",
+      "coords": [
+        [
+          16.36562,
+          48.19704
+        ],
+        [
+          16.3657,
+          48.19697
+        ]
+      ]
+    },
+    "geo": {
+      "coords": [
+        [
+          16.36562,
+          48.19704
+        ],
+        [
+          16.3657,
+          48.19697
+        ]
+      ],
+      "length": 9.78
+    }
+  },
+  {
+    "id": 11,
+    "name": "Schönbrunner Straße/Ramperstorffergasse",
+    "bezirk": 5,
+    "type": "transFlag",
+    "sources": [
+      {
+        "type": "news",
+        "url": "https://www.meinbezirk.at/margareten/c-politik/margaretens-erster-trans-pride-schutzweg-ist-eroeffnet_a4706615",
+        "date": "2021-06-15"
+      }
+    ],
+    "geosource": {
+      "type": "OSMnodes",
+      "nodes": [
+        3724714788,
+        3724714740,
+        1352578195,
+        3724714760
+      ]
+    },
+    "geo": {
+      "coords": [
+        [
+          16.3547176,
+          48.190631
+        ],
+        [
+          16.3549009,
+          48.1907098
+        ]
+      ],
+      "length": 16.17
+    }
+  },
+  {
+    "id": 12,
+    "name": "Kennedybrücke/Hietzinger Hauptstraße",
+    "bezirk": 13,
+    "type": "prideFlag",
+    "sources": [
+      {
+        "type": "news",
+        "url": "https://www.meinbezirk.at/hietzing/c-lokales/der-13-bezirk-hat-seinen-ersten-regenbogen-zebrastreifen_a5051167#gallery=null",
+        "date": "2021-12-07"
+      }
+    ],
+    "geosource": {
+      "type": "OSMnodes",
+      "nodes": [
+        2971124930,
+        26970481,
+        251708631
+      ]
+    },
+    "geo": {
+      "coords": [
+        [
+          16.3035692,
+          48.1873011
+        ],
+        [
+          16.3035488,
+          48.1874442
+        ]
+      ],
+      "length": 15.98
+    }
+  },
+  {
+    "id": 13,
+    "name": "Kennedybrücke/Hadikgasse",
+    "bezirk": 14,
+    "type": "prideFlag",
+    "sources": [
+      {
+        "type": "streetview",
+        "date": "2021-12-01"
+      }
+    ],
+    "geosource": {
+      "type": "OSMnodes",
+      "nodes": [
+        3252467172,
+        2003097464,
+        2003097460
+      ]
+    },
+    "geo": {
+      "coords": [
+        [
+          16.3040589,
+          48.1882864
+        ],
+        [
+          16.3040479,
+          48.1881693
+        ]
+      ],
+      "length": 13.05
     }
   }
 ]

@@ -12,7 +12,10 @@ import {Coordinate} from "ol/coordinate";
 import {State} from "ol/render";
 import {Line, Vector2d} from "./vectorUtils";
 import {drawZebraCrossing, zebraPatterns} from "./zebraUtils";
-import importdata from "../data/data.json"
+// @ts-ignore
+import importdata from "../data/data.json?inline"
+// @ts-ignore
+import dataURL from "../data/data.json?url"
 import {Crossing} from "../interfaces";
 import prideFlag from "../assets/prideflag.svg"
 import transFlag from "../assets/transflag.svg"
@@ -47,9 +50,14 @@ const map = new Map({
         constrainOnlyCenter: true
     })
 });
-var vectorLine = new VectorSource({});
+var vectorLine = new VectorSource({
+    attributions: ["<a target='_blank' href='" + dataURL + "'>Rohdaten</a>"]
+});
 const metaData: { [id: number]: Crossing } = {}
 data.forEach(c => {
+    if (typeof c.geo === "undefined") {
+        return
+    }
     const points = c.geo.coords.map(coord => transform(coord, 'EPSG:4326', 'EPSG:3857'));
 
     const featureLine = new Feature({
@@ -82,7 +90,7 @@ function renderer(coordinates: Coordinate | Coordinate[] | Coordinate[][], state
         return
     }
     const crossing = metaData[featureID]
-    let numStripes = crossing.geo.length / 0.5
+    let numStripes = crossing.geo!.length / 0.5
     if (state.resolution > 0.3) {
         numStripes /= 2
     }
@@ -186,4 +194,4 @@ map.on('singleclick', function (event) {
         closer.blur();
     }
 });
-
+console.log(dataURL)

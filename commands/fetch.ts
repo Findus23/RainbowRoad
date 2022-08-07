@@ -50,7 +50,9 @@ async function runfetch() {
     }
 
     for (const d of data) {
+
         if (typeof d.geo !== "undefined") {
+            d.geo.length = lineLengthInM(d.geo.coords[0], d.geo.coords[1])
             continue
         }
         const geosource = d.geosource
@@ -63,14 +65,16 @@ async function runfetch() {
             case "OSMnodes":
                 coords = await fetchNodeData(geosource);
                 break
+            case "RawCoords":
+                coords = geosource.coords
+                console.info(geosource.coords)
+                break
         }
-
         d.geo = {
             coords: coords,
             length: lineLengthInM(coords[0], coords[1])
         }
         // crossings[i] = d
-        d.geo.length = lineLengthInM(d.geo.coords[0], d.geo.coords[1])
     }
 
 

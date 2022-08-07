@@ -5,10 +5,10 @@ function toRad(val: number) {
 }
 
 export function lineLengthInM(start: number[], end: number[]) {
-    let lat1 = start[0]
-    let lat2 = end[0]
-    const lon1 = start[1]
-    const lon2 = end[1]
+    let lat1 = start[1]
+    let lat2 = end[1]
+    const lon1 = start[0]
+    const lon2 = end[0]
 
     let dLat = toRad(lat2 - lat1)
     let dLon = toRad(lon2 - lon1)

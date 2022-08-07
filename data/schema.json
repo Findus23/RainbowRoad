@@ -5,6 +5,57 @@
     "$ref": "#/definitions/crossing"
   },
   "definitions": {
+    "Coordinate": {
+      "type": "array",
+      "minItems": 2,
+      "maxItems": 2,
+      "items": {
+        "type": "number"
+      }
+    },
+    "Coordinates": {
+      "type": "array",
+      "items": {
+        "$ref": "#/definitions/Coordinate"
+      }
+    },
+    "RawCoordSource": {
+      "type": "object",
+      "properties": {
+        "type": {
+          "const": "RawCoords"
+        },
+        "coords": {
+          "$ref": "#/definitions/Coordinates"
+        }
+      }
+    },
+    "OSMNodeSource": {
+      "type": "object",
+      "properties": {
+        "type": {
+          "const": "OSMnodes"
+        },
+        "nodes": {
+          "type": "array",
+          "minItems": 2,
+          "items": {
+            "type": "number"
+          }
+        }
+      }
+    },
+    "OSMWaySource": {
+      "type": "object",
+      "properties": {
+        "type": {
+          "const": "OSMway"
+        },
+        "wayID": {
+          "type": "number"
+        }
+      }
+    },
     "source": {
       "type": "object",
       "additionalProperties": false,
@@ -13,17 +64,16 @@
           "type": "string",
           "enum": [
             "news",
+            "official",
             "streetview",
             "in person"
           ]
         },
         "date": {
-          "type": "string",
-          "format": "date"
+          "type": "string"
         },
         "url": {
-          "type": "string",
-          "format": "url"
+          "type": "string"
         }
       },
       "required": [
@@ -39,13 +89,7 @@
           "type": "integer"
         },
         "coords": {
-          "type": "array",
-          "items": {
-            "type": "array",
-            "items": {
-              "type": "number"
-            }
-          }
+          "$ref": "#/definitions/Coordinates"
         },
         "length": {
           "type": "number"
@@ -65,12 +109,16 @@
         "bezirk": {
           "type": "integer"
         },
+        "comment": {
+          "type": "string"
+        },
         "sources": {
           "type": "array",
           "items": {
             "type": "object",
-            "$ref": "#/source"
-          }
+            "$ref": "#/definitions/source"
+          },
+          "minItems": 1
         },
         "type": {
           "type": "string",
@@ -81,15 +129,29 @@
         },
         "geo": {
           "type": "object",
-          "$ref": "#/geo"
+          "$ref": "#/definitions/geo"
         },
-        "geosource": {}
+        "geosource": {
+          "oneOf": [
+            {
+              "$ref": "#/definitions/OSMWaySource"
+            },
+            {
+              "$ref": "#/definitions/OSMNodeSource"
+            },
+            {
+              "$ref": "#/definitions/RawCoordSource"
+            }
+          ]
+        }
       },
       "required": [
         "id",
         "bezirk",
         "name",
-        "type"
+        "type",
+        "sources",
+        "geosource"
       ],
       "title": "Zebrastreifen"
     }

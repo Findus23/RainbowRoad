@@ -1,9 +1,16 @@
 export type FlagType = "prideFlag" | "transFlag"
 
+export type Coord = number[]
+export type Coords = Coord[]
 
 export interface OSMWaySource {
     type: "OSMway",
     wayID: number
+}
+
+export interface RawCoordSource {
+    type: "RawCoords",
+    coords: Coords,
 }
 
 export interface OSMNodeSource {
@@ -12,7 +19,7 @@ export interface OSMNodeSource {
 }
 
 export interface GeoData {
-    coords: number[][],
+    coords: Coords,
     length: number // in meter
 }
 
@@ -21,8 +28,8 @@ export interface Crossing {
     name: string
     bezirk: number
     type: FlagType
-    geosource: OSMWaySource | OSMNodeSource,
-    geo: GeoData
+    geosource: OSMWaySource | OSMNodeSource | RawCoordSource,
+    geo?: GeoData
 }
 
 export interface Tags {

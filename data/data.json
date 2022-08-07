@@ -1,0 +1,67 @@
+[
+  {
+    "id": 1,
+    "name": "Praterstern",
+    "sources": [
+      {
+        "type": "streetview",
+        "date": "2022-07-01"
+      },
+      {
+        "type": "news",
+        "date": "2021-04-22",
+        "url": "https://www.meinbezirk.at/leopoldstadt/c-lokales/neuer-regenbogen-zebrastreifen-am-praterstern_a4591199"
+      }
+    ],
+    "bezirk": 2,
+    "type": "prideFlag",
+    "geosource": {
+      "type": "OSMway",
+      "wayID": 191209754
+    },
+    "geo": {
+      "coords": [
+        [
+          16.3934161,
+          48.217841
+        ],
+        [
+          16.3936921,
+          48.217809
+        ]
+      ],
+      "length": 30.88
+    }
+  },
+  {
+    "id": 2,
+    "name": "Spitalgasse/Lazarettgasse",
+    "bezirk": 5,
+    "type": "transFlag",
+    "geosource": {
+      "type": "OSMnodes",
+      "nodes": [
+        4688793755,
+        248435078,
+        4688793750,
+        4688793751,
+        4688793749,
+        2507395460,
+        4688793762
+      ]
+    },
+    "geo": {
+      "coords": [
+        [
+          16.3519972,
+          48.2191707
+        ],
+        [
+          16.3516333,
+          48.2190409
+        ]
+      ],
+      "length": 42.77
+    }
+  }
+]

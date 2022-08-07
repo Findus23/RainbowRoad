@@ -1,0 +1,97 @@
+{
+  "$schema": "http://json-schema.org/draft-06/schema#",
+  "type": "array",
+  "items": {
+    "$ref": "#/definitions/crossing"
+  },
+  "definitions": {
+    "source": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "type": {
+          "type": "string",
+          "enum": [
+            "news",
+            "streetview",
+            "in person"
+          ]
+        },
+        "date": {
+          "type": "string",
+          "format": "date"
+        },
+        "url": {
+          "type": "string",
+          "format": "url"
+        }
+      },
+      "required": [
+        "date",
+        "type"
+      ]
+    },
+    "geo": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "wayID": {
+          "type": "integer"
+        },
+        "coords": {
+          "type": "array",
+          "items": {
+            "type": "array",
+            "items": {
+              "type": "number"
+            }
+          }
+        },
+        "length": {
+          "type": "number"
+        }
+      }
+    },
+    "crossing": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "id": {
+          "type": "number"
+        },
+        "name": {
+          "type": "string"
+        },
+        "bezirk": {
+          "type": "integer"
+        },
+        "sources": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "$ref": "#/source"
+          }
+        },
+        "type": {
+          "type": "string",
+          "enum": [
+            "prideFlag",
+            "transFlag"
+          ]
+        },
+        "geo": {
+          "type": "object",
+          "$ref": "#/geo"
+        },
+        "geosource": {}
+      },
+      "required": [
+        "id",
+        "bezirk",
+        "name",
+        "type"
+      ],
+      "title": "Zebrastreifen"
+    }
+  }
+}

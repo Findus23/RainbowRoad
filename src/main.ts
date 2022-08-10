@@ -189,7 +189,7 @@ map.on('singleclick', function (event) {
 
         overlay.setPosition(coordinate);
 
-    }, {hitTolerance: 20})
+    }, {hitTolerance: 5})
     if (!map.hasFeatureAtPixel(event.pixel, {hitTolerance: 2})) {
         overlay.setPosition(undefined);
         closer.blur();

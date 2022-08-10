@@ -75,10 +75,8 @@ async function runfetch() {
             length: lineLengthInM(coords[0], coords[1])
         }
         // crossings[i] = d
+        fs.writeFileSync("../data/data.json", JSON.stringify(data, null, 2))
     }
-
-
-    fs.writeFileSync("../data/data.json", JSON.stringify(data, null, 2))
 }
 
 runfetch()

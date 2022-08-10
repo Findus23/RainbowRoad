@@ -18,6 +18,12 @@ export interface OSMNodeSource {
     nodes: number[]
 }
 
+export interface Source {
+    type: "news" | "official" | "proposal" | "streetview" | "in person"
+    date: string
+    url?: string
+}
+
 export interface GeoData {
     coords: Coords,
     length: number // in meter
@@ -27,7 +33,10 @@ export interface Crossing {
     id: number
     name: string
     bezirk: number
+    comment?:string
+    set?:string
     type: FlagType
+    sources: Source[]
     geosource: OSMWaySource | OSMNodeSource | RawCoordSource,
     geo?: GeoData
 }

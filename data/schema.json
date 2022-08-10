@@ -88,9 +88,6 @@
       "type": "object",
       "additionalProperties": false,
       "properties": {
-        "wayID": {
-          "type": "integer"
-        },
         "coords": {
           "$ref": "#/definitions/Coordinates"
         },

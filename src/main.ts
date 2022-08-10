@@ -19,6 +19,7 @@ import dataURL from "../data/data.json?url"
 import {Crossing} from "../interfaces";
 import prideFlag from "../assets/prideflag.svg"
 import transFlag from "../assets/transflag.svg"
+import {displaySources} from "./text";
 
 
 function averageCoords(coords: number[][]): number[] {
@@ -179,14 +180,20 @@ map.on('singleclick', function (event) {
         if (id > 10000) {
             id -= 10000
         }
-        console.info(id)
         const crossing = metaData[id]
 
         content.innerHTML = "";
         const p = document.createElement("p")
         p.innerText = crossing.name
         content.appendChild(p)
-
+        if (crossing.comment) {
+            const p = document.createElement("p")
+            const small = document.createElement("small")
+            small.innerText = crossing.comment
+            p.appendChild(small)
+            content.appendChild(p)
+        }
+        displaySources(crossing.sources, content)
         overlay.setPosition(coordinate);
 
     }, {hitTolerance: 5})
@@ -195,4 +202,3 @@ map.on('singleclick', function (event) {
         closer.blur();
     }
 });
-console.log(dataURL)

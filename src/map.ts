@@ -18,17 +18,12 @@ import dataURL from "../data/data.json?url"
 import {Crossing} from "../interfaces";
 import prideFlag from "../assets/prideflag.svg"
 import transFlag from "../assets/transflag.svg"
+import {averageCoords} from "../utils/geo";
 
 import "./style.scss"
 import "hint.css/hint.base.css"
 
 
-function averageCoords(coords: number[][]): number[] {
-    return [
-        (coords[0][0] + coords[1][0]) / 2,
-        (coords[0][1] + coords[1][1]) / 2
-    ]
-}
 
 
 const data = importdata as Crossing[]

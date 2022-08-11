@@ -1309,5 +1309,39 @@
       ],
       "length": 26.42
     }
+  },
+  {
+    "id": 38,
+    "name": "Pilgramgasse/Margaretenstraße",
+    "bezirk": 5,
+    "type": "prideFlag",
+    "sources": [
+      {
+        "type": "streetview",
+        "date": "2020-11-01",
+        "note": "Nicht in August 2019"
+      }
+    ],
+    "geosource": {
+      "type": "OSMnodes",
+      "nodes": [
+        1877331771,
+        292371940,
+        2592738807
+      ]
+    },
+    "geo": {
+      "coords": [
+        [
+          16.3581003,
+          48.1914631
+        ],
+        [
+          16.3579901,
+          48.1913387
+        ]
+      ],
+      "length": 16.06
+    }
   }
 ]

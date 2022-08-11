@@ -1,12 +1,11 @@
 import Map from "ol/Map";
 import {OSM, Vector as VectorSource} from "ol/source";
 import TileLayer from "ol/layer/Tile";
-import {Feature, Overlay, View} from "ol";
+import {Feature, View} from "ol";
 import {fromLonLat, transform, transformExtent} from "ol/proj";
 
 import {LineString, Point} from "ol/geom";
 import {Vector as VectorLayer} from "ol/layer";
-import "./style.css"
 import {Circle, Fill, Icon, Stroke, Style} from "ol/style";
 import {Coordinate} from "ol/coordinate";
 import {State} from "ol/render";
@@ -19,7 +18,9 @@ import dataURL from "../data/data.json?url"
 import {Crossing} from "../interfaces";
 import prideFlag from "../assets/prideflag.svg"
 import transFlag from "../assets/transflag.svg"
-import {displaySources} from "./text";
+
+import "./style.scss"
+import "hint.css/hint.base.css"
 
 
 function averageCoords(coords: number[][]): number[] {
@@ -38,12 +39,6 @@ const map = new Map({
             source: new OSM({url: "https://maps.lw1.at/tiles/1.0.0/osm/GLOBAL_MERCATOR/{z}/{x}/{y}.png"})
         }),
     ],
-    // view: new View({
-    //     center: fromLonLat([16.3787, 48.2089]),
-    //     zoom: 12,
-    //     extent: transformExtent([16.2988, 48.1353, 16.4986, 48.2974], 'EPSG:4326', 'EPSG:3857'),
-    //     constrainOnlyCenter: true
-    // })
     view: new View({
         center: fromLonLat([16.3787, 48.2089]),
         zoom: 13,
@@ -52,10 +47,23 @@ const map = new Map({
         constrainOnlyCenter: true
     })
 });
-var vectorLine = new VectorSource({
+const vectorLine = new VectorSource({
     attributions: ["<a target='_blank' href='" + dataURL + "'>Rohdaten</a>"]
 });
 const metaData: { [id: number]: Crossing } = {}
+data.sort((a, b) => {
+    /*
+    put trans flag on top (so they are not covered,
+    but apart from that keep the drawing order random
+     */
+    if (a.type == "transFlag") {
+        return 1
+    }
+    if (b.type == "transFlag") {
+        return -1
+    }
+    return Math.random() - 0.5;
+})
 data.forEach(c => {
     if (typeof c.geo === "undefined") {
         return
@@ -124,7 +132,7 @@ const circleStyle = new Style({
         radius: 10,
     }),
 })
-var vectorLineLayer = new VectorLayer({
+const vectorLineLayer = new VectorLayer({
     source: vectorLine,
     style: function (feature, resolution) {
         const zoom = map.getView().getZoomForResolution(resolution);
@@ -150,55 +158,6 @@ var vectorLineLayer = new VectorLayer({
 map.addLayer(vectorLineLayer);
 
 
-// popups
-
-const container = document.getElementById('popup')!;
-const content = document.getElementById('popup-content')!;
-const closer = document.getElementById('popup-closer')!;
-
-var overlay = new Overlay({
-    element: container,
-    autoPan: true,
-    autoPanAnimation: {
-        duration: 250
-    }
-});
-map.addOverlay(overlay);
-
-closer.onclick = function () {
-    overlay.setPosition(undefined);
-    closer.blur();
-    return false;
-};
-map.on('singleclick', function (event) {
-    map.forEachFeatureAtPixel(event.pixel, feature => {
-        var coordinate = event.coordinate;
-        let id = Number(feature.getId())
-        if (!id) {
-            return
-        }
-        if (id > 10000) {
-            id -= 10000
-        }
-        const crossing = metaData[id]
-
-        content.innerHTML = "";
-        const p = document.createElement("p")
-        p.innerText = crossing.name
-        content.appendChild(p)
-        if (crossing.comment) {
-            const p = document.createElement("p")
-            const small = document.createElement("small")
-            small.innerText = crossing.comment
-            p.appendChild(small)
-            content.appendChild(p)
-        }
-        displaySources(crossing.sources, content)
-        overlay.setPosition(coordinate);
-
-    }, {hitTolerance: 5})
-    if (!map.hasFeatureAtPixel(event.pixel, {hitTolerance: 2})) {
-        overlay.setPosition(undefined);
-        closer.blur();
-    }
-});
+import("./popups").then(popups => {
+    popups.initPopups(map, metaData);
+})

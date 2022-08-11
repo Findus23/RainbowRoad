@@ -1,4 +1,4 @@
-import "./style.css"
+import "./style.scss"
 import {Line, Vector2d} from "./vectorUtils";
 import {drawZebraCrossing, prideZebraPattern, transZebraPattern, zebraPattern} from "./zebraUtils";
 

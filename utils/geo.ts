@@ -21,3 +21,10 @@ export function lineLengthInM(start: number[], end: number[]) {
     const value = earthRadius * c * 1000
     return Math.round(value * 100) / 100
 }
+
+export function averageCoords(coords: number[][]): number[] {
+    return [
+        (coords[0][0] + coords[1][0]) / 2,
+        (coords[0][1] + coords[1][1]) / 2
+    ]
+}

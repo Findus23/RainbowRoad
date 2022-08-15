@@ -1,10 +1,6 @@
 import Map from "ol/Map";
 import {OSM, Vector as VectorSource} from "ol/source";
 import TileLayer from "ol/layer/Tile";
-import {Feature, View} from "ol";
-import {fromLonLat, transform, transformExtent} from "ol/proj";
-
-import {LineString, Point} from "ol/geom";
 import {Vector as VectorLayer} from "ol/layer";
 import {Circle, Fill, Icon, Stroke, Style} from "ol/style";
 import {Coordinate} from "ol/coordinate";
@@ -12,21 +8,20 @@ import {State} from "ol/render";
 import {Line, Vector2d} from "./vectorUtils";
 import {drawZebraCrossing, zebraPatterns} from "./zebraUtils";
 // @ts-ignore
-import importdata from "../data/data.json?inline"
-// @ts-ignore
-import dataURL from "../data/data.json?url"
-import {Crossing} from "../interfaces";
+import dataURL from "../data/Wien.json?url"
 import prideFlag from "../assets/prideflag.svg"
 import transFlag from "../assets/transflag.svg"
-import {averageCoords} from "../utils/geo";
+import {loadData, MetaData} from "./features";
+// @ts-ignore
+import importdata from "../data/Wien.json?inline"
+import Navigo from "navigo";
+import {redirect} from "./router";
+import {areas, viewFromArea, Wien} from "./areaData";
+import {Crossing} from "../interfaces";
 
-import "./style.scss"
-import "hint.css/hint.base.css"
+const root = import.meta.env.PROD ? "/s/tmp/rainbowroad/" : "/"
+export const router = new Navigo(root)
 
-
-
-
-const data = importdata as Crossing[]
 const map = new Map({
     target: 'map',
     layers: [
@@ -34,51 +29,30 @@ const map = new Map({
             source: new OSM({url: "https://maps.lw1.at/tiles/1.0.0/osm/GLOBAL_MERCATOR/{z}/{x}/{y}.png"})
         }),
     ],
-    view: new View({
-        center: fromLonLat([16.3787, 48.2089]),
-        zoom: 13,
-        // https://www.wien.gv.at/statistik/lebensraum/tabellen/stadtgebiet-eckdaten.html
-        extent: transformExtent([16.18278, 48.11833, 16.58, 48.32306], 'EPSG:4326', 'EPSG:3857'),
-        constrainOnlyCenter: true
-    })
+    view: viewFromArea(Wien)
 });
-const vectorLine = new VectorSource({
+const vectorSource = new VectorSource({
     attributions: ["<a target='_blank' href='" + dataURL + "'>Rohdaten</a>"]
 });
-const metaData: { [id: number]: Crossing } = {}
-data.sort((a, b) => {
-    /*
-    put trans flag on top (so they are not covered,
-    but apart from that keep the drawing order random
-     */
-    if (a.type == "transFlag") {
-        return 1
-    }
-    if (b.type == "transFlag") {
-        return -1
-    }
-    return Math.random() - 0.5;
+let metaData: MetaData
+
+router.on("/Wien", () => {
+    map.setView(viewFromArea(Wien))
+    // @ts-ignore
+    import("../data/Wien.json?inline").then((data) => {
+        metaData = loadData(data.default as unknown as Crossing[], vectorSource)
+    })
 })
-data.forEach(c => {
-    if (typeof c.geo === "undefined") {
-        return
-    }
-    const points = c.geo.coords.map(coord => transform(coord, 'EPSG:4326', 'EPSG:3857'));
+router.on("/Ober%C3%B6sterreich", () => {
+    map.setView(viewFromArea(areas.OOE))
 
-    const featureLine = new Feature({
-        geometry: new LineString(points)
-    });
-    const featureDot = new Feature({
-        geometry: new Point(averageCoords(points))
-    });
-    featureLine.setId(c.id)
-    featureDot.setId(c.id + 10000)
-    metaData[c.id] = c
-    vectorLine.addFeature(featureLine);
-    vectorLine.addFeature(featureDot);
+    // @ts-ignore
+    import("../data/Oberösterreich.json?inline").then((data) => {
+        metaData = loadData(data.default as unknown as Crossing[], vectorSource)
+    })
 })
-
-
+redirect(router, "/", "/Wien")
+router.resolve()
 const greenLine = new Style({
     fill: new Fill({color: '#00FF00'}),
     stroke: new Stroke({color: '#00FF00', width: 2})
@@ -128,7 +102,7 @@ const circleStyle = new Style({
     }),
 })
 const vectorLineLayer = new VectorLayer({
-    source: vectorLine,
+    source: vectorSource,
     style: function (feature, resolution) {
         const zoom = map.getView().getZoomForResolution(resolution);
         if (!zoom) {
@@ -152,6 +126,18 @@ const vectorLineLayer = new VectorLayer({
 });
 map.addLayer(vectorLineLayer);
 
+
+// window.bla = function () {
+//     const view = map.getView()
+//     map.setView(
+//         new View({
+//             center: fromLonLat([15.3787, 47.2089]),
+//             zoom: 13,
+//             // https://www.wien.gv.at/statistik/lebensraum/tabellen/stadtgebiet-eckdaten.html
+//             extent: transformExtent([15.18278, 47.11833, 15.58, 47.32306], 'EPSG:4326', 'EPSG:3857'),
+//             constrainOnlyCenter: true
+//         }))
+// }
 
 import("./popups").then(popups => {
     popups.initPopups(map, metaData);

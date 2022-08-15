@@ -3,8 +3,8 @@ import type {Crossing, OSMNodeSource, OSMWaySource, OverPassNode, OverPassRespon
 import {nodeData, wayData} from "./overpass";
 import {lineLengthInM} from "../utils/geo";
 
-async function runfetch() {
-    const data: Crossing[] = JSON.parse(fs.readFileSync("../data/data.json", 'utf8'));
+async function runfetch(filename: string) {
+    const data: Crossing[] = JSON.parse(fs.readFileSync(filename, 'utf8'));
 
     function firstLastNodeCoords(nodeMap: { [id: number]: OverPassNode }, nodeList: number[]) {
         const coords: number[][] = []
@@ -75,8 +75,14 @@ async function runfetch() {
             length: lineLengthInM(coords[0], coords[1])
         }
         // crossings[i] = d
-        fs.writeFileSync("../data/data.json", JSON.stringify(data, null, 2))
+        fs.writeFileSync(filename, JSON.stringify(data, null, 2))
     }
 }
 
-runfetch()
+fs.readdirSync("../data/").forEach(file => {
+    if (file === "schema.json") {
+        return
+    }
+    console.info(file)
+    runfetch("../data/" + file)
+})

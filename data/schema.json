@@ -68,6 +68,7 @@
             "news",
             "official",
             "proposal",
+            "photo",
             "streetview",
             "in person"
           ]
@@ -153,7 +154,6 @@
       },
       "required": [
         "id",
-        "bezirk",
         "name",
         "type",
         "sources",

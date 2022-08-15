@@ -2,10 +2,10 @@ import * as fs from "fs";
 import type {Crossing} from "../interfaces";
 
 function runstats() {
-    const data: Crossing[] = JSON.parse(fs.readFileSync("../data/data.json", 'utf8'));
+    const data: Crossing[] = JSON.parse(fs.readFileSync("../data/Wien.json", 'utf8'));
 
 
-    const bezirke = data.map(c => c.bezirk)
+    const bezirke = data.map(c => c.bezirk!)
     const counts: { [key: number]: number } = {};
 
     for (const num of bezirke) {

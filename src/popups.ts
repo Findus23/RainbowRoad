@@ -3,6 +3,7 @@ import {createDateWithDisclaimer, displaySources} from "./text";
 import type Map from "ol/Map";
 import {Crossing} from "../interfaces";
 import {createElement} from "./domutils";
+import "hint.css/hint.base.css"
 
 export function initPopups(map: Map, metaData: { [id: number]: Crossing }) {
     const container = document.getElementById('popup')!;
@@ -24,7 +25,7 @@ export function initPopups(map: Map, metaData: { [id: number]: Crossing }) {
         closer.blur();
         return false;
     };
-    map.on('singleclick', function (event) {
+    map.on('singleclick', event => {
         map.forEachFeatureAtPixel(event.pixel, feature => {
             const coordinate = event.coordinate;
             let id = Number(feature.getId())

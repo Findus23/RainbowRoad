@@ -19,7 +19,7 @@ export interface OSMNodeSource {
 }
 
 export interface Source {
-    type: "news" | "official" | "proposal" | "streetview" | "in person"
+    type: "news" | "official" | "proposal" | "photo" | "streetview" | "in person"
     date: string
     url?: string
 }
@@ -32,9 +32,9 @@ export interface GeoData {
 export interface Crossing {
     id: number
     name: string
-    bezirk: number
-    comment?:string
-    set?:string
+    bezirk?: number
+    comment?: string
+    set?: string
     type: FlagType
     sources: Source[]
     geosource: OSMWaySource | OSMNodeSource | RawCoordSource,

@@ -1,0 +1,31 @@
+[
+  {
+    "id": 1,
+    "name": "Nordico",
+    "type": "prideFlag",
+    "sources": [
+      {
+        "type": "official",
+        "url": "https://www.linz.at/medienservice/2022/202206_115655.php",
+        "date": "2022-06-22"
+      }
+    ],
+    "geosource": {
+      "type": "OSMway",
+      "wayID": 140435401
+    },
+    "geo": {
+      "coords": [
+        [
+          14.2911588,
+          48.3037437
+        ],
+        [
+          14.2911232,
+          48.3038253
+        ]
+      ],
+      "length": 9.45
+    }
+  }
+]

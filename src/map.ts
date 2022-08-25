@@ -9,17 +9,15 @@ import {Line, Vector2d} from "./vectorUtils";
 import {drawZebraCrossing, zebraPatterns} from "./zebraUtils";
 import prideFlag from "../assets/prideflag.svg"
 import transFlag from "../assets/transflag.svg"
-import {loadData, MetaData} from "./features";
-import Navigo from "navigo";
-import {redirect} from "./router";
-import {areas, buildAttribution, viewFromArea, Wien} from "./areaData";
+import {FeatureProperties} from "./features";
+import {areas, viewFromArea, Wien} from "./areaData";
 import {Crossing} from "../interfaces";
-import {defaults as defaultControls} from 'ol/control';
-import {AreaControl} from "./controls";
+import {loadAllData} from "./loadData";
+import "./router"
+import {router} from "./router";
 
-export const router = new Navigo("/")
 const map = new Map({
-    controls: defaultControls().extend([new AreaControl({router: router})]),
+    // controls: defaultControls().extend([new AreaControl({router: router})]),
     target: 'map',
     layers: [
         new TileLayer({
@@ -29,33 +27,9 @@ const map = new Map({
     view: viewFromArea(Wien)
 });
 const vectorSource = new VectorSource();
-let metaData: MetaData
-router.on("/Wien", () => {
-    map.setView(viewFromArea(Wien))
-    // @ts-ignore
-    import("../data/Wien.json?inline").then((data) => {
-        metaData = loadData(data.default as unknown as Crossing[], vectorSource)
-    })
 
-    import("../data/Wien.json?url").then(importdata => {
-        vectorSource.setAttributions(buildAttribution(importdata.default))
-    })
+loadAllData(vectorSource)
 
-})
-router.on("/Ober%C3%B6sterreich", () => {
-    map.setView(viewFromArea(areas.OOE))
-
-    // @ts-ignore
-    import("../data/Oberösterreich.json?inline").then((data) => {
-        metaData = loadData(data.default as unknown as Crossing[], vectorSource)
-    })
-    import("../data/Oberösterreich.json?url").then(importdata => {
-        vectorSource.setAttributions(buildAttribution(importdata.default))
-    })
-
-})
-redirect(router, "/", "/Wien")
-router.resolve()
 const greenLine = new Style({
     fill: new Fill({color: '#00FF00'}),
     stroke: new Stroke({color: '#00FF00', width: 2})
@@ -67,11 +41,11 @@ function renderer(coordinates: Coordinate | Coordinate[] | Coordinate[][], state
     const line = new Line(start, end)
     // console.log(line.vec.length())
     const ctx = state.context;
-    const featureID = Number(state.feature.getId())
-    if (!featureID || featureID > 10000) {
+    const featureProperties = state.feature.getProperties() as FeatureProperties
+    if (featureProperties.type != "line") {
         return
     }
-    const crossing = metaData[featureID]
+    const crossing: Crossing = featureProperties.crossing
     let numStripes = crossing.geo!.length / 0.5
     if (state.resolution > 0.3) {
         numStripes /= 2
@@ -114,12 +88,13 @@ const vectorLineLayer = new VectorLayer({
         if (zoom > 17) {
             return crossingsStyle
         }
-        const featureID = Number(feature.getId()) - 10000
-        if (!featureID || featureID < 0) {
+        const featureProperties = feature.getProperties() as FeatureProperties
+        const crossing = featureProperties.crossing
+        if (featureProperties.type != "dot") {
             return
         }
-        const crossing = metaData[featureID]
-        if (typeof crossing==="undefined") {
+
+        if (typeof crossing === "undefined") {
             return
         }
         switch (crossing.type) {
@@ -131,6 +106,12 @@ const vectorLineLayer = new VectorLayer({
     }
 });
 map.addLayer(vectorLineLayer);
+
+Object.entries(areas).forEach(([name, area]) => {
+    router.on("/" + encodeURIComponent(area.name), () => {
+        map.setView(viewFromArea(area))
+    })
+})
 
 
 // window.bla = function () {
@@ -146,5 +127,5 @@ map.addLayer(vectorLineLayer);
 // }
 
 import("./popups").then(popups => {
-    popups.initPopups(map, metaData);
+    popups.initPopups(map, vectorSource);
 })

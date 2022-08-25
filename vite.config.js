@@ -5,7 +5,6 @@ export default defineConfig({
         // splitVendorChunkPlugin(),
         // visualizer(),
     ],
-    base: "",
     build: {
         sourcemap: true,
         rollupOptions: {

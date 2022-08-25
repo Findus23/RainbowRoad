@@ -5,10 +5,14 @@ import {Feature} from "ol";
 import {LineString, Point} from "ol/geom";
 import {averageCoords} from "../utils/geo";
 
-export type MetaData = { [id: number]: Crossing }
+export type FeatureType = "line" | "dot"
 
-export function loadData(data: Crossing[], vectorSource: VectorSource): MetaData {
-    const metaData: MetaData = {}
+export interface FeatureProperties {
+    crossing: Crossing
+    type: FeatureType
+}
+
+export function loadData(data: Crossing[], vectorSource: VectorSource): void {
     console.info(data)
     data.sort((a, b) => {
         /*
@@ -35,12 +39,12 @@ export function loadData(data: Crossing[], vectorSource: VectorSource): MetaData
         const featureDot = new Feature({
             geometry: new Point(averageCoords(points))
         });
+
+        featureLine.setProperties({"crossing": c, "type": "line"} as FeatureProperties)
+        featureDot.setProperties({"crossing": c, "type": "dot"} as FeatureProperties)
         featureLine.setId(c.id)
         featureDot.setId(c.id + 10000)
-        metaData[c.id] = c
         vectorSource.addFeature(featureLine);
         vectorSource.addFeature(featureDot);
     })
-    return metaData
-
 }

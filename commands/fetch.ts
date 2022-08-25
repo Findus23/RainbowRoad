@@ -53,6 +53,10 @@ async function runfetch(filename: string) {
 
         if (typeof d.geo !== "undefined") {
             d.geo.length = lineLengthInM(d.geo.coords[0], d.geo.coords[1])
+            if (d.id < 100) {
+                const max = 2 ** 32
+                d.id = Math.floor(Math.random() * max);
+            }
             continue
         }
         const geosource = d.geosource
@@ -77,6 +81,8 @@ async function runfetch(filename: string) {
         // crossings[i] = d
         fs.writeFileSync(filename, JSON.stringify(data, null, 2))
     }
+    fs.writeFileSync(filename, JSON.stringify(data, null, 2))
+
 }
 
 fs.readdirSync("../data/").forEach(file => {

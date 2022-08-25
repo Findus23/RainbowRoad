@@ -35,7 +35,7 @@ export function viewFromArea(area: Area): View {
     return new View({
         center: fromLonLat(area.center),
         zoom: area.zoom,
-        extent: transformExtent(area.extent, 'EPSG:4326', 'EPSG:3857'),
+        // extent: transformExtent(area.extent, 'EPSG:4326', 'EPSG:3857'),
         constrainOnlyCenter: true
     })
 }

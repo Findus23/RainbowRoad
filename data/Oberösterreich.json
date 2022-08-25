@@ -27,5 +27,143 @@
       ],
       "length": 9.45
     }
+  },
+  {
+    "id": 2,
+    "name": "Mozartkreuzung 1/2",
+    "type": "prideFlag",
+    "set": "Mozartkreuzung",
+    "sources": [
+      {
+        "type": "official",
+        "url": "https://www.linz.at/medienservice/2022/202205_115199.php",
+        "date": "2022-05-12"
+      }
+    ],
+    "geosource": {
+      "type": "OSMway",
+      "wayID": 140335416
+    },
+    "geo": {
+      "coords": [
+        [
+          14.2926493,
+          48.3014648
+        ],
+        [
+          14.2927263,
+          48.3013794
+        ]
+      ],
+      "length": 11.07
+    }
+  },
+  {
+    "id": 3,
+    "name": "Mozartkreuzung 2/2",
+    "type": "prideFlag",
+    "set": "Mozartkreuzung",
+    "sources": [
+      {
+        "type": "official",
+        "url": "https://www.linz.at/medienservice/2022/202205_115199.php",
+        "date": "2022-05-12"
+      }
+    ],
+    "geosource": {
+      "type": "OSMway",
+      "wayID": 142813763
+    },
+    "geo": {
+      "coords": [
+        [
+          14.2925177,
+          48.3013095
+        ],
+        [
+          14.2923495,
+          48.3014183
+        ]
+      ],
+      "length": 17.35
+    }
+  },
+  {
+    "id": 4,
+    "name": "Grieskirchen",
+    "type": "prideFlag",
+    "sources": [
+      {
+        "type": "news",
+        "url": "https://www.tips.at/nachrichten/grieskirchen/wirtschaft-politik/572149-alle-parteien-stimmten-fuer-grieskirchner-regenbogenzebrastreifen",
+        "date": "2022-07-01"
+      }
+    ],
+    "unknownLocation": true,
+    "comment": "Standort unbekannt/einstimmig im Gemeinderat angenommen",
+    "geosource": {
+      "type": "RawCoords",
+      "coords": [
+        [
+          13.82711,
+          48.236
+        ],
+        [
+          13.82775,
+          48.236
+        ]
+      ]
+    },
+    "geo": {
+      "coords": [
+        [
+          13.82711,
+          48.236
+        ],
+        [
+          13.82775,
+          48.236
+        ]
+      ],
+      "length": 47.4
+    }
+  },
+  {
+    "id": 5,
+    "name": "Bad Ischl",
+    "type": "prideFlag",
+    "sources": [
+      {
+        "type": "news",
+        "url": "https://www.meinbezirk.at/salzkammergut/c-lokales/erster-regenbogen-zebrastreifen-im-salzkammergut_a5321260",
+        "date": "2022-05-04"
+      }
+    ],
+    "geosource": {
+      "type": "RawCoords",
+      "coords": [
+        [
+          13.62115,
+          47.71034
+        ],
+        [
+          13.62126,
+          47.71038
+        ]
+      ]
+    },
+    "geo": {
+      "coords": [
+        [
+          13.62115,
+          47.71034
+        ],
+        [
+          13.62126,
+          47.71038
+        ]
+      ],
+      "length": 9.36
+    }
   }
 ]

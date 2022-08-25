@@ -6,6 +6,7 @@ import spoeIcon from "../assets/favicons/spoe.png"
 import neosIcon from "../assets/favicons/neos.png"
 import WienIcon from "../assets/favicons/wien.gv.at.png"
 import derStandardIcon from "../assets/favicons/derstandard.at.png"
+import linzIcon from "../assets/favicons/linz.at.png"
 import {createElement} from "./domutils";
 
 export function prettyDate(isoDate: string): string {
@@ -48,7 +49,10 @@ export function displaySources(sources: Source[]) {
                 img.src = WienIcon
                 break
             case "www.derstandard.at":
-                img.src=derStandardIcon
+                img.src = derStandardIcon
+                break
+            case "www.linz.at":
+                img.src = linzIcon
                 break
         }
 

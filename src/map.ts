@@ -7,22 +7,19 @@ import {Coordinate} from "ol/coordinate";
 import {State} from "ol/render";
 import {Line, Vector2d} from "./vectorUtils";
 import {drawZebraCrossing, zebraPatterns} from "./zebraUtils";
-// @ts-ignore
-import dataURL from "../data/Wien.json?url"
 import prideFlag from "../assets/prideflag.svg"
 import transFlag from "../assets/transflag.svg"
 import {loadData, MetaData} from "./features";
-// @ts-ignore
-import importdata from "../data/Wien.json?inline"
 import Navigo from "navigo";
 import {redirect} from "./router";
-import {areas, viewFromArea, Wien} from "./areaData";
+import {areas, buildAttribution, viewFromArea, Wien} from "./areaData";
 import {Crossing} from "../interfaces";
+import {defaults as defaultControls} from 'ol/control';
+import {AreaControl} from "./controls";
 
-const root = import.meta.env.PROD ? "/s/tmp/rainbowroad/" : "/"
-export const router = new Navigo(root)
-
+export const router = new Navigo("/")
 const map = new Map({
+    controls: defaultControls().extend([new AreaControl({router: router})]),
     target: 'map',
     layers: [
         new TileLayer({
@@ -31,17 +28,19 @@ const map = new Map({
     ],
     view: viewFromArea(Wien)
 });
-const vectorSource = new VectorSource({
-    attributions: ["<a target='_blank' href='" + dataURL + "'>Rohdaten</a>"]
-});
+const vectorSource = new VectorSource();
 let metaData: MetaData
-
 router.on("/Wien", () => {
     map.setView(viewFromArea(Wien))
     // @ts-ignore
     import("../data/Wien.json?inline").then((data) => {
         metaData = loadData(data.default as unknown as Crossing[], vectorSource)
     })
+
+    import("../data/Wien.json?url").then(importdata => {
+        vectorSource.setAttributions(buildAttribution(importdata.default))
+    })
+
 })
 router.on("/Ober%C3%B6sterreich", () => {
     map.setView(viewFromArea(areas.OOE))
@@ -50,6 +49,10 @@ router.on("/Ober%C3%B6sterreich", () => {
     import("../data/Oberösterreich.json?inline").then((data) => {
         metaData = loadData(data.default as unknown as Crossing[], vectorSource)
     })
+    import("../data/Oberösterreich.json?url").then(importdata => {
+        vectorSource.setAttributions(buildAttribution(importdata.default))
+    })
+
 })
 redirect(router, "/", "/Wien")
 router.resolve()
@@ -116,6 +119,9 @@ const vectorLineLayer = new VectorLayer({
             return
         }
         const crossing = metaData[featureID]
+        if (typeof crossing==="undefined") {
+            return
+        }
         switch (crossing.type) {
             case "prideFlag":
                 return prideFlagStyle;

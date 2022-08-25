@@ -39,3 +39,7 @@ export function viewFromArea(area: Area): View {
         constrainOnlyCenter: true
     })
 }
+
+export function buildAttribution(dataURL: string) {
+    return ["<a target='_blank' href='" + dataURL + "'>Rohdaten</a>"]
+}

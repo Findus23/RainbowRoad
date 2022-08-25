@@ -99,3 +99,20 @@ p {
   margin-top: 0;
   margin-bottom: .5rem;
 }
+
+#city-selector {
+  right: 0.5em;
+  top: 0.5em;
+
+  .textbox {
+    position: absolute;
+    right: 1em;
+    top: 1em;
+display: flex;
+    flex-direction: column;
+    margin: .5rem;
+    a {
+      display: block;
+    }
+  }
+}

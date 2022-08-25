@@ -119,6 +119,9 @@
         "set": {
           "type": "string"
         },
+        "unknownLocation": {
+          "type": "boolean"
+        },
         "sources": {
           "type": "array",
           "items": {

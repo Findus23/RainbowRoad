@@ -11,3 +11,8 @@ Linz:
 https://www.weekend.at/bundesland/oberoesterreich/neue-regenbogen-zebrastreifen-linz
 https://www.linzwiki.at/wiki/Datei:Regenbogen-Zebrastreifen_Mozartkreuzung.jpg/
 https://www.linz.at/medienservice/2022/202206_115655.php
+
+OÖ:
+- Ried
+- Steyr
+- Steyregg (https://www.meinbezirk.at/linz/c-politik/steyregg-setzt-buntes-zeichen-gegen-identitaere-bewegung_a4793903)

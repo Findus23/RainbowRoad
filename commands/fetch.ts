@@ -50,13 +50,12 @@ async function runfetch(filename: string) {
     }
 
     for (const d of data) {
-
+        if (d.id < 100) {
+            const max = 2 ** 32
+            d.id = Math.floor(Math.random() * max);
+        }
         if (typeof d.geo !== "undefined") {
             d.geo.length = lineLengthInM(d.geo.coords[0], d.geo.coords[1])
-            if (d.id < 100) {
-                const max = 2 ** 32
-                d.id = Math.floor(Math.random() * max);
-            }
             continue
         }
         const geosource = d.geosource

@@ -42,8 +42,7 @@ export function loadData(data: Crossing[], vectorSource: VectorSource): void {
 
         featureLine.setProperties({"crossing": c, "type": "line"} as FeatureProperties)
         featureDot.setProperties({"crossing": c, "type": "dot"} as FeatureProperties)
-        featureLine.setId(c.id)
-        featureDot.setId(c.id + 10000)
+        featureDot.setId(c.id)
         vectorSource.addFeature(featureLine);
         vectorSource.addFeature(featureDot);
     })

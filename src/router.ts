@@ -1,6 +1,16 @@
-import Navigo, {Route} from "navigo";
-import {areas, viewFromArea, Wien} from "./areaData";
-export const router = new Navigo("/")
+import Navigo, {NavigateOptions} from "navigo";
+
+class CustomNavigo extends Navigo {
+    navigateReplace(to: string, options?: NavigateOptions) {
+        if (typeof options === "undefined") {
+            options = {}
+        }
+        options.historyAPIMethod = "replaceState"
+        this.navigate(to, options);
+    }
+}
+
+export const router = new CustomNavigo("/")
 
 // router.on("/Wien", () => {
 //     map.setView(viewFromArea(Wien))
@@ -15,11 +25,9 @@ export const router = new Navigo("/")
 // redirect(router, "/", "/Wien")
 
 
-export function redirect(router:Navigo,from:string,to:string){
+export function redirect(router: CustomNavigo, from: string, to: string) {
     router.on(from, () => {
-        router.navigate(to, {
-            historyAPIMethod: 'replaceState'
-        })
+        router.navigateReplace(to)
     })
 
 }

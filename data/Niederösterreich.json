@@ -1,0 +1,94 @@
+[
+  {
+    "id": 2338291641,
+    "name": "Strasshof an der Nordbahn",
+    "type": "prideFlag",
+    "sources": [
+      {
+        "type": "news",
+        "url": "https://www.noen.at/niederoesterreich/politik/strasshof-hat-jetzt-einen-regenbogen-zebrastreifen-niederoesterreich-strasshof-an-der-nordbahn-redaktionsfeed-toleranz-regenbogen-zebrastreifen-oe3-robert-kratky-redaktion-327639717",
+        "date": "2022-06-30"
+      },
+      {
+        "type": "news",
+        "url": "https://www.meinbezirk.at/gaenserndorf/c-lokales/regenbogen-zebrastreifen-fuer-strasshof_a5445571",
+        "date": "2022-06-30"
+      },
+      {
+        "type": "news",
+        "url": "https://oe3.orf.at/stories/3025611/",
+        "date": "2022-07-22"
+      }
+    ],
+    "comment": "Ö3-Wecker-Regenbogen-Zebrastreifen Nummer 1",
+    "geosource": {
+      "type": "RawCoords",
+      "coords": [
+        [
+          16.65308,
+          48.32012
+        ],
+        [
+          16.65314,
+          48.32014
+        ]
+      ]
+    },
+    "geo": {
+      "coords": [
+        [
+          16.65308,
+          48.32012
+        ],
+        [
+          16.65314,
+          48.32014
+        ]
+      ],
+      "length": 4.96
+    }
+  },
+  {
+    "id": 3232915964,
+    "name": "Schwechat",
+    "type": "prideFlag",
+    "sources": [
+      {
+        "type": "news",
+        "url": "https://www.meinbezirk.at/schwechat/c-lokales/erster-regenbogenschutzweg-in-schwechat_a4806267",
+        "date": "2021-08-05"
+      },
+      {
+        "type": "news",
+        "url": "https://www.noen.at/schwechat/schwechat-solidaritaet-ein-regenbogen-fuer-die-strasse-schwechat-solidaritaet-regenbogen-gemeinderat-zebrastreifen-minderheiten-aufklaerungsprojekt-print-279632939",
+        "date": "2021-08-05"
+      }
+    ],
+    "geosource": {
+      "type": "RawCoords",
+      "coords": [
+        [
+          16.4744,
+          48.13618
+        ],
+        [
+          16.47435,
+          48.13611
+        ]
+      ]
+    },
+    "geo": {
+      "coords": [
+        [
+          16.4744,
+          48.13618
+        ],
+        [
+          16.47435,
+          48.13611
+        ]
+      ],
+      "length": 8.62
+    }
+  }
+]

@@ -1,0 +1,51 @@
+[
+  {
+    "id": 1122716132,
+    "name": "Bad Hofgastein",
+    "type": "prideFlag",
+    "comment": "Ö3-Wecker-Regenbogen-Zebrastreifen Nummer 5",
+    "sources": [
+      {
+        "type": "news",
+        "url": "https://oe3.orf.at/stories/3025611/",
+        "date": "2022-07-22"
+      },
+      {
+        "type": "news",
+        "url": "https://www.salzburg24.at/news/salzburg/pongau/bad-hofgastein-bekommt-regenbogen-zebrastreifen-124464529",
+        "date": "2022-07-19"
+      },
+      {
+        "type": "news",
+        "url": "https://www.fmt-pictures.at/bericht.php?bericht_id=10322",
+        "date": "2022-07-22"
+      }
+    ],
+    "geosource": {
+      "type": "RawCoords",
+      "coords": [
+        [
+          13.09882,
+          47.16986
+        ],
+        [
+          13.09888,
+          47.16978
+        ]
+      ]
+    },
+    "geo": {
+      "coords": [
+        [
+          13.09882,
+          47.16986
+        ],
+        [
+          13.09888,
+          47.16978
+        ]
+      ],
+      "length": 9.99
+    }
+  }
+]

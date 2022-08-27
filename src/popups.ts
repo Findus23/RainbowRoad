@@ -26,17 +26,17 @@ export function initPopups(map: Map, vectorSource: VectorSource) {
     map.addOverlay(overlay);
 
     closer.onclick = function () {
-        router.navigate("/")
+        router.navigateReplace("/")
         return false;
     };
     map.on('singleclick', event => {
         map.forEachFeatureAtPixel(event.pixel, feature => {
             const coordinate = event.coordinate;
             const crossing: Crossing = feature.getProperties().crossing
-            router.navigate("/flag/" + feature.getId())
+            router.navigateReplace("/flag/" + crossing.id)
         }, {hitTolerance: 5})
         if (!map.hasFeatureAtPixel(event.pixel, {hitTolerance: 5})) {
-            router.navigate("/")
+            router.navigateReplace("/")
 
         }
     });

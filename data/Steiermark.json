@@ -1,0 +1,51 @@
+[
+  {
+    "id": 3394477153,
+    "name": "Leoben",
+    "type": "prideFlag",
+    "comment": "Ö3-Wecker-Regenbogen-Zebrastreifen Nummer 2, nach 5 Tagen zerstört",
+    "sources": [
+      {
+        "type": "news",
+        "url": "https://oe3.orf.at/stories/3025611/",
+        "date": "2022-07-22"
+      },
+      {
+        "type": "news",
+        "url": "https://www.meinbezirk.at/leoben/c-lokales/leoben-hat-seinen-regenbogen-zebrastreifen_a5451571",
+        "date": "2022-07-04"
+      },
+      {
+        "type": "news",
+        "url": "https://www.meinbezirk.at/leoben/c-lokales/regenbogen-zebrastreifen-nach-nur-fuenf-tagen-zerstoert_a5464429",
+        "date": "2022-07-09"
+      },
+      {
+        "type": "news",
+        "url": "https://www.ggg.at/2022/07/11/regenbogen-zebrastreifen-in-leoben-nach-fuenf-tagen-zerstoert/",
+        "date": "2022-07-11"
+      }
+    ],
+    "geosource": {
+      "type": "OSMnodes",
+      "nodes": [
+        2463426113,
+        846964786,
+        3760068692
+      ]
+    },
+    "geo": {
+      "coords": [
+        [
+          15.0901884,
+          47.3863884
+        ],
+        [
+          15.0903186,
+          47.3862693
+        ]
+      ],
+      "length": 16.48
+    }
+  }
+]

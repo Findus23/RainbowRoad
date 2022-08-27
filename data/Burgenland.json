@@ -1,0 +1,41 @@
+[
+  {
+    "id": 1548557755,
+    "name": "Frauenkirchen",
+    "type": "prideFlag",
+    "comment": "Ö3-Wecker-Regenbogen-Zebrastreifen Nummer 3",
+    "sources": [
+      {
+        "type": "official",
+        "url": "https://www.burgenland.at/news-detail/regenbogenzebrastreifen-fuer-frauenkirchen/",
+        "date": "2022-07-05"
+      },
+      {
+        "type": "news",
+        "url": "https://www.meinbezirk.at/neusiedl-am-see/c-lokales/regenbogen-zebrastreifen-vor-der-basilika-in-frauenkirchen_a5454469",
+        "date": "2022-07-06"
+      }
+    ],
+    "geosource": {
+      "type": "OSMnodes",
+      "nodes": [
+        9129447381,
+        284143552,
+        8853967843
+      ]
+    },
+    "geo": {
+      "coords": [
+        [
+          16.9281382,
+          47.8357072
+        ],
+        [
+          16.9279725,
+          47.835674
+        ]
+      ],
+      "length": 12.91
+    }
+  }
+]

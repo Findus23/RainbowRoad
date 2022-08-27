@@ -15,6 +15,7 @@ import {Crossing} from "../interfaces";
 import {loadAllData} from "./loadData";
 import "./router"
 import {router} from "./router";
+import {transformExtent} from "ol/proj";
 
 const map = new Map({
     // controls: defaultControls().extend([new AreaControl({router: router})]),
@@ -109,7 +110,12 @@ map.addLayer(vectorLineLayer);
 
 Object.entries(areas).forEach(([name, area]) => {
     router.on("/" + encodeURIComponent(area.name), () => {
-        map.setView(viewFromArea(area))
+        const extent = transformExtent(area.extent, 'EPSG:4326', 'EPSG:3857')
+        map.getView().fit(extent, {
+            size: map.getSize(),
+            // duration:1000
+        })
+        // map.setView(viewFromArea(area))
     })
 })
 

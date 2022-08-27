@@ -1,11 +1,11 @@
 import {Coordinate} from "ol/coordinate";
 import {Extent} from "ol/extent";
 import {View} from "ol";
-import {fromLonLat, transformExtent} from "ol/proj";
+import {fromLonLat} from "ol/proj";
 
 interface Area {
     name: string
-    center: Coordinate
+    center?: Coordinate
     extent: Extent
     zoom: number
 }
@@ -26,14 +26,27 @@ export const areas: { [name: string]: Area } = {
         center: [13.964417, 48.136583],
         // https://www.deine-berge.de/Region/Oesterreich/8/Bundesland-Oberoesterreich.html
         extent: [12.749244, 47.461112, 14.9921682, 48.7725637]
+    },
+    NOE: {
+        name: "Niederösterreich",
+        zoom: 9,
+        // https://www.deine-berge.de/Region/Oesterreich/7/Bundesland-Nieder%C3%B6sterreich.html
+        extent: [14.4526384, 47.4222062, 17.068839, 49.0205306]
     }
 }
 
 export const Wien = areas.Wien
 
 export function viewFromArea(area: Area): View {
+    let center;
+    const extent = area.extent
+    if (area.center) {
+        center = area.center
+    } else {
+        center = [(extent[0] + extent[2]) / 2, (extent[1] + extent[3]) / 2]
+    }
     return new View({
-        center: fromLonLat(area.center),
+        center: fromLonLat(center),
         zoom: area.zoom,
         // extent: transformExtent(area.extent, 'EPSG:4326', 'EPSG:3857'),
         constrainOnlyCenter: true

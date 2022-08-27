@@ -1,0 +1,51 @@
+[
+  {
+    "id": 134088388,
+    "name": "Telfs",
+    "type": "prideFlag",
+    "comment": "Ö3-Wecker-Regenbogen-Zebrastreifen Nummer 4",
+    "sources": [
+      {
+        "type": "news",
+        "url": "https://oe3.orf.at/stories/3025611/",
+        "date": "2022-07-22"
+      },
+      {
+        "type": "news",
+        "url": "https://www.tt.com/artikel/30826546/bunte-regenbogen-zebrastreifen-fuer-telfs",
+        "date": "2022-07-22"
+      },
+      {
+        "type": "news",
+        "url": "https://www.meinbezirk.at/telfs/c-lokales/regenbogen-zebrastreifen-nun-auch-fuer-telfs_a5486716",
+        "date": "2022-07-21"
+      }
+    ],
+    "geosource": {
+      "type": "RawCoords",
+      "coords": [
+        [
+          11.07489,
+          47.30752
+        ],
+        [
+          11.07492,
+          47.30748
+        ]
+      ]
+    },
+    "geo": {
+      "coords": [
+        [
+          11.07489,
+          47.30752
+        ],
+        [
+          11.07492,
+          47.30748
+        ]
+      ],
+      "length": 4.99
+    }
+  }
+]

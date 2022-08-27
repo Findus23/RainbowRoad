@@ -12,6 +12,12 @@ interface Area {
 
 
 export const areas: { [name: string]: Area } = {
+    AT: {
+        name: "Österreich",
+        zoom: 8,
+        // https://de.wikipedia.org/wiki/Geographie_%C3%96sterreichs
+        extent: [9.530768, 46.372132, 17.160749, 49.020703]
+    },
     Wien: {
         name: "Wien",
         zoom: 13,

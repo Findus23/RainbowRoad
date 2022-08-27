@@ -12,7 +12,7 @@ https://www.linzwiki.at/wiki/Datei:Regenbogen-Zebrastreifen_Mozartkreuzung.jpg/
 https://www.linz.at/medienservice/2022/202206_115655.php
 
 OÖ:
-
+https://www.meinbezirk.at/freistadt/c-lokales/freistadt-bekommt-regenbogen-zebrastreifen_a5471665
 - Ried
 - Steyr
 - Steyregg (https://www.meinbezirk.at/linz/c-politik/steyregg-setzt-buntes-zeichen-gegen-identitaere-bewegung_a4793903)

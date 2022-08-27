@@ -12,7 +12,9 @@ export function loadAllData(vectorSource: VectorSource): void {
         import("../data/Steiermark.json?inline"),
         import("../data/Tirol.json?inline"),
         import("../data/Burgenland.json?inline"),
-        import("../data/Salzburg.json?inline")
+        import("../data/Salzburg.json?inline"),
+        import("../data/Vorarlberg.json?inline"),
+        import("../data/Kärnten.json?inline")
     ]
     imports.forEach(imp => {
         imp.then(data => {

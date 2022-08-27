@@ -1,0 +1,176 @@
+[
+  {
+    "id": 240089906,
+    "name": "Heuplatz Klagenfurt",
+    "type": "prideFlag",
+    "sources": [
+      {
+        "type": "news",
+        "url": "https://www.ggg.at/2021/08/19/polit-groteske-um-ersten-regenbogen-zebrastreifen-in-klagenfurt/",
+        "date": "2021-08-19"
+      },
+      {
+        "type": "news",
+        "url": "https://kaernten.orf.at/stories/3117441/",
+        "date": "2021-08-18"
+      }
+    ],
+    "geosource": {
+      "type": "OSMnodes",
+      "nodes": [
+        8327564903,
+        550693878,
+        550693874
+      ]
+    },
+    "geo": {
+      "coords": [
+        [
+          14.308557,
+          46.6266911
+        ],
+        [
+          14.3085275,
+          46.626523
+        ]
+      ],
+      "length": 18.83
+    }
+  },
+  {
+    "id": 3641562643,
+    "name": "Villach Gerbergasse",
+    "type": "prideFlag",
+    "comment": "Dritter in Villach, vor dem Jugendzentrum",
+    "sources": [
+      {
+        "type": "news",
+        "url": "https://www.hallo-villach.at/jugend-bewegt-was-in-der-gerbergasse/",
+        "date": "2020-07-09"
+      }
+    ],
+    "geosource": {
+      "type": "OSMway",
+      "wayID": 209557890
+    },
+    "geo": {
+      "coords": [
+        [
+          13.8491827,
+          46.6128615
+        ],
+        [
+          13.8490153,
+          46.61281
+        ]
+      ],
+      "length": 14.01
+    }
+  },
+  {
+    "id": 1613121717,
+    "name": "Villach Hauptbahnhof 1/2",
+    "set": "Villach Hauptbahnhof",
+    "type": "prideFlag",
+    "comment": "Erster in Villach",
+    "sources": [
+      {
+        "type": "news",
+        "url": "https://www.5min.at/202006287937/villach-setzt-mit-regenbogen-zebrastreifen-ein-zeichen-fuer-vielfalt/",
+        "date": "2020-06-04"
+      }
+    ],
+    "geosource": {
+      "type": "OSMnodes",
+      "nodes": [
+        2195918917,
+        272354450,
+        2195918924,
+        2195918931
+      ]
+    },
+    "geo": {
+      "coords": [
+        [
+          13.8483965,
+          46.6179438
+        ],
+        [
+          13.8483708,
+          46.6180672
+        ]
+      ],
+      "length": 13.86
+    }
+  },
+  {
+    "id": 1613121717,
+    "name": "Villach Hauptbahnhof 1/2",
+    "set": "Villach Hauptbahnhof",
+    "type": "prideFlag",
+    "sources": [
+      {
+        "type": "news",
+        "url": "https://www.5min.at/202006287937/villach-setzt-mit-regenbogen-zebrastreifen-ein-zeichen-fuer-vielfalt/",
+        "date": "2020-06-04"
+      }
+    ],
+    "geosource": {
+      "type": "OSMnodes",
+      "nodes": [
+        2195918917,
+        272354450,
+        2195918924,
+        2195918931
+      ]
+    },
+    "geo": {
+      "coords": [
+        [
+          13.8483965,
+          46.6179438
+        ],
+        [
+          13.8483708,
+          46.6180672
+        ]
+      ],
+      "length": 13.86
+    }
+  },
+  {
+    "id": 286013449,
+    "name": "Villach Hauptbahnhof 2/2",
+    "set": "Villach Hauptbahnhof",
+    "type": "prideFlag",
+    "sources": [
+      {
+        "type": "news",
+        "url": "https://www.5min.at/202006287937/villach-setzt-mit-regenbogen-zebrastreifen-ein-zeichen-fuer-vielfalt/",
+        "date": "2020-06-04"
+      }
+    ],
+    "geosource": {
+      "type": "OSMnodes",
+      "nodes": [
+        2195918952,
+        2191057333,
+        2195918925,
+        2191057322
+      ]
+    },
+    "geo": {
+      "coords": [
+        [
+          13.8488131,
+          46.6181138
+        ],
+        [
+          13.8488447,
+          46.617994
+        ]
+      ],
+      "length": 13.54
+    }
+  }
+]

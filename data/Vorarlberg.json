@@ -1,0 +1,45 @@
+[
+  {
+    "id": 3657711293,
+    "name": "Schlins",
+    "type": "prideFlag",
+    "sources": [
+      {
+        "type": "news",
+        "url": "https://www.ggg.at/2021/07/06/erster-regenbogen-zebrastreifen-in-vorarlberg/",
+        "date": "2021-07-06"
+      },
+      {
+        "type": "official",
+        "url": "https://www.schlins.at/Erster_Regenbogen-Zebrastreifen_in_Schlins",
+        "date": "2021-06-28"
+      }
+    ],
+    "geosource": {
+      "type": "RawCoords",
+      "coords": [
+        [
+          9.69642,
+          47.20448
+        ],
+        [
+          9.69651,
+          47.20445
+        ]
+      ]
+    },
+    "geo": {
+      "coords": [
+        [
+          9.69642,
+          47.20448
+        ],
+        [
+          9.69651,
+          47.20445
+        ]
+      ],
+      "length": 7.57
+    }
+  }
+]

@@ -47,5 +47,54 @@
       ],
       "length": 9.99
     }
+  },
+  {
+    "id": 932441635,
+    "name": "Hallein",
+    "type": "HalleinPrideFlag",
+    "comment": "Farben vertauscht",
+    "sources": [
+      {
+        "type": "news",
+        "url": "https://www.meinbezirk.at/tennengau/c-lokales/hallein-bekommt-einen-regenbogen-zebrastreifen_a5460253",
+        "date": "2022-07-07"
+      },
+      {
+        "type": "news",
+        "url": "https://www.meinbezirk.at/tennengau/c-lokales/regenbogen-zebrastreifen-in-hallein-beschmiert_a5633809",
+        "date": "2022-10-06"
+      },
+      {
+        "type": "news",
+        "url": "https://salzburg.orf.at/stories/3177392/",
+        "date": "2022-10-10"
+      }
+    ],
+    "geosource": {
+      "type": "RawCoords",
+      "coords": [
+        [
+          13.09879,
+          47.67703
+        ],
+        [
+          13.09884,
+          47.67693
+        ]
+      ]
+    },
+    "geo": {
+      "coords": [
+        [
+          13.09879,
+          47.67703
+        ],
+        [
+          13.09884,
+          47.67693
+        ]
+      ],
+      "length": 11.73
+    }
   }
 ]

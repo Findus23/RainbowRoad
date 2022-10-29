@@ -8,6 +8,7 @@ import {State} from "ol/render";
 import {Line, Vector2d} from "./vectorUtils";
 import {drawZebraCrossing, zebraPatterns} from "./zebraUtils";
 import prideFlag from "../assets/prideflag.svg"
+import prideFlagHallein from "../assets/prideflag-hallein.svg"
 import transFlag from "../assets/transflag.svg"
 import {FeatureProperties} from "./features";
 import {areas, viewFromArea, Wien} from "./areaData";
@@ -66,6 +67,12 @@ const prideFlagStyle = new Style({
         scale: 0.05
     })
 })
+const prideFlagHalleinStyle = new Style({
+    image: new Icon({
+        src: prideFlagHallein,
+        scale: 0.05
+    })
+})
 const transFlagStyle = new Style({
     image: new Icon({
         src: transFlag,
@@ -101,6 +108,8 @@ const vectorLineLayer = new VectorLayer({
         switch (crossing.type) {
             case "prideFlag":
                 return prideFlagStyle;
+            case "HalleinPrideFlag":
+                return prideFlagHalleinStyle;
             case "transFlag":
                 return transFlagStyle;
         }

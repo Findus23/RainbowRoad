@@ -37,5 +37,43 @@
       ],
       "length": 12.91
     }
+  },
+  {
+    "id": 234624664,
+    "name": "Hornstein",
+    "type": "prideFlag",
+    "sources": [
+      {
+        "type": "news",
+        "url": "https://www.meinbezirk.at/eisenstadt/c-lokales/regenbogen-zebrastreifen-in-hornstein_a5678653",
+        "date": "2022-10-28"
+      }
+    ],
+    "geosource": {
+      "type": "RawCoords",
+      "coords": [
+        [
+          16.44589,
+          47.88057
+        ],
+        [
+          16.44602,
+          47.88057
+        ]
+      ]
+    },
+    "geo": {
+      "coords": [
+        [
+          16.44589,
+          47.88057
+        ],
+        [
+          16.44602,
+          47.88057
+        ]
+      ],
+      "length": 9.69
+    }
   }
 ]

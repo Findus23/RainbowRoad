@@ -134,7 +134,8 @@
           "type": "string",
           "enum": [
             "prideFlag",
-            "transFlag"
+            "transFlag",
+            "HalleinPrideFlag"
           ]
         },
         "geo": {

@@ -1343,5 +1343,81 @@
       ],
       "length": 16.06
     }
+  },
+  {
+    "id": 4048820989,
+    "name": "Schüttaustraße",
+    "bezirk": 22,
+    "type": "prideFlag",
+    "comment": "Erster im 22. Bezirk",
+    "sources": [
+      {
+        "type": "photo",
+        "url": "https://donaustadt.gruene.at/wp-content/uploads/sites/24/2022/08/Schuettaustrasse-Regenbogenzebrastreifen-Kaisermuehlen-20220803_105701.jpg",
+        "date": "2022-08-03"
+      }
+    ],
+    "geosource": {
+      "type": "OSMnodes",
+      "nodes": [
+        290062177,
+        2449174864,
+        2449174860,
+        290062182
+      ]
+    },
+    "geo": {
+      "coords": [
+        [
+          16.4171831,
+          48.2309996
+        ],
+        [
+          16.4169777,
+          48.2308745
+        ]
+      ],
+      "length": 20.61
+    }
+  },
+  {
+    "id": 706479564,
+    "name": "Lassallestraße",
+    "bezirk": 2,
+    "type": "prideFlag",
+    "sources": [
+      {
+        "type": "news",
+        "url": "https://www.meinbezirk.at/leopoldstadt/c-lokales/leopoldstadt-setzt-bunte-zeichen-fuer-vielfalt-und-solidaritaet_a4698233",
+        "date": "2021-06-17"
+      },
+      {
+        "type": "news",
+        "url": "https://newsroom.a1.net/news-regenbogen-zebrastreifen-vor-der-a1-zentrale-auf-der-lassallestrasse?id=134325&menueid=13052&l=deutsch",
+        "date": "2021-05-31"
+      }
+    ],
+    "geosource": {
+      "type": "OSMnodes",
+      "nodes": [
+        3674043389,
+        1702310383,
+        338819939,
+        519190048
+      ]
+    },
+    "geo": {
+      "coords": [
+        [
+          16.4005148,
+          48.223146
+        ],
+        [
+          16.4002596,
+          48.2233589
+        ]
+      ],
+      "length": 30.3
+    }
   }
 ]

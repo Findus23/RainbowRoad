@@ -3,6 +3,7 @@ import meinBezirkIcon from "../assets/favicons/meinbezirk.at.png"
 import kurierIcon from "../assets/favicons/kurier.at.png"
 import spoeIcon from "../assets/favicons/spoe.png"
 import neosIcon from "../assets/favicons/neos.svg"
+import grueneIcon from "../assets/favicons/gruene.at.svg"
 import WienIcon from "../assets/favicons/wien.gv.at.svg"
 import derStandardIcon from "../assets/favicons/derstandard.at.png"
 import linzIcon from "../assets/favicons/linz.at.png"
@@ -13,6 +14,9 @@ import ttIcon from "../assets/favicons/tt.png"
 import salzburg24Icon from "../assets/favicons/salzburg24.png"
 import fmtIcon from "../assets/favicons/fmt.png"
 import tipsIcon from "../assets/favicons/tips.png"
+import a1Icon from "../assets/favicons/a1.net.png"
+import orfIcon from "../assets/favicons/orf.png"
+import {or} from "ol/format/filter";
 
 export function faviconByHostname(hostname: string): string | undefined {
 
@@ -45,9 +49,17 @@ export function faviconByHostname(hostname: string): string | undefined {
             return fmtIcon
         case "www.tips.at":
             return tipsIcon
+        case "newsroom.a1.net":
+            return a1Icon
     }
 
     if (hostname.includes("spoe")) {
         return spoeIcon
+    }
+    if (hostname.includes("gruene.at")) {
+        return grueneIcon
+    }
+    if (hostname.includes("orf.at")) {
+        return orfIcon
     }
 }

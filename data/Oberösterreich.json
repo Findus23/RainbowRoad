@@ -165,5 +165,39 @@
       ],
       "length": 9.36
     }
+  },
+  {
+    "id": 2662817586,
+    "name": "Ried im Innkreis",
+    "type": "prideFlag",
+    "sources": [
+      {
+        "type": "news",
+        "url": "https://www.meinbezirk.at/ried/c-lokales/stadt-ried-hat-einen-regenbogen-zebrastreifen_a5628343",
+        "date": "2022-10-04"
+      }
+    ],
+    "geosource": {
+      "type": "OSMnodes",
+      "nodes": [
+        9387994416,
+        3253906680,
+        3662778319,
+        9388012217
+      ]
+    },
+    "geo": {
+      "coords": [
+        [
+          13.4861416,
+          48.2099182
+        ],
+        [
+          13.4859122,
+          48.2099021
+        ]
+      ],
+      "length": 17.09
+    }
   }
 ]

@@ -85,7 +85,7 @@ async function runfetch(filename: string) {
 }
 
 fs.readdirSync("../data/").forEach(file => {
-    if (file === "schema.json") {
+    if (file === "schema.json" || file === "LICENSE") {
         return
     }
     console.info(file)

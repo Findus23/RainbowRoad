@@ -16,7 +16,8 @@ import fmtIcon from "../assets/favicons/fmt.png"
 import tipsIcon from "../assets/favicons/tips.png"
 import a1Icon from "../assets/favicons/a1.net.png"
 import orfIcon from "../assets/favicons/orf.png"
-import {or} from "ol/format/filter";
+import apaIcon from "../assets/favicons/apa.png"
+
 
 export function faviconByHostname(hostname: string): string | undefined {
 
@@ -51,6 +52,8 @@ export function faviconByHostname(hostname: string): string | undefined {
             return tipsIcon
         case "newsroom.a1.net":
             return a1Icon
+        case "www.ots.at":
+            return apaIcon
     }
 
     if (hostname.includes("spoe")) {

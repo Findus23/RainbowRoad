@@ -1418,5 +1418,46 @@
       ],
       "length": 30.3
     }
+  },
+  {
+    "id": 331542771,
+    "name": "Burggasse/Museumsplatz",
+    "bezirk": 7,
+    "type": "transFlag",
+    "sources": [
+      {
+        "type": "official",
+        "url": "https://www.ots.at/presseaussendung/OTS_20221118_OTS0105/bezirk-neubau-transzebrastreifen-feierlich-eroeffnet-bild",
+        "date": "2022-11-18"
+      },
+      {
+        "type": "official",
+        "url": "https://www.wien.gv.at/presse/2022/11/18/neubau-trans-zebrastreifen-an-zentralem-und-stark-frequentiertem-platz-eroeffnet",
+        "date": "2022-11-18"
+      }
+    ],
+    "geosource": {
+      "type": "OSMnodes",
+      "nodes": [
+        4788433944,
+        3805842867,
+        4683287990,
+        4683287989,
+        4683287588
+      ]
+    },
+    "geo": {
+      "coords": [
+        [
+          16.3601155,
+          48.2062852
+        ],
+        [
+          16.3599884,
+          48.2063912
+        ]
+      ],
+      "length": 15.09
+    }
   }
 ]

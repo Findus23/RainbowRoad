@@ -17,6 +17,8 @@ import {loadAllData} from "./loadData";
 import "./router"
 import {router} from "./router";
 import {transformExtent} from "ol/proj";
+import {defaults as defaultControls} from 'ol/control';
+import {InfoButton} from "./info";
 
 const map = new Map({
     // controls: defaultControls().extend([new AreaControl({router: router})]),
@@ -26,9 +28,15 @@ const map = new Map({
             source: new OSM({url: "https://maps.lw1.at/tiles/1.0.0/osm/GLOBAL_MERCATOR/{z}/{x}/{y}.png"})
         }),
     ],
-    view: viewFromArea(Wien)
+    view: viewFromArea(Wien),
+    controls: defaultControls().extend([new InfoButton({})])
 });
-const vectorSource = new VectorSource();
+
+const vectorSource = new VectorSource({
+    attributions: [
+        '<a href="https://lw1.at/i" target="_blank">Impressum</a>'
+    ]
+});
 
 loadAllData(vectorSource)
 

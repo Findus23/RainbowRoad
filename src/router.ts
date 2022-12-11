@@ -12,6 +12,7 @@ class CustomNavigo extends Navigo {
 
 export const router = new CustomNavigo("/")
 
+
 // router.on("/Wien", () => {
 //     map.setView(viewFromArea(Wien))
 //

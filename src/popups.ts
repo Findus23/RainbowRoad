@@ -8,6 +8,7 @@ import {router} from "./router";
 import VectorSource from "ol/source/Vector";
 import {FeatureProperties} from "./features";
 import {Point} from "ol/geom";
+import {hideOverlay} from "./info";
 
 const container = document.getElementById('popup')!;
 const content = document.getElementById('popup-content')!;
@@ -41,6 +42,7 @@ export function initPopups(map: Map, vectorSource: VectorSource) {
         }
     });
     router.on("/flag/:id", (match) => {
+        hideOverlay()
         const id = match?.data?.id
         if (!id) {
             return
@@ -81,6 +83,7 @@ export function initPopups(map: Map, vectorSource: VectorSource) {
     })
     router.on("/", () => {
         overlay.setPosition(undefined);
+        hideOverlay()
         closer.blur();
     })
     router.resolve()

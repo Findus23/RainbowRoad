@@ -939,7 +939,6 @@
     "name": "Mariahilfer Straße/Neubaugasse",
     "bezirk": 6,
     "type": "prideFlag",
-    "comment": "Sind es zwei separate Zebrastreifen?",
     "sources": [
       {
         "type": "news",

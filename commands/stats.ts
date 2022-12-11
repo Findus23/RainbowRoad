@@ -4,6 +4,7 @@ import type {Crossing} from "../interfaces";
 function runstats() {
     const data: Crossing[] = JSON.parse(fs.readFileSync("../data/Wien.json", 'utf8'));
 
+    console.log("total", data.length)
 
     const bezirke = data.map(c => c.bezirk!)
     const counts: { [key: number]: number } = {};

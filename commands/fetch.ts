@@ -80,7 +80,7 @@ async function runfetch(filename: string) {
         // crossings[i] = d
         fs.writeFileSync(filename, JSON.stringify(data, null, 2))
     }
-    fs.writeFileSync(filename, JSON.stringify(data, null, 2))
+    fs.writeFileSync(filename, JSON.stringify(data, null, 2).concat('\n'))
 
 }
 

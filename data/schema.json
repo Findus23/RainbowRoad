@@ -116,6 +116,10 @@
         "comment": {
           "type": "string"
         },
+        "officialName": {
+          "type": "string",
+          "description": "The name used in the documents by the City of Vienna"
+        },
         "set": {
           "type": "string"
         },

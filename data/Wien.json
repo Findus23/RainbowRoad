@@ -2,6 +2,9 @@
   {
     "id": 1740508417,
     "name": "Praterstern",
+    "officialName": "Praterstern # Ausstellungsstraße",
+    "bezirk": 2,
+    "type": "prideFlag",
     "sources": [
       {
         "type": "streetview",
@@ -13,8 +16,6 @@
         "url": "https://www.meinbezirk.at/leopoldstadt/c-lokales/neuer-regenbogen-zebrastreifen-am-praterstern_a4591199"
       }
     ],
-    "bezirk": 2,
-    "type": "prideFlag",
     "geosource": {
       "type": "OSMway",
       "wayID": 191209754
@@ -38,6 +39,7 @@
     "name": "Spitalgasse/Lazarettgasse",
     "bezirk": 9,
     "type": "transFlag",
+    "officialName": "Spitalgasse # Lazarettgasse",
     "sources": [
       {
         "type": "news",
@@ -77,6 +79,7 @@
     "bezirk": 6,
     "type": "prideFlag",
     "comment": "dritte in Wien",
+    "officialName": "Gumpendorfer Straße # Kaunitzgasse",
     "sources": [
       {
         "type": "official",
@@ -111,6 +114,7 @@
     "name": "Schönbrunner Straße/Pilgramgasse",
     "bezirk": 5,
     "type": "prideFlag",
+    "officialName": "Pilgramgasse # Schönbrunner Straße",
     "sources": [
       {
         "type": "official",
@@ -147,6 +151,7 @@
     "bezirk": 1,
     "type": "prideFlag",
     "comment": "erster in Wien",
+    "officialName": "Universitätsring vor Burgtheater",
     "sources": [
       {
         "type": "news",
@@ -182,6 +187,7 @@
     "name": "Meidlinger Markt",
     "bezirk": 12,
     "type": "prideFlag",
+    "officialName": "Niederhofstraße # Ignazgasse",
     "sources": [
       {
         "type": "news",
@@ -221,6 +227,7 @@
     "name": "Laaer-Berg-Straße",
     "bezirk": 10,
     "type": "prideFlag",
+    "officialName": "Laaer-Berg-Straße 170",
     "sources": [
       {
         "type": "news",
@@ -267,6 +274,7 @@
     "bezirk": 18,
     "type": "prideFlag",
     "comment": "Zweiter in Wien",
+    "officialName": "Währinger Straße 108",
     "sources": [
       {
         "type": "news",
@@ -305,6 +313,7 @@
     "name": "Landstraßer Hauptstraße",
     "bezirk": 3,
     "type": "prideFlag",
+    "officialName": "Landstraßer Hauptstraße # Beatrixgasse",
     "sources": [
       {
         "type": "news",
@@ -336,6 +345,7 @@
     "name": "Operngasse/Schleifmühlgasse",
     "bezirk": 4,
     "type": "prideFlag",
+    "officialName": "Operngasse # Schleifmühlgasse",
     "sources": [
       {
         "type": "news",
@@ -375,6 +385,7 @@
     "name": "Schönbrunner Straße/Ramperstorffergasse",
     "bezirk": 5,
     "type": "transFlag",
+    "officialName": "Schönbrunner Straße # Ramperstorffergasse",
     "sources": [
       {
         "type": "news",
@@ -410,6 +421,7 @@
     "name": "Kennedybrücke/Hietzinger Hauptstraße",
     "bezirk": 13,
     "type": "prideFlag",
+    "officialName": "Hietzinger Hauptstraße / Schönbrunner Straße",
     "sources": [
       {
         "type": "news",
@@ -444,6 +456,7 @@
     "name": "Kennedybrücke/Hadikgasse",
     "bezirk": 14,
     "type": "prideFlag",
+    "officialName": "Hadikgasse # Nisselgasse",
     "sources": [
       {
         "type": "streetview",
@@ -477,6 +490,7 @@
     "name": "Simmeringer Platz",
     "bezirk": 11,
     "type": "prideFlag",
+    "officialName": "Simmeringer Platz 1",
     "sources": [
       {
         "type": "news",
@@ -511,6 +525,7 @@
     "name": "Mauer Hauptplatz",
     "bezirk": 23,
     "type": "prideFlag",
+    "officialName": "Maurer Hauptplatz",
     "sources": [
       {
         "type": "news",
@@ -545,6 +560,7 @@
     "name": "Elterleinplatz/Kalvarienberggasse",
     "bezirk": 17,
     "type": "prideFlag",
+    "officialName": "Kalvarienberggasse # Elterleinplatz",
     "sources": [
       {
         "type": "official",
@@ -580,6 +596,7 @@
     "bezirk": 3,
     "type": "prideFlag",
     "comment": "Zweiter im 3. Bezirk",
+    "officialName": "Rennweg 24",
     "sources": [
       {
         "type": "news",
@@ -617,8 +634,9 @@
   {
     "id": 3932188971,
     "name": "Museumsquartier",
-    "bezirk": 1,
+    "bezirk": 7,
     "type": "prideFlag",
+    "officialName": "Mariahilfer Straße # Getreidemarkt / Museumsquartier",
     "comment": "Keine Informationen darüber, zwischen Juli 2019 und November 2020 gemalt",
     "sources": [
       {
@@ -655,6 +673,7 @@
     "name": "Pilgrambrücke/Linke Wienzeile",
     "bezirk": 6,
     "type": "transFlag",
+    "officialName": "Pilgrambrücke",
     "sources": [
       {
         "type": "proposal",
@@ -691,6 +710,7 @@
     "bezirk": 21,
     "type": "prideFlag",
     "set": "Floridsdorfer Spitz",
+    "officialName": "Am Spitz # Floridsdorfer Hauptstraße",
     "sources": [
       {
         "type": "news",
@@ -726,6 +746,7 @@
     "bezirk": 21,
     "type": "prideFlag",
     "set": "Floridsdorfer Spitz",
+    "officialName": "Am Spitz # Floridsdorfer Hauptstraße",
     "sources": [
       {
         "type": "news",
@@ -761,6 +782,7 @@
     "bezirk": 21,
     "type": "prideFlag",
     "set": "Floridsdorfer Spitz",
+    "officialName": "Am Spitz # Floridsdorfer Hauptstraße",
     "sources": [
       {
         "type": "news",
@@ -800,6 +822,7 @@
     "name": "Josefstädter Straße/Albertgasse 1/3",
     "bezirk": 8,
     "type": "prideFlag",
+    "officialName": "Josef-Matthias-Hauer-Platz",
     "sources": [
       {
         "type": "news",
@@ -832,6 +855,7 @@
     "bezirk": 8,
     "type": "transFlag",
     "comment": "Trans Pride Streifen sind eventuell neuer",
+    "officialName": "Josef-Matthias-Hauer-Platz",
     "sources": [
       {
         "type": "news",
@@ -863,6 +887,7 @@
     "name": "Josefstädter Straße/Albertgasse 3/3",
     "bezirk": 8,
     "type": "transFlag",
+    "officialName": "Josefstädter Straße # Albertgasse",
     "comment": "Trans Pride Streifen sind eventuell neuer",
     "sources": [
       {
@@ -900,9 +925,10 @@
   },
   {
     "id": 1928064980,
-    "name": "Äußere Mariahilfer Straße",
+    "name": "Äußere Mariahilfer Straße/Palmgasse",
     "bezirk": 15,
     "type": "prideFlag",
+    "officialName": "Mariahilfer Straße # Palmgasse",
     "sources": [
       {
         "type": "proposal",
@@ -939,6 +965,7 @@
     "name": "Mariahilfer Straße/Neubaugasse",
     "bezirk": 6,
     "type": "prideFlag",
+    "officialName": "Mariahilfer Straße # Amerlingstraße",
     "sources": [
       {
         "type": "news",
@@ -979,6 +1006,7 @@
     "bezirk": 16,
     "type": "prideFlag",
     "set": "Thaliastraße/Brunnenstraße",
+    "officialName": "Thaliastraße # Brunnengasse",
     "sources": [
       {
         "type": "news",
@@ -1089,6 +1117,7 @@
     "bezirk": 19,
     "type": "prideFlag",
     "set": "Peter-Jordan-Straße/Dänenstraße",
+    "officialName": "Peter-Jordan-Straße # Dänenstraße",
     "sources": [
       {
         "type": "news",
@@ -1217,6 +1246,7 @@
     "name": "Billrothstraße/Gymnasiumstraße",
     "bezirk": 19,
     "type": "prideFlag",
+    "officialName": "Gymnasiumstraße / Billrothstraße",
     "sources": [
       {
         "type": "official",
@@ -1247,6 +1277,7 @@
     "name": "Rauscherstraße/Wallensteinstraße",
     "bezirk": 20,
     "type": "prideFlag",
+    "officialName": "Wallensteinstraße # Rauscherstraße",
     "sources": [
       {
         "type": "news",
@@ -1284,6 +1315,7 @@
     "name": "Winarskystraße/Dresdner Straße",
     "bezirk": 20,
     "type": "prideFlag",
+    "officialName": "Dresdnerstraße # Winarksystraße",
     "sources": [
       {
         "type": "news",
@@ -1314,6 +1346,7 @@
     "name": "Pilgramgasse/Margaretenstraße",
     "bezirk": 5,
     "type": "prideFlag",
+    "officialName": "Margaretenplatz 44",
     "sources": [
       {
         "type": "streetview",
@@ -1349,6 +1382,7 @@
     "bezirk": 22,
     "type": "prideFlag",
     "comment": "Erster im 22. Bezirk",
+    "officialName": "Schüttaustraße # Felix-Bischof-Weg",
     "sources": [
       {
         "type": "photo",
@@ -1384,6 +1418,7 @@
     "name": "Lassallestraße",
     "bezirk": 2,
     "type": "prideFlag",
+    "officialName": "Lassallestraße # Radingergasse",
     "sources": [
       {
         "type": "news",
@@ -1424,6 +1459,7 @@
     "name": "Burggasse/Museumsplatz",
     "bezirk": 7,
     "type": "transFlag",
+    "officialName": "Burggasse 1 / Museumstraße",
     "sources": [
       {
         "type": "official",
@@ -1458,6 +1494,50 @@
         ]
       ],
       "length": 15.09
+    }
+  },
+  {
+    "id": 4158395213,
+    "name": "Liesinger Platz",
+    "bezirk": 23,
+    "type": "transFlag",
+    "officialName": "Liesinger Platz 399",
+    "sources": [
+      {
+        "type": "proposal",
+        "date": "2022-03-24",
+        "url": "https://www.wien.gv.at/bezirke/liesing/politik/sitzungen/pdf/antrag-20220324-22.pdf"
+      },
+      {
+        "type": "proposal",
+        "date": "2022-03-24",
+        "url": "https://www.wien.gv.at/bezirke/liesing/politik/sitzungen/pdf/protokoll-20220324.pdf"
+      },
+      {
+        "type": "news",
+        "date": "2022-11-06",
+        "url": "https://www.facebook.com/neos.liesing/posts/pfbid02odyuq6Y9Zp7mi28VWBbnRTn8XEqVcev7tv6XPw54dsdUEnSoQAFCcqTdFe5PpfnXl"
+      }
+    ],
+    "geosource": {
+      "type": "OSMnodes",
+      "nodes": [
+        2035248667,
+        3558815420
+      ]
+    },
+    "geo": {
+      "coords": [
+        [
+          16.282958,
+          48.1352247
+        ],
+        [
+          16.2831286,
+          48.1353368
+        ]
+      ],
+      "length": 17.77
     }
   }
 ]

@@ -41,13 +41,16 @@ export function displaySources(sources: Source[]) {
 
 export function createDateWithDisclaimer(sources: Source[]): HTMLDivElement {
     const dateWithDisclaimer = createElement("div")
-    const earliestDate = sources.map(s => s.date).sort()[0]
+    const dates = sources.filter(s => s.type != "proposal").map(s => s.date).sort()
     const dateP = createElement("p")
     const disclaimerP = createElement("p")
     disclaimerP.innerText = "Das angezeigte Datum ist der Zeitpunkt der ersten Erwähnung in Medien " +
         "oder des ersten Bild auf Google Streetview."
     disclaimerP.style.display = "none"
-    dateP.innerText = prettyDate(earliestDate)
+    if (dates.length > 0) {
+        dateP.innerText = prettyDate(dates[0])
+    }
+    dateP.innerText = "Datum unbekannt"
     const starLink = createElement("a")
     starLink.href = "#"
     starLink.innerText = "*"

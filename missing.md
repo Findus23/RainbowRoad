@@ -1,5 +1,7 @@
 https://www.ggg.at/2020/07/31/am-guertel-gibt-es-jetzt-den-laengsten-regenbogen-zebrastreifen/
 Gürtel/Felberstraße (7x)
+offizieller Name: "Neubaugürtel # Stollgasse", 7.
+"Neubaugürtel # Felberstraße", 15.
 
 Mariahilfer Straße
 

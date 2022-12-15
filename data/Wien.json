@@ -1045,6 +1045,7 @@
     "bezirk": 16,
     "type": "prideFlag",
     "set": "Thaliastraße/Brunnenstraße",
+    "officialName": "Thaliastraße # Brunnengasse",
     "sources": [
       {
         "type": "news",
@@ -1080,6 +1081,7 @@
     "bezirk": 16,
     "type": "prideFlag",
     "set": "Thaliastraße/Brunnenstraße",
+    "officialName": "Thaliastraße # Brunnengasse",
     "sources": [
       {
         "type": "news",
@@ -1154,6 +1156,7 @@
     "bezirk": 19,
     "type": "prideFlag",
     "set": "Peter-Jordan-Straße/Dänenstraße",
+    "officialName": "Peter-Jordan-Straße # Dänenstraße",
     "sources": [
       {
         "type": "news",
@@ -1185,6 +1188,7 @@
     "bezirk": 19,
     "type": "prideFlag",
     "set": "Peter-Jordan-Straße/Dänenstraße",
+    "officialName": "Peter-Jordan-Straße # Dänenstraße",
     "sources": [
       {
         "type": "news",
@@ -1216,6 +1220,7 @@
     "bezirk": 19,
     "type": "prideFlag",
     "set": "Peter-Jordan-Straße/Dänenstraße",
+    "officialName": "Peter-Jordan-Straße # Dänenstraße",
     "sources": [
       {
         "type": "news",

@@ -49,8 +49,9 @@ export function createDateWithDisclaimer(sources: Source[]): HTMLDivElement {
     disclaimerP.style.display = "none"
     if (dates.length > 0) {
         dateP.innerText = prettyDate(dates[0])
+    } else {
+        dateP.innerText = "Datum unbekannt"
     }
-    dateP.innerText = "Datum unbekannt"
     const starLink = createElement("a")
     starLink.href = "#"
     starLink.innerText = "*"

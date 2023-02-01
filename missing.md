@@ -1,10 +1,3 @@
-https://www.ggg.at/2020/07/31/am-guertel-gibt-es-jetzt-den-laengsten-regenbogen-zebrastreifen/
-Gürtel/Felberstraße (7x)
-offizieller Name: "Neubaugürtel # Stollgasse", 7.
-"Neubaugürtel # Felberstraße", 15.
-
-Mariahilfer Straße
-
 Unbekannter Trans-Pride-Streifen in Rudolfsheim-Fünfhaus
 https://www.wien.gv.at/bezirke/rudolfsheim-fuenfhaus/politik/sitzungen/pdf/20210701-antrag-pride-schutzweg.pdf
 
@@ -18,6 +11,7 @@ https://www.meinbezirk.at/freistadt/c-lokales/freistadt-bekommt-regenbogen-zebra
 - Steyr
 - Steyregg (https://www.meinbezirk.at/linz/c-politik/steyregg-setzt-buntes-zeichen-gegen-identitaere-bewegung_a4793903)
 - Efferding: https://www.meinbezirk.at/grieskirchen-eferding/c-politik/wir-wollen-ein-zeichen-fuer-toleranz-setzen_a5674603
+
 Vermutlich vollständig:
 
 - NÖ

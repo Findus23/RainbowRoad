@@ -1544,5 +1544,297 @@
       ],
       "length": 17.77
     }
+  },
+  {
+    "id": 1154660302,
+    "name": "Neubaugürtel/Felberstraße 1/5",
+    "officialName": "Neubaugürtel # Felberstraße",
+    "set": "Neubaugürtel/Felberstraße",
+    "bezirk": 15,
+    "type": "prideFlag",
+    "sources": [
+      {
+        "type": "news",
+        "url": "https://www.ggg.at/2020/07/31/am-guertel-gibt-es-jetzt-den-laengsten-regenbogen-zebrastreifen/",
+        "date": "2020-07-31"
+      }
+    ],
+    "geosource": {
+      "type": "OSMnodes",
+      "nodes": [
+        252548555,
+        451666743,
+        3175174063
+      ]
+    },
+    "geo": {
+      "coords": [
+        [
+          16.3380537,
+          48.1979205
+        ],
+        [
+          16.3381334,
+          48.1980454
+        ]
+      ],
+      "length": 15.09
+    }
+  },
+  {
+    "id": 1684945895,
+    "name": "Neubaugürtel/Felberstraße 2/5",
+    "officialName": "Neubaugürtel # Felberstraße",
+    "set": "Neubaugürtel/Felberstraße",
+    "bezirk": 15,
+    "type": "prideFlag",
+    "sources": [
+      {
+        "type": "news",
+        "url": "https://www.ggg.at/2020/07/31/am-guertel-gibt-es-jetzt-den-laengsten-regenbogen-zebrastreifen/",
+        "date": "2020-07-31"
+      }
+    ],
+    "geosource": {
+      "type": "OSMnodes",
+      "nodes": [
+        3175174064,
+        1965238268,
+        252548489,
+        252548490
+      ]
+    },
+    "geo": {
+      "coords": [
+        [
+          16.3381415,
+          48.1980996
+        ],
+        [
+          16.3380572,
+          48.1982402
+        ]
+      ],
+      "length": 16.84
+    }
+  },
+  {
+    "id": 3658287605,
+    "name": "Neubaugürtel/Felberstraße 3/5",
+    "officialName": "Neubaugürtel # Felberstraße",
+    "set": "Neubaugürtel/Felberstraße",
+    "bezirk": 15,
+    "type": "prideFlag",
+    "sources": [
+      {
+        "type": "news",
+        "url": "https://www.ggg.at/2020/07/31/am-guertel-gibt-es-jetzt-den-laengsten-regenbogen-zebrastreifen/",
+        "date": "2020-07-31"
+      }
+    ],
+    "geosource": {
+      "type": "OSMnodes",
+      "nodes": [
+        4690359867,
+        252548491,
+        2213568003
+      ]
+    },
+    "geo": {
+      "coords": [
+        [
+          16.3381611,
+          48.1983057
+        ],
+        [
+          16.3383417,
+          48.1983553
+        ]
+      ],
+      "length": 14.48
+    }
+  },
+  {
+    "id": 502679879,
+    "name": "Neubaugürtel/Felberstraße 4/5",
+    "officialName": "Neubaugürtel # Felberstraße",
+    "set": "Neubaugürtel/Felberstraße",
+    "bezirk": 15,
+    "type": "prideFlag",
+    "sources": [
+      {
+        "type": "news",
+        "url": "https://www.ggg.at/2020/07/31/am-guertel-gibt-es-jetzt-den-laengsten-regenbogen-zebrastreifen/",
+        "date": "2020-07-31"
+      }
+    ],
+    "geosource": {
+      "type": "OSMnodes",
+      "nodes": [
+        2213568003,
+        2213568001,
+        2213568000
+      ]
+    },
+    "geo": {
+      "coords": [
+        [
+          16.3383417,
+          48.1983553
+        ],
+        [
+          16.3384136,
+          48.1981421
+        ]
+      ],
+      "length": 24.3
+    }
+  },
+  {
+    "id": 130009472,
+    "name": "Neubaugürtel/Felberstraße 5/5",
+    "officialName": "Neubaugürtel # Felberstraße",
+    "set": "Neubaugürtel/Felberstraße",
+    "bezirk": 15,
+    "type": "prideFlag",
+    "sources": [
+      {
+        "type": "news",
+        "url": "https://www.ggg.at/2020/07/31/am-guertel-gibt-es-jetzt-den-laengsten-regenbogen-zebrastreifen/",
+        "date": "2020-07-31"
+      }
+    ],
+    "geosource": {
+      "type": "OSMnodes",
+      "nodes": [
+        2213568000,
+        4688895202,
+        3175174064
+      ]
+    },
+    "geo": {
+      "coords": [
+        [
+          16.3384136,
+          48.1981421
+        ],
+        [
+          16.3381415,
+          48.1980996
+        ]
+      ],
+      "length": 20.71
+    }
+  },
+  {
+    "id": 838487078,
+    "name": "Neubaugürtel/Stollgasse 1/3",
+    "officialName": "Neubaugürtel # Stollgasse",
+    "set": "Neubaugürtel/Stollgasse",
+    "bezirk": 7,
+    "type": "prideFlag",
+    "sources": [
+      {
+        "type": "news",
+        "url": "https://www.ggg.at/2020/07/31/am-guertel-gibt-es-jetzt-den-laengsten-regenbogen-zebrastreifen/",
+        "date": "2020-07-31"
+      }
+    ],
+    "geosource": {
+      "type": "OSMnodes",
+      "nodes": [
+        252548492,
+        4688895215,
+        4688895214,
+        4688895213
+      ]
+    },
+    "geo": {
+      "coords": [
+        [
+          16.3387966,
+          48.1984848
+        ],
+        [
+          16.3390851,
+          48.1984782
+        ]
+      ],
+      "length": 21.4
+    }
+  },
+  {
+    "id": 2565065083,
+    "name": "Neubaugürtel/Stollgasse 2/3",
+    "officialName": "Neubaugürtel # Stollgasse",
+    "set": "Neubaugürtel/Stollgasse",
+    "bezirk": 7,
+    "type": "prideFlag",
+    "sources": [
+      {
+        "type": "news",
+        "url": "https://www.ggg.at/2020/07/31/am-guertel-gibt-es-jetzt-den-laengsten-regenbogen-zebrastreifen/",
+        "date": "2020-07-31"
+      }
+    ],
+    "geosource": {
+      "type": "OSMnodes",
+      "nodes": [
+        4688895213,
+        4688895212,
+        4688895211,
+        2510794000
+      ]
+    },
+    "geo": {
+      "coords": [
+        [
+          16.3390851,
+          48.1984782
+        ],
+        [
+          16.3391349,
+          48.1983494
+        ]
+      ],
+      "length": 14.79
+    }
+  },
+  {
+    "id": 1667968916,
+    "name": "Neubaugürtel/Stollgasse 3/3",
+    "officialName": "Neubaugürtel # Stollgasse",
+    "set": "Neubaugürtel/Stollgasse",
+    "bezirk": 7,
+    "type": "prideFlag",
+    "sources": [
+      {
+        "type": "news",
+        "url": "https://www.ggg.at/2020/07/31/am-guertel-gibt-es-jetzt-den-laengsten-regenbogen-zebrastreifen/",
+        "date": "2020-07-31"
+      }
+    ],
+    "geosource": {
+      "type": "OSMnodes",
+      "nodes": [
+        4688895209,
+        4688895208,
+        4688895207,
+        4688895206
+      ]
+    },
+    "geo": {
+      "coords": [
+        [
+          16.3391309,
+          48.1982963
+        ],
+        [
+          16.3388517,
+          48.1982624
+        ]
+      ],
+      "length": 21.03
+    }
   }
 ]

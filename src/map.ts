@@ -19,17 +19,24 @@ import {router} from "./router";
 import {transformExtent} from "ol/proj";
 import {defaults as defaultControls} from 'ol/control';
 import {InfoButton} from "./info";
+import {MapButton} from "./toggle";
 
 const map = new Map({
     // controls: defaultControls().extend([new AreaControl({router: router})]),
     target: 'map',
     layers: [
         new TileLayer({
-            source: new OSM({url: "https://maps.lw1.at/tiles/1.0.0/osm/GLOBAL_MERCATOR/{z}/{x}/{y}.png"})
+            source: new OSM({url: "https://maps.lw1.at/tiles/1.0.0/osm/GLOBAL_MERCATOR/{z}/{x}/{y}.png"}),
+        }),
+        new TileLayer({
+            source: new OSM({
+                url: "https://maps.lw1.at/tiles/1.0.0/basemap_orthofoto/GLOBAL_MERCATOR/{z}/{x}/{y}.jpeg",
+            }),
+            visible: false
         }),
     ],
     view: viewFromArea(Wien),
-    controls: defaultControls().extend([new InfoButton({})])
+    controls: defaultControls().extend([new InfoButton({}), new MapButton({})])
 });
 
 const vectorSource = new VectorSource({
@@ -39,11 +46,6 @@ const vectorSource = new VectorSource({
 });
 
 loadAllData(vectorSource)
-
-const greenLine = new Style({
-    fill: new Fill({color: '#00FF00'}),
-    stroke: new Stroke({color: '#00FF00', width: 2})
-})
 
 function renderer(coordinates: Coordinate | Coordinate[] | Coordinate[][], state: State): void {
     const start = Vector2d.fromCoordList(coordinates[0] as Coordinate)
@@ -87,13 +89,7 @@ const transFlagStyle = new Style({
         scale: 0.05
     })
 })
-const circleStyle = new Style({
-    image: new Circle({
-        fill: new Fill({color: "red"}),
-        stroke: new Stroke({color: "green"}),
-        radius: 10,
-    }),
-})
+
 const vectorLineLayer = new VectorLayer({
     source: vectorSource,
     style: function (feature, resolution) {
@@ -135,7 +131,6 @@ Object.entries(areas).forEach(([name, area]) => {
         // map.setView(viewFromArea(area))
     })
 })
-
 
 // window.bla = function () {
 //     const view = map.getView()

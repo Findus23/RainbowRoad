@@ -12,13 +12,15 @@ function svgToDataURL(svgStr: string): string {
 
 function customSvgLoader() {
     return {
+        enforce: "pre",
         name: 'vite-svg-patch-plugin',
-        transform: function (code, id) {
-            if (id.endsWith('.svg')) {
-                const extractedSvg = readFileSync(id, 'utf8');
-                return `export default '${svgToDataURL(extractedSvg)}'`;
+        load: function (id: string): null | string {
+            if (!id.endsWith('.svg')) {
+                return null
             }
-            return code;
+            const extractedSvg = readFileSync(id, 'utf8');
+            return `export default '${svgToDataURL(extractedSvg)}'`;
+
         }
     } as Plugin;
 }

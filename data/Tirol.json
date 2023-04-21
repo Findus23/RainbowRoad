@@ -47,5 +47,43 @@
       ],
       "length": 4.99
     }
+  },
+  {
+    "id": 3710366134,
+    "name": "Kuffstein",
+    "type": "prideFlag",
+    "geosource": {
+      "type": "RawCoords",
+      "coords": [
+        [
+          12.17131,
+          47.58441
+        ],
+        [
+          12.17122,
+          47.58434
+        ]
+      ]
+    },
+    "sources": [
+      {
+        "type": "news",
+        "url": "https://www.fh-kufstein.ac.at/Newsroom/Archiv-Newsroom/Studienjahr-2020-21/bunter-zebrastreifen-setzt-zeichen",
+        "date": "2021-06-23"
+      }
+    ],
+    "geo": {
+      "coords": [
+        [
+          12.17131,
+          47.58441
+        ],
+        [
+          12.17122,
+          47.58434
+        ]
+      ],
+      "length": 10.3
+    }
   }
 ]

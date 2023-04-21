@@ -2,6 +2,8 @@ import {Control} from "ol/control";
 import {Options} from "ol/control/Control";
 import {router} from "./router";
 import {createElement, createElementWithContent, dlSet} from "./domutils";
+import "./stats"
+import {addStatsChart} from "./stats";
 
 const overlay = document.getElementById("overlay")!
 
@@ -66,7 +68,7 @@ export function setOverlay(): void {
         "lw1.at/de/impressum/",
         "https://lw1.at/de/impressum/"
     ))
-
+    // addStatsChart(content)
     overlay.appendChild(content)
 
 }

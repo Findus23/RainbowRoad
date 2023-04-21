@@ -90,5 +90,48 @@
       ],
       "length": 8.62
     }
+  },
+  {
+    "id": 111591209,
+    "name": "Mödling",
+    "type": "prideFlag",
+    "sources": [
+      {
+        "type": "proposal",
+        "url": "https://www.noen.at/moedling/gleichberechtigung-schutzweg-in-moedling-wird-bunt-moedling-print-schutzweg-gleichberechtigung-daniel-koenczoel-rainer-praschak-redaktion-354713368",
+        "date": "2023-02-17"
+      },
+      {
+        "type": "news",
+        "url": "https://www.heute.at/s/regenbogen-zebrastreifen-als-zeichen-der-solidaritaet-100262709",
+        "date": "2023-03-28"
+      }
+    ],
+    "geosource": {
+      "type": "RawCoords",
+      "coords": [
+        [
+          16.29094,
+          48.08642
+        ],
+        [
+          16.29108,
+          48.08644
+        ]
+      ]
+    },
+    "geo": {
+      "coords": [
+        [
+          16.29094,
+          48.08642
+        ],
+        [
+          16.29108,
+          48.08644
+        ]
+      ],
+      "length": 10.63
+    }
   }
 ]

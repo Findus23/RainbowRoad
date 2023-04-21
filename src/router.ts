@@ -1,4 +1,6 @@
 import Navigo, {NavigateOptions} from "navigo";
+import {matomo} from "./matomo";
+import {locationAlias} from "matomo-lite-tracker/src/aliases";
 
 class CustomNavigo extends Navigo {
     navigateReplace(to: string, options?: NavigateOptions) {
@@ -12,6 +14,15 @@ class CustomNavigo extends Navigo {
 
 export const router = new CustomNavigo("/")
 
+router.hooks({
+    after(m) {
+        if (matomo) {
+            matomo.customURL = locationAlias.protocol + '//' +
+                locationAlias.hostname + "/" + m.url
+            matomo?.trackPageview()
+        }
+    }
+})
 
 // router.on("/Wien", () => {
 //     map.setView(viewFromArea(Wien))

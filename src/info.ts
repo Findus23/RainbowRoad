@@ -3,7 +3,6 @@ import {Options} from "ol/control/Control";
 import {router} from "./router";
 import {createElement, createElementWithContent, dlSet} from "./domutils";
 import "./stats"
-import {addStatsChart} from "./stats";
 
 const overlay = document.getElementById("overlay")!
 
@@ -52,10 +51,15 @@ export function setOverlay(): void {
     content.appendChild(p)
 
     content.appendChild(dlSet(
-        "Source-Code:",
+        "Source-Code und Daten:",
         "github.com/Findus23/RainbowRoad",
         "https://github.com/Findus23/RainbowRoad"
     ))
+    const dl = createElement("dl")
+    dl.appendChild(createElementWithContent("dt", "Lizenz:"))
+    const dd = createElementWithContent("dd", "GPL-3 (Code), CC BY-SA 4.0 (Daten)")
+    dl.appendChild(dd)
+    content.appendChild(dl)
 
     content.appendChild(dlSet(
         "Andere Projekte:",

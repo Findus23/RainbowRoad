@@ -5,6 +5,7 @@
   "scripts": {
     "fetch": "cd commands && ts-node fetch.ts",
     "stats": "cd commands && ts-node stats.ts",
+    "archive": "cd commands && ts-node archive_sources.ts",
     "dev": "vite",
     "build": "tsc --skipLibCheck && vite build",
     "preview": "vite preview",

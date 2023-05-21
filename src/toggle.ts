@@ -33,6 +33,6 @@ export class MapButton extends Control {
         this.showingOrtho = !this.showingOrtho
         firstLayer.setVisible(!this.showingOrtho)
         secondLayer.setVisible(this.showingOrtho)
-        thirdLayer.setOpacity(this.showingOrtho ? 0.5 : 1)
+        thirdLayer.setOpacity(this.showingOrtho ? 0.2 : 1)
     }
 }

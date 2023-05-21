@@ -51,8 +51,8 @@
   {
     "id": 932441635,
     "name": "Hallein",
-    "type": "HalleinPrideFlag",
-    "comment": "Farben vertauscht",
+    "type": "prideFlag",
+    "comment": "",
     "sources": [
       {
         "type": "news",
@@ -68,6 +68,11 @@
         "type": "news",
         "url": "https://salzburg.orf.at/stories/3177392/",
         "date": "2022-10-10"
+      },
+      {
+        "type": "news",
+        "url": "https://www.salzburg24.at/news/salzburg/tennengau/halleiner-regenbogen-zebrastreifen-bekommt-neuen-anstrich-138649279",
+        "date": "2023-05-12"
       }
     ],
     "geosource": {

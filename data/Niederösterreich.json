@@ -105,6 +105,11 @@
         "type": "news",
         "url": "https://www.heute.at/s/regenbogen-zebrastreifen-als-zeichen-der-solidaritaet-100262709",
         "date": "2023-03-28"
+      },
+      {
+        "type": "news",
+        "url": "https://www.spoe-moedling.at/regenbogen-zebrastreifen/",
+        "date": "2023-05-03"
       }
     ],
     "geosource": {

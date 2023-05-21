@@ -18,6 +18,7 @@ import a1Icon from "../assets/favicons/a1.net.png"
 import orfIcon from "../assets/favicons/orf.png"
 import apaIcon from "../assets/favicons/apa.png"
 import facebookIcon from "../assets/favicons/facebook.svg"
+import heuteIcon from "../assets/favicons/heute.at.png"
 
 
 export function faviconByHostname(hostname: string): string | undefined {
@@ -57,6 +58,8 @@ export function faviconByHostname(hostname: string): string | undefined {
             return apaIcon
         case "www.facebook.com":
             return facebookIcon
+        case "www.heute.at":
+            return heuteIcon
     }
 
     if (hostname.includes("spoe")) {

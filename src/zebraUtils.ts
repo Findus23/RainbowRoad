@@ -3,9 +3,6 @@ import {FlagType} from "../interfaces";
 
 export const prideFlagColors = ["#e40303", "#ff8c00", "#ffed00", "#008026", "#004dff", "#750787"]
 export const transFlagColors = ["#5BCEFA", "#F5A9B8"]
-let prideFlagHalleinColors = prideFlagColors.slice()
-prideFlagHalleinColors[0] = prideFlagColors[1]
-prideFlagHalleinColors[1] = prideFlagColors[0]
 export type PatternFunction = (i: number) => string
 
 export function zebraPattern(i: number): string {
@@ -24,12 +21,10 @@ export function generateFlagZebraPattern(colors: string[]): PatternFunction {
 }
 
 export const prideZebraPattern = generateFlagZebraPattern(prideFlagColors)
-export const prideZebraHalleinPattern = generateFlagZebraPattern(prideFlagHalleinColors)
 export const transZebraPattern = generateFlagZebraPattern(transFlagColors)
 
 export const zebraPatterns: { [d in FlagType]: PatternFunction } = {
     "prideFlag": prideZebraPattern,
-    "HalleinPrideFlag": prideZebraHalleinPattern,
     "transFlag": transZebraPattern
 }
 

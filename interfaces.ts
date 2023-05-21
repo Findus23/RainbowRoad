@@ -1,4 +1,4 @@
-export type FlagType = "prideFlag" | "transFlag" | "HalleinPrideFlag"
+export type FlagType = "prideFlag" | "transFlag"
 
 export type Coord = number[]
 export type Coords = Coord[]

@@ -131,10 +131,18 @@ p {
 .ol-touch .ol-control.info-button a {
   font-size: 1.5em;
 }
-.ol-control.map-button {
-  bottom: .5rem;
-  left: 2.375rem;
+.ol-control {
+  &.ortho-button, &.basemap-button {
+    bottom: .5rem;
+  }
+}
+.ol-control.ortho-button {
+  left: 1.875rem+0.5rem;
 
+}
+
+.ol-control.basemap-button {
+  left: 1.875rem*2+0.5rem;
 }
 
 
@@ -161,7 +169,8 @@ p {
     h1 {
       margin-top: 0;
     }
-    a{
+
+    a {
       color: green;
 
       text-decoration: none;
@@ -182,7 +191,7 @@ dl {
   font-weight: bold;
 }
 
-.box{
+.box {
   background-color: white;
   box-shadow: 0 1px 4px rgba(0, 0, 0, 0.2);
   border-radius: 1rem;
@@ -190,15 +199,15 @@ dl {
 }
 
 
-
-svg.ct-chart-bar, svg.ct-chart-line{
+svg.ct-chart-bar, svg.ct-chart-line {
   overflow: visible;
 }
+
 .ct-label.ct-label.ct-horizontal.ct-end {
   position: relative;
   justify-content: flex-end;
   text-align: right;
   transform-origin: 100% 0;
   transform: translate(-70%) rotate(-45deg);
-  white-space:nowrap;
+  white-space: nowrap;
 }

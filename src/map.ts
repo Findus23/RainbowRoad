@@ -1,8 +1,8 @@
 import Map from "ol/Map";
-import {OSM, Vector as VectorSource} from "ol/source";
+import {OSM, Vector as VectorSource, XYZ} from "ol/source";
 import TileLayer from "ol/layer/Tile";
 import {Vector as VectorLayer} from "ol/layer";
-import {Circle, Fill, Icon, Stroke, Style} from "ol/style";
+import {Icon, Style} from "ol/style";
 import {Coordinate} from "ol/coordinate";
 import {State} from "ol/render";
 import {Line, Vector2d} from "./vectorUtils";
@@ -18,14 +18,30 @@ import {router} from "./router";
 import {transformExtent} from "ol/proj";
 import {defaults as defaultControls} from 'ol/control';
 import {InfoButton} from "./info";
-import {MapButton} from "./toggle";
+import {BasemapControl, OrthophotoControl} from "./toggle";
+import {retina} from "./utils";
+
+
+const basemap_lq_url = "https://maps.lw1.at/tiles/1.0.0/basemap/GLOBAL_MERCATOR/{z}/{x}/{y}.png"
+const basemap_hq_url = "https://maps.lw1.at/tiles/1.0.0/basemap_hq/webmercator_hq/{z}/{x}/{y}.png"
+const basemap_attribution = "Datenquelle: <a href=\"https://www.basemap.at\">basemap.at</a>"
+
+
+const basemap_url = retina ? basemap_hq_url : basemap_lq_url
 
 const map = new Map({
-    // controls: defaultControls().extend([new AreaControl({router: router})]),
     target: 'map',
     layers: [
         new TileLayer({
             source: new OSM({url: "https://maps.lw1.at/tiles/1.0.0/osm/GLOBAL_MERCATOR/{z}/{x}/{y}.png"}),
+        }),
+        new TileLayer({
+            source: new XYZ({
+                url: basemap_url,
+                tilePixelRatio: retina ? 2 : 1,
+                attributions: [basemap_attribution]
+            }),
+            visible: false
         }),
         new TileLayer({
             source: new OSM({
@@ -35,7 +51,7 @@ const map = new Map({
         }),
     ],
     view: viewFromArea(Wien),
-    controls: defaultControls().extend([new InfoButton({}), new MapButton({})])
+    controls: defaultControls().extend([new InfoButton({}), new OrthophotoControl(), new BasemapControl()])
 });
 
 const vectorSource = new VectorSource({

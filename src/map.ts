@@ -24,7 +24,7 @@ import {retina} from "./utils";
 
 const basemap_lq_url = "https://maps.lw1.at/tiles/1.0.0/basemap/GLOBAL_MERCATOR/{z}/{x}/{y}.png"
 const basemap_hq_url = "https://maps.lw1.at/tiles/1.0.0/basemap_hq/webmercator_hq/{z}/{x}/{y}.png"
-const basemap_attribution = "Datenquelle: <a href=\"https://www.basemap.at\">basemap.at</a>"
+const basemap_attribution = "Datenquelle: <a href=\"https://www.basemap.at\">basemap.at</a>,"
 
 
 const basemap_url = retina ? basemap_hq_url : basemap_lq_url
@@ -46,6 +46,7 @@ const map = new Map({
         new TileLayer({
             source: new OSM({
                 url: "https://maps.lw1.at/tiles/1.0.0/basemap_orthofoto/GLOBAL_MERCATOR/{z}/{x}/{y}.jpeg",
+                attributions: [basemap_attribution]
             }),
             visible: false
         }),

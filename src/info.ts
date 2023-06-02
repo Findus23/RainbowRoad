@@ -13,6 +13,7 @@ export class InfoButton extends Control {
         const button = createElement('a');
         button.dataset.navigo = ""
         button.href = "/about"
+        button.title = "Mehr Informationen"
         button.innerHTML = 'i';
 
         const element = createElement('div');

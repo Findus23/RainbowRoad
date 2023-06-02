@@ -85,5 +85,93 @@
       ],
       "length": 10.3
     }
+  },
+  {
+    "id": 3706356937,
+    "name": "Innsbruck Marktgraben/Burggraben 1/2",
+    "type": "prideFlag",
+    "sources": [
+      {
+        "type": "proposal",
+        "url": "https://www.tt.com/artikel/30787847/zeichen-der-vielfalt-innsbruck-bekommt-zwei-regenbogen-zebrastreifen",
+        "date": "2021-03-31"
+      },
+      {
+        "type": "news",
+        "url": "https://www.meinbezirk.at/innsbruck/c-politik/darum-sind-die-zebrastreifen-bunt_a4593035",
+        "date": "2021-04-22"
+      }
+    ],
+    "set": "Innsbruck Marktgraben/Burggraben",
+    "geosource": {
+      "type": "RawCoords",
+      "coords": [
+        [
+          11.39348,
+          47.26692
+        ],
+        [
+          11.39344,
+          47.26706
+        ]
+      ]
+    },
+    "geo": {
+      "coords": [
+        [
+          11.39348,
+          47.26692
+        ],
+        [
+          11.39344,
+          47.26706
+        ]
+      ],
+      "length": 15.86
+    }
+  },
+  {
+    "id": 2862189765,
+    "name": "Innsbruck Marktgraben/Burggraben 2/2",
+    "type": "prideFlag",
+    "sources": [
+      {
+        "type": "proposal",
+        "url": "https://www.tt.com/artikel/30787847/zeichen-der-vielfalt-innsbruck-bekommt-zwei-regenbogen-zebrastreifen",
+        "date": "2021-03-31"
+      },
+      {
+        "type": "news",
+        "url": "https://www.meinbezirk.at/innsbruck/c-politik/darum-sind-die-zebrastreifen-bunt_a4593035",
+        "date": "2021-04-22"
+      }
+    ],
+    "set": "Innsbruck Marktgraben/Burggraben",
+    "geosource": {
+      "type": "RawCoords",
+      "coords": [
+        [
+          11.39383,
+          47.26699
+        ],
+        [
+          11.39376,
+          47.26713
+        ]
+      ]
+    },
+    "geo": {
+      "coords": [
+        [
+          11.39383,
+          47.26699
+        ],
+        [
+          11.39376,
+          47.26713
+        ]
+      ],
+      "length": 16.44
+    }
   }
 ]

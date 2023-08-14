@@ -138,5 +138,64 @@
       ],
       "length": 10.63
     }
+  },
+  {
+    "id": 53977841,
+    "name": "Moosbrunn",
+    "type": "prideFlag",
+    "sources": [
+      {
+        "type": "news",
+        "url": "https://oe3.orf.at/stories/3034425/",
+        "date": "2023-06-23"
+      },
+      {
+        "type": "news",
+        "url": "https://www.meinbezirk.at/schwechat/c-lokales/einzigartiger-zebrastreifen-strahlt-bunt_a6121661",
+        "date": "2023-06-23"
+      },
+      {
+        "type": "news",
+        "url": "https://www.noen.at/schwechat/pride-month-bunter-zebrastreifen-fuer-moosbrunn-373331872",
+        "date": "2023-06-24"
+      },
+      {
+        "type": "news",
+        "url": "https://www.meinbezirk.at/schwechat/c-lokales/unbekannte-beschmieren-regenbogenzebrastreifen_a6202417",
+        "date": "2023-08-08"
+      },
+      {
+        "type": "news",
+        "url": "https://www.noen.at/schwechat/taeter-sind-bekannt-bunter-zebrastreifen-in-moosbrunn-beschmiert-380520505",
+        "date": "2023-08-11"
+      }
+    ],
+    "comment": "Ö3-Wecker 3/2023",
+    "geosource": {
+      "type": "RawCoords",
+      "coords": [
+        [
+          16.46092,
+          48.02013
+        ],
+        [
+          16.46099,
+          48.02007
+        ]
+      ]
+    },
+    "geo": {
+      "coords": [
+        [
+          16.46092,
+          48.02013
+        ],
+        [
+          16.46099,
+          48.02007
+        ]
+      ],
+      "length": 8.46
+    }
   }
 ]

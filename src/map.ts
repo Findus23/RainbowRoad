@@ -15,7 +15,7 @@ import {Crossing} from "../interfaces";
 import {loadAllData} from "./loadData";
 import "./router"
 import {router} from "./router";
-import {transformExtent} from "ol/proj";
+import {transform, transformExtent} from "ol/proj";
 import {defaults as defaultControls} from 'ol/control';
 import {InfoButton} from "./info";
 import {BasemapControl, OrthophotoControl} from "./toggle";
@@ -63,7 +63,7 @@ const vectorSource = new VectorSource({
 
 loadAllData(vectorSource)
 
-function renderer(coordinates: Coordinate | Coordinate[] | Coordinate[][], state: State): void {
+function renderer(coordinates: Coordinate | Coordinate[] | Coordinate[][] | Coordinate[][][], state: State): void {
     const start = Vector2d.fromCoordList(coordinates[0] as Coordinate)
     const end = Vector2d.fromCoordList(coordinates[1] as Coordinate)
     const line = new Line(start, end)
@@ -155,3 +155,7 @@ Object.entries(areas).forEach(([name, area]) => {
 import("./popups").then(popups => {
     popups.initPopups(map, vectorSource);
 })
+
+map.on('click', function(evt){
+    console.log(transform(evt.coordinate, 'EPSG:3857', 'EPSG:4326'));
+});

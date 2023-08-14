@@ -101,5 +101,180 @@
       ],
       "length": 11.73
     }
+  },
+  {
+    "id": 2852937130,
+    "name": "Salzburg Andräviertel",
+    "type": "prideFlag",
+    "sources": [
+      {
+        "type": "news",
+        "url": "https://www.meinbezirk.at/salzburg-stadt/c-politik/neuer-regenbogen-zebrastreifen-im-andraeviertel_a6101006",
+        "date": "2023-06-13"
+      }
+    ],
+    "comment": "3. in in der Stadt Salzburg",
+    "geosource": {
+      "type": "RawCoords",
+      "coords": [
+        [
+          13.04835,
+          47.80596
+        ],
+        [
+          13.04844,
+          47.80585
+        ]
+      ]
+    },
+    "geo": {
+      "coords": [
+        [
+          13.04835,
+          47.80596
+        ],
+        [
+          13.04844,
+          47.80585
+        ]
+      ],
+      "length": 13.96
+    }
+  },
+  {
+    "id": 1570218019,
+    "name": "Salzburg Mirabellplatz",
+    "type": "prideFlag",
+    "sources": [
+      {
+        "type": "news",
+        "url": "https://www.salzburg24.at/news/salzburg/stadt/regenbogen-zebrastreifen-salzburg-setzt-zeichen-fuer-gleichberechtigung-109828021",
+        "date": "2021-09-22"
+      }
+    ],
+    "geosource": {
+      "type": "RawCoords",
+      "coords": [
+        [
+          13.04253,
+          47.80613
+        ],
+        [
+          13.04266,
+          47.80617
+        ]
+      ]
+    },
+    "geo": {
+      "coords": [
+        [
+          13.04253,
+          47.80613
+        ],
+        [
+          13.04266,
+          47.80617
+        ]
+      ],
+      "length": 10.68
+    }
+  },
+  {
+    "id": 3235101084,
+    "name": "Salzburg Liefering 1/2",
+    "set": "Salzburg Liefering",
+    "type": "prideFlag",
+    "sources": [
+      {
+        "type": "news",
+        "url": "https://www.salzburg24.at/news/salzburg/stadt/regenbogen-zebrastreifen-vor-ms-liefering-123194536",
+        "date": "2022-06-23"
+      },
+      {
+        "type": "news",
+        "url": "https://www.salzburg24.at/news/salzburg/stadt/regenbogen-zebrastreifen-in-liefering-von-vandalen-beschmiert-123239176",
+        "date": "2022-06-24"
+      },
+      {
+        "type": "news",
+        "url": "https://www.salzburg24.at/news/salzburg/stadt/regenbogen-zebrastreifen-in-liefering-erstrahlt-in-neuem-glanz-123782536",
+        "date": "2022-07-05"
+      }
+    ],
+    "geosource": {
+      "type": "RawCoords",
+      "coords": [
+        [
+          13.02358,
+          47.82217
+        ],
+        [
+          13.023696,
+          47.822213
+        ]
+      ]
+    },
+    "geo": {
+      "coords": [
+        [
+          13.02358,
+          47.82217
+        ],
+        [
+          13.023696,
+          47.822213
+        ]
+      ],
+      "length": 9.89
+    }
+  },
+  {
+    "id": 2112630061,
+    "name": "Salzburg Liefering 2/2",
+    "set": "Salzburg Liefering",
+    "type": "prideFlag",
+    "sources": [
+      {
+        "type": "news",
+        "url": "https://www.salzburg24.at/news/salzburg/stadt/regenbogen-zebrastreifen-vor-ms-liefering-123194536",
+        "date": "2022-06-23"
+      },
+      {
+        "type": "news",
+        "url": "https://www.salzburg24.at/news/salzburg/stadt/regenbogen-zebrastreifen-in-liefering-von-vandalen-beschmiert-123239176",
+        "date": "2022-06-24"
+      },
+      {
+        "type": "news",
+        "url": "https://www.salzburg24.at/news/salzburg/stadt/regenbogen-zebrastreifen-in-liefering-erstrahlt-in-neuem-glanz-123782536",
+        "date": "2022-07-05"
+      }
+    ],
+    "geosource": {
+      "type": "RawCoords",
+      "coords": [
+        [
+          13.02351,
+          47.8223
+        ],
+        [
+          13.0236,
+          47.82232
+        ]
+      ]
+    },
+    "geo": {
+      "coords": [
+        [
+          13.02351,
+          47.8223
+        ],
+        [
+          13.0236,
+          47.82232
+        ]
+      ],
+      "length": 7.08
+    }
   }
 ]

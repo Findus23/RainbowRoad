@@ -173,5 +173,44 @@
       ],
       "length": 16.44
     }
+  },
+  {
+    "id": 3227238824,
+    "name": "Mayrhofen",
+    "type": "prideFlag",
+    "sources": [
+      {
+        "type": "news",
+        "url": "https://oe3.orf.at/stories/3034387/",
+        "date": "2023-06-22"
+      }
+    ],
+    "comment": "Ö3-Wecker 2/2023",
+    "geosource": {
+      "type": "RawCoords",
+      "coords": [
+        [
+          11.86281,
+          47.16699
+        ],
+        [
+          11.86278,
+          47.16689
+        ]
+      ]
+    },
+    "geo": {
+      "coords": [
+        [
+          11.86281,
+          47.16699
+        ],
+        [
+          11.86278,
+          47.16689
+        ]
+      ],
+      "length": 11.35
+    }
   }
 ]

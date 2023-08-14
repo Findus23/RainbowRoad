@@ -41,5 +41,49 @@
       ],
       "length": 7.57
     }
+  },
+  {
+    "id": 2180726719,
+    "name": "Bregenz-Fluh",
+    "type": "prideFlag",
+    "sources": [
+      {
+        "type": "news",
+        "url": "https://oe3.orf.at/stories/3034362/",
+        "date": "2023-06-21"
+      },
+      {
+        "type": "news",
+        "url": "https://vorarlberg.orf.at/stories/3212457/",
+        "date": "2023-06-20"
+      }
+    ],
+    "comment": "Ö3-Wecker 1/2023",
+    "geosource": {
+      "type": "RawCoords",
+      "coords": [
+        [
+          9.77488,
+          47.49358
+        ],
+        [
+          9.77492,
+          47.49352
+        ]
+      ]
+    },
+    "geo": {
+      "coords": [
+        [
+          9.77488,
+          47.49358
+        ],
+        [
+          9.77492,
+          47.49352
+        ]
+      ],
+      "length": 7.32
+    }
   }
 ]

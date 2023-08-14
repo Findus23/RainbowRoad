@@ -276,5 +276,48 @@
       ],
       "length": 7.08
     }
+  },
+  {
+    "id": 2669537448,
+    "name": "Neumarkt",
+    "type": "prideFlag",
+    "sources": [
+      {
+        "type": "news",
+        "url": "https://www.salzburg24.at/news/salzburg/flachgau/neumarkt-bekennt-mit-regenbogen-zebrastreifen-farbe-142731382",
+        "date": "2023-06-28"
+      },
+      {
+        "type": "news",
+        "url": "https://www.salzburg24.at/news/salzburg/flachgau/ns-symbole-auf-regenbogen-zebrastreifen-in-neumarkt-142882183",
+        "date": "2023-07-31"
+      }
+    ],
+    "geosource": {
+      "type": "RawCoords",
+      "coords": [
+        [
+          13.22062,
+          47.94223
+        ],
+        [
+          13.22045,
+          47.94218
+        ]
+      ]
+    },
+    "geo": {
+      "coords": [
+        [
+          13.22062,
+          47.94223
+        ],
+        [
+          13.22045,
+          47.94218
+        ]
+      ],
+      "length": 13.83
+    }
   }
 ]

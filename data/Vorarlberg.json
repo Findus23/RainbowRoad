@@ -85,5 +85,43 @@
       ],
       "length": 7.32
     }
+  },
+  {
+    "id": 4065147000,
+    "name": "Bregenz Schillerstraße",
+    "type": "prideFlag",
+    "sources": [
+      {
+        "type": "official",
+        "url": "https://www.bregenz.gv.at/rathaus/news/regenbogen-zebrastreifen-in-bregenz",
+        "date": "2022-06-08"
+      }
+    ],
+    "geosource": {
+      "type": "RawCoords",
+      "coords": [
+        [
+          9.75165,
+          47.5048
+        ],
+        [
+          9.75171,
+          47.50487
+        ]
+      ]
+    },
+    "geo": {
+      "coords": [
+        [
+          9.75165,
+          47.5048
+        ],
+        [
+          9.75171,
+          47.50487
+        ]
+      ],
+      "length": 8.99
+    }
   }
 ]

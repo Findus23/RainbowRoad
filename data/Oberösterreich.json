@@ -199,5 +199,35 @@
       ],
       "length": 17.09
     }
+  },
+  {
+    "id": 3733961617,
+    "name": "Steyr",
+    "type": "prideFlag",
+    "sources": [
+      {
+        "type": "news",
+        "url": "https://www.meinbezirk.at/steyr-steyr-land/c-lokales/regenbogen-zebrastreifen-auf-der-dukartstrasse-beschmiert_a6100490",
+        "date": "2023-06-13"
+      }
+    ],
+    "comment": "Alter unbekannt",
+    "geosource": {
+      "type": "OSMway",
+      "wayID": 868875089
+    },
+    "geo": {
+      "coords": [
+        [
+          14.4216065,
+          48.0386848
+        ],
+        [
+          14.4217371,
+          48.0386559
+        ]
+      ],
+      "length": 10.23
+    }
   }
 ]

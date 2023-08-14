@@ -8,7 +8,7 @@ https://www.linz.at/medienservice/2022/202206_115655.php
 
 OÖ:
 https://www.meinbezirk.at/freistadt/c-lokales/freistadt-bekommt-regenbogen-zebrastreifen_a5471665
-- Steyr
+- Steyr: https://www.tips.at/nachrichten/steyr/land-leute/608175-regenbogen-zebrastreifen-beschmiert
 - Steyregg (https://www.meinbezirk.at/linz/c-politik/steyregg-setzt-buntes-zeichen-gegen-identitaere-bewegung_a4793903)
 - Efferding: https://www.meinbezirk.at/grieskirchen-eferding/c-politik/wir-wollen-ein-zeichen-fuer-toleranz-setzen_a5674603
 
@@ -16,7 +16,6 @@ Salzburg:
 Geplant im April: https://www.meinbezirk.at/salzburg-stadt/c-lokales/andraeviertel-bekommt-neuen-regenbogen-zebrastreifen_a5830102
 
 Geplant:
-- Mödling: https://www.noen.at/moedling/gleichberechtigung-schutzweg-in-moedling-wird-bunt-moedling-print-schutzweg-gleichberechtigung-daniel-koenczoel-rainer-praschak-redaktion-354713368
 - Kufstein (zweiter): https://www.meinbezirk.at/kufstein/c-lokales/bunter-kufsteiner-zebrastreifen-fordert-diskussion_a4703126
 
 Vermutlich vollständig:
@@ -25,3 +24,4 @@ Vermutlich vollständig:
 - Burgenland
 
 Küniglberg/ORF: https://oe3.orf.at/stories/3034425/
+Ramperstorffergasse 33 ?

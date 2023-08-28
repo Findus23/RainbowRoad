@@ -197,5 +197,91 @@
       ],
       "length": 8.46
     }
+  },
+  {
+    "id": 757992739,
+    "name": "Wiener Neudorf",
+    "type": "prideFlag",
+    "sources": [
+      {
+        "type": "news",
+        "url": "https://www.noen.at/video/noen-n1-tv-regenbogen-zebrastreifen-in-wiener-neudorf-381577504",
+        "date": "2023-08-18"
+      },
+      {
+        "type": "news",
+        "url": "https://www.meinbezirk.at/moedling/c-lokales/regenbogen-zebrastreifen-in-wiener-neudorf_a6223674",
+        "date": "2023-08-25"
+      }
+    ],
+    "geosource": {
+      "type": "RawCoords",
+      "coords": [
+        [
+          16.31779,
+          48.08644
+        ],
+        [
+          16.31776,
+          48.08635
+        ]
+      ]
+    },
+    "geo": {
+      "coords": [
+        [
+          16.31779,
+          48.08644
+        ],
+        [
+          16.31776,
+          48.08635
+        ]
+      ],
+      "length": 10.25
+    }
+  },
+  {
+    "id": 1016612021,
+    "name": "Traismauer",
+    "type": "prideFlag",
+    "sources": [
+      {
+        "type": "official",
+        "url": "https://www.facebook.com/mapeiaustriagmbh/posts/pfbid02igTyicMNYEhzA2PVHMzrf7yqhJSfHVszBVvzh3RdFKoVJxybjbucA6Gxs5g9mXQvl",
+        "date": "2022-08-12"
+      },
+      {
+        "type": "streetview",
+        "url": "https://www.google.com/maps/@48.3508004,15.7431973,3a,77y,352.02h,87.2t/data=!3m6!1e1!3m4!1ss29JNQ2lyLm5aO4hjORMFw!2e0!7i16384!8i8192?entry=ttu",
+        "date": "2023-03-01"
+      }
+    ],
+    "geosource": {
+      "type": "RawCoords",
+      "coords": [
+        [
+          15.74309,
+          48.35099
+        ],
+        [
+          15.74323,
+          48.35101
+        ]
+      ]
+    },
+    "geo": {
+      "coords": [
+        [
+          15.74309,
+          48.35099
+        ],
+        [
+          15.74323,
+          48.35101
+        ]
+      ],
+      "length": 10.58
+    }
   }
 ]

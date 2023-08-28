@@ -25,9 +25,10 @@ function runstats() {
         }
     }
     console.log(dateCounts)
-
+    let totalNumber = 0
     files.forEach(f => {
         const data: Crossing[] = JSON.parse(fs.readFileSync(`../data/${f}.json`, 'utf8'));
+        totalNumber += data.length
         data.forEach(cr => {
             const dates = cr.sources.filter(s => s.type != "proposal").map(s => s.date).sort()
             const date = new Date(dates[0])
@@ -39,6 +40,7 @@ function runstats() {
         })
 
     })
+    console.log("total", totalNumber)
     const dateCountList = []
     for (let dateCountsKey in dateCounts) {
         dateCountList.push({

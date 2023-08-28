@@ -25,7 +25,7 @@ export function displaySources(sources: Source[]) {
         img.width = img.height = 24
         a.appendChild(img)
         a.href = s.url! // TODO: missing url
-        const favicon = faviconByHostname(a.hostname)
+        const favicon = faviconByHostname(a.hostname, a.pathname)
         if (favicon) {
             img.src = favicon
         }

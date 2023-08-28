@@ -75,5 +75,37 @@
       ],
       "length": 9.69
     }
+  },
+  {
+    "id": 2941975459,
+    "type": "prideFlag",
+    "name": "Parndorf Einkaufszentrum",
+    "sources": [
+      {
+        "type": "photo",
+        "date": "2023-08-28"
+      }
+    ],
+    "geosource": {
+      "type": "OSMnodes",
+      "nodes": [
+        5981491046,
+        268966416,
+        1511570357
+      ]
+    },
+    "geo": {
+      "coords": [
+        [
+          16.8474312,
+          47.9778454
+        ],
+        [
+          16.8476292,
+          47.9778644
+        ]
+      ],
+      "length": 14.89
+    }
   }
 ]

@@ -19,9 +19,10 @@ import orfIcon from "../assets/favicons/orf.png"
 import apaIcon from "../assets/favicons/apa.png"
 import facebookIcon from "../assets/favicons/facebook.svg"
 import heuteIcon from "../assets/favicons/heute.at.png"
+import gmapsIcon from "../assets/favicons/gmaps.svg"
 
 
-export function faviconByHostname(hostname: string): string | undefined {
+export function faviconByHostname(hostname: string, pathname: string): string | undefined {
 
     switch (hostname) {
         case "www.ggg.at":
@@ -70,5 +71,8 @@ export function faviconByHostname(hostname: string): string | undefined {
     }
     if (hostname.includes("orf.at")) {
         return orfIcon
+    }
+    if (hostname == "www.google.com" && pathname.startsWith("/maps/")) {
+        return gmapsIcon
     }
 }

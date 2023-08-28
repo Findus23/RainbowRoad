@@ -82,5 +82,35 @@
       ],
       "length": 10.11
     }
+  },
+  {
+    "id": 1260971435,
+    "name": "Gleisdorf",
+    "type": "prideFlag",
+    "sources": [
+      {
+        "type": "news",
+        "url": "https://www.kleinezeitung.at/steiermark/weiz/6311317/FPOe-ist-empoert_1200-Euro-fuer-RegenbogenZebrastreifen-in-Gleisdorf",
+        "date": "2023-08-01"
+      }
+    ],
+    "comment": "Exakte Position unbekannt",
+    "geosource": {
+      "type": "OSMway",
+      "wayID": 306268826
+    },
+    "geo": {
+      "coords": [
+        [
+          15.7140729,
+          47.105878
+        ],
+        [
+          15.7141261,
+          47.1058395
+        ]
+      ],
+      "length": 5.88
+    }
   }
 ]

@@ -17,10 +17,11 @@ function main() {
     const start = new Vector2d(10, 110)
     const end = new Vector2d(110, 60)
     const line = new Line(start, end)
-    drawZebraCrossing(ctx, new Line(start, new Vector2d(50, 50)),30, zebraPattern)
-    drawZebraCrossing(ctx, line,30, prideZebraPattern)
-    drawZebraCrossing(ctx, new Line(end, new Vector2d(160, 80)),30, transZebraPattern)
-    drawZebraCrossing(ctx, new Line(new Vector2d(160, 80), new Vector2d(120, 150)),30, nonbinaryZebraPattern)
+    const numLines = 10;
+    drawZebraCrossing(ctx, new Line(start, new Vector2d(50, 50)), 30, zebraPattern, numLines)
+    drawZebraCrossing(ctx, line, 30, prideZebraPattern, numLines)
+    drawZebraCrossing(ctx, new Line(end, new Vector2d(160, 80)), 30, transZebraPattern, numLines)
+    drawZebraCrossing(ctx, new Line(new Vector2d(160, 80), new Vector2d(120, 150)), 30, nonbinaryZebraPattern, numLines)
     // line.draw(ctx)
     // const line = new Line(start, end)
     //

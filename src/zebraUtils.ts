@@ -36,17 +36,11 @@ export function drawZebraCrossing(
     ctx: CanvasRenderingContext2D,
     line: Line,
     zebraWidth: number,
-    pattern: (i: number) => string, numStripes?: number
+    pattern: (i: number) => string, numStripes: number
 ): void {
     const ex = line.vec
     const ey = line.vec.rotate90deg().toLength(zebraWidth)
     const eoff = line.start
-// console.log(line.length())
-// console.log(line.vec)
-    if (typeof numStripes === "undefined") {
-        numStripes = Math.floor(line.vec.length() / 6)
-    }
-    // console.log(numStripes)
 
     const stripeLength = 1
     const stripeWidth = stripeLength / numStripes

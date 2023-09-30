@@ -89,28 +89,42 @@
     "type": "prideFlag",
     "sources": [
       {
-        "type": "news",
+        "type": "proposal",
         "url": "https://www.kleinezeitung.at/steiermark/weiz/6311317/FPOe-ist-empoert_1200-Euro-fuer-RegenbogenZebrastreifen-in-Gleisdorf",
         "date": "2023-08-01"
+      },
+      {
+        "type": "official",
+        "url": "https://www.gleisdorf.at/gleisdorf-hat-einen-regenbogen-zebrastreifen_7570_188.htm",
+        "date": "2023-09-26"
+      },
+      {
+        "type": "news",
+        "url": "https://www.kleinezeitung.at/steiermark/weiz/6325602/Vandalismus-in-Gleisdorf_RegenbogenZebrastreifen",
+        "date": "2023-09-27"
+      },
+      {
+        "type": "news",
+        "url": "https://www.5min.at/202309712211/hoert-auf-unsere-kinder-zu-vergiften-neuer-regenbogen-zebrastreifen-beschmiert/",
+        "date": "2023-09-28"
       }
     ],
-    "comment": "Exakte Position unbekannt",
     "geosource": {
       "type": "OSMway",
-      "wayID": 306268826
+      "wayID": 308209802
     },
     "geo": {
       "coords": [
         [
-          15.7140729,
-          47.105878
+          15.7140103,
+          47.1058751
         ],
         [
-          15.7141261,
-          47.1058395
+          15.7139297,
+          47.1058229
         ]
       ],
-      "length": 5.88
+      "length": 8.42
     }
   }
 ]

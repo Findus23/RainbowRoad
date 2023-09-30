@@ -1841,5 +1841,45 @@
       ],
       "length": 21.03
     }
+  },
+  {
+    "id": 1166723159,
+    "name": "Am Heumarkt",
+    "type": "nonbinaryFlag",
+    "bezirk": 3,
+    "comment": "existiert noch nicht",
+    "sources": [
+      {
+        "type": "proposal",
+        "url": "https://www.ggg.at/2023/09/29/exklusiv-wien-bekommt-seinen-ersten-nonbinary-zebrastreifen/",
+        "date": "2023-09-29"
+      }
+    ],
+    "geosource": {
+      "type": "RawCoords",
+      "coords": [
+        [
+          16.3801164,
+          48.2016298
+        ],
+        [
+          16.3802898,
+          48.2017652
+        ]
+      ]
+    },
+    "geo": {
+      "coords": [
+        [
+          16.3801164,
+          48.2016298
+        ],
+        [
+          16.3802898,
+          48.2017652
+        ]
+      ],
+      "length": 19.79
+    }
   }
 ]

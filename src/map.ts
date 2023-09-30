@@ -9,6 +9,7 @@ import {Line, Vector2d} from "./vectorUtils";
 import {drawZebraCrossing, zebraPatterns} from "./zebraUtils";
 import prideFlag from "../assets/prideflag.svg"
 import transFlag from "../assets/transflag.svg"
+import nonbinaryFlag from "../assets/nonbinaryflag.svg"
 import {FeatureProperties} from "./features";
 import {areas, viewFromArea, Wien} from "./areaData";
 import {Crossing} from "../interfaces";
@@ -99,6 +100,12 @@ const transFlagStyle = new Style({
         scale: 0.05
     })
 })
+const nonbinaryFlagStyle = new Style({
+    image: new Icon({
+        src: nonbinaryFlag,
+        scale: 0.05*800/300
+    })
+})
 
 const vectorLineLayer = new VectorLayer({
     source: vectorSource,
@@ -121,9 +128,11 @@ const vectorLineLayer = new VectorLayer({
         }
         switch (crossing.type) {
             case "prideFlag":
-                return prideFlagStyle;
+                return prideFlagStyle
             case "transFlag":
-                return transFlagStyle;
+                return transFlagStyle
+            case "nonbinaryFlag":
+                return nonbinaryFlagStyle
         }
     }
 });
@@ -156,6 +165,6 @@ import("./popups").then(popups => {
     popups.initPopups(map, vectorSource);
 })
 
-map.on('click', function(evt){
+map.on('click', function (evt) {
     console.log(transform(evt.coordinate, 'EPSG:3857', 'EPSG:4326'));
 });

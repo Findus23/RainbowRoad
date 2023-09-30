@@ -1,6 +1,12 @@
 import "./style.scss"
 import {Line, Vector2d} from "./vectorUtils";
-import {drawZebraCrossing, prideZebraPattern, transZebraPattern, zebraPattern} from "./zebraUtils";
+import {
+    drawZebraCrossing,
+    nonbinaryZebraPattern,
+    prideZebraPattern,
+    transZebraPattern,
+    zebraPattern
+} from "./zebraUtils";
 
 
 function main() {
@@ -14,6 +20,7 @@ function main() {
     drawZebraCrossing(ctx, new Line(start, new Vector2d(50, 50)),30, zebraPattern)
     drawZebraCrossing(ctx, line,30, prideZebraPattern)
     drawZebraCrossing(ctx, new Line(end, new Vector2d(160, 80)),30, transZebraPattern)
+    drawZebraCrossing(ctx, new Line(new Vector2d(160, 80), new Vector2d(120, 150)),30, nonbinaryZebraPattern)
     // line.draw(ctx)
     // const line = new Line(start, end)
     //

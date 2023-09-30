@@ -19,10 +19,10 @@ export function loadData(data: Crossing[], vectorSource: VectorSource): void {
         put trans flag on top (so they are not covered,
         but apart from that keep the drawing order random
          */
-        if (a.type == "transFlag") {
+        if (a.type == "transFlag" || a.type == "nonbinaryFlag") {
             return 1
         }
-        if (b.type == "transFlag") {
+        if (b.type == "transFlag" || b.type == "nonbinaryFlag") {
             return -1
         }
         return Math.random() - 0.5;

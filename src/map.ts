@@ -33,8 +33,17 @@ const basemap_url = retina ? basemap_hq_url : basemap_lq_url
 const map = new Map({
     target: 'map',
     layers: [
+        // new TileLayer({
+        //     source: new OSM({url: "https://maps.lw1.at/tiles/1.0.0/osm/GLOBAL_MERCATOR/{z}/{x}/{y}.png"}),
+        // }),
         new TileLayer({
-            source: new OSM({url: "https://maps.lw1.at/tiles/1.0.0/osm/GLOBAL_MERCATOR/{z}/{x}/{y}.png"}),
+            source: new XYZ({
+                url: "https://maps.lw1.at/tiles/1.0.0/tracestack/webmercator_hq/{z}/{x}/{y}.png",
+                tilePixelRatio: 5,
+                attributions: ['Data: © <a href="https://www.openstreetmap.org/copyright">OpenStreetMap contributors</a>, <a href="http://viewfinderpanoramas.org/">SRTM</a>, <a href="https://portal.opentopography.org/datasetMetadata?otCollectionID=OT.032021.4326.2">NASADEM</a>, <a href="https://worldcover2021.esa.int">ESA WorldCover</a>; Maps © <a href="https://www.tracestrack.com/">Tracestrack</a>'],
+                opaque: true,
+                crossOrigin: null
+            }),
         }),
         new TileLayer({
             source: new XYZ({
@@ -103,7 +112,7 @@ const transFlagStyle = new Style({
 const nonbinaryFlagStyle = new Style({
     image: new Icon({
         src: nonbinaryFlag,
-        scale: 0.05*800/300
+        scale: 0.05 * 800 / 300
     })
 })
 

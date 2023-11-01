@@ -20,6 +20,7 @@ import apaIcon from "../assets/favicons/apa.png"
 import facebookIcon from "../assets/favicons/facebook.svg"
 import heuteIcon from "../assets/favicons/heute.at.png"
 import gmapsIcon from "../assets/favicons/gmaps.svg"
+import salzburgIcon from "../assets/favicons/salzburg.svg"
 
 
 export function faviconByHostname(hostname: string, pathname: string): string | undefined {
@@ -61,6 +62,8 @@ export function faviconByHostname(hostname: string, pathname: string): string | 
             return facebookIcon
         case "www.heute.at":
             return heuteIcon
+        case "www.stadt-salzburg.at":
+            return salzburgIcon
     }
 
     if (hostname.includes("spoe")) {

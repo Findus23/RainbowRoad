@@ -319,5 +319,43 @@
       ],
       "length": 13.83
     }
+  },
+  {
+    "id": 3743706375,
+    "type": "prideFlag",
+    "name": "Salzburg Nonntal",
+    "sources": [
+      {
+        "type": "official",
+        "url": "https://www.stadt-salzburg.at/presseaussendungen/presseaussendungen-2023/neuer-regenbogen-zebrastreifen-im-nonntal-vor-praxisvolksschule/",
+        "date": "2023-10-12"
+      }
+    ],
+    "geosource": {
+      "type": "RawCoords",
+      "coords": [
+        [
+          13.052757447940975,
+          47.7922130293519
+        ],
+        [
+          13.052689626448107,
+          47.79231175108717
+        ]
+      ]
+    },
+    "geo": {
+      "coords": [
+        [
+          13.052757447940975,
+          47.7922130293519
+        ],
+        [
+          13.052689626448107,
+          47.79231175108717
+        ]
+      ],
+      "length": 12.09
+    }
   }
 ]

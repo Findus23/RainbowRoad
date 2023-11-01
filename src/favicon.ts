@@ -21,6 +21,9 @@ import facebookIcon from "../assets/favicons/facebook.svg"
 import heuteIcon from "../assets/favicons/heute.at.png"
 import gmapsIcon from "../assets/favicons/gmaps.svg"
 import salzburgIcon from "../assets/favicons/salzburg.svg"
+import viennaatIcon from "../assets/favicons/vienna_at.png"
+import f5minIcon from "../assets/favicons/5min.png"
+import kleinezeitungIcon from "../assets/favicons/kleinezeitung.svg"
 
 
 export function faviconByHostname(hostname: string, pathname: string): string | undefined {
@@ -64,6 +67,10 @@ export function faviconByHostname(hostname: string, pathname: string): string | 
             return heuteIcon
         case "www.stadt-salzburg.at":
             return salzburgIcon
+        case "www.vienna.at":
+            return viennaatIcon
+        case "www.kleinezeitung.at":
+            return kleinezeitungIcon
     }
 
     if (hostname.includes("spoe")) {
@@ -74,6 +81,9 @@ export function faviconByHostname(hostname: string, pathname: string): string | 
     }
     if (hostname.includes("orf.at")) {
         return orfIcon
+    }
+    if (hostname.endsWith("5min.at")) {
+        return f5minIcon
     }
     if (hostname == "www.google.com" && pathname.startsWith("/maps/")) {
         return gmapsIcon

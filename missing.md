@@ -15,6 +15,9 @@ https://www.meinbezirk.at/freistadt/c-lokales/freistadt-bekommt-regenbogen-zebra
 Salzburg:
 Geplant im April: https://www.meinbezirk.at/salzburg-stadt/c-lokales/andraeviertel-bekommt-neuen-regenbogen-zebrastreifen_a5830102
 
+3x um Traiskirchen: https://www.meinbezirk.at/baden/c-lokales/traiskirchen-hat-bunte-regenbogen-zebrastreifen_a6398346
+
+
 Geplant:
 - Kufstein (zweiter): https://www.meinbezirk.at/kufstein/c-lokales/bunter-kufsteiner-zebrastreifen-fordert-diskussion_a4703126
 

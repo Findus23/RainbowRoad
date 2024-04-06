@@ -4,9 +4,9 @@
   "description": "",
   "type": "module",
   "scripts": {
-    "fetch": "cd commands && ts-node fetch.ts",
-    "stats": "cd commands && ts-node stats.ts",
-    "archive": "cd commands && ts-node archive_sources.ts",
+    "fetch": "cd commands && tsx fetch.ts",
+    "stats": "cd commands && tsx stats.ts",
+    "archive": "cd commands && tsx archive_sources.ts",
     "dev": "vite",
     "build": "tsc --skipLibCheck && vite build",
     "preview": "vite preview",
@@ -16,6 +16,7 @@
     "@types/micromodal": "^0.3.3",
     "@types/node": "^20.5.0",
     "sass": "^1.54.4",
+    "tsx": "^4.7.2",
     "typescript": "^5.0.4",
     "vite": "^5.0.0"
   },
@@ -28,8 +29,7 @@
     "micromodal": "^0.4.10",
     "navigo": "^8.11.1",
     "node-fetch": "^3.2.10",
-    "ol": "^8.0.0",
-    "ts-node": "^10.9.1"
+    "ol": "^9.0.0"
   },
   "author": "",
   "license": "ISC"

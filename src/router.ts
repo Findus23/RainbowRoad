@@ -19,7 +19,7 @@ router.hooks({
         if (matomo) {
             matomo.customURL = locationAlias.protocol + '//' +
                 locationAlias.hostname + "/" + m.url
-            matomo?.trackPageview()
+            matomo.trackPageview()
         }
     }
 })

@@ -229,5 +229,48 @@
       ],
       "length": 10.23
     }
+  },
+  {
+    "id": 2378182130,
+    "name": "Steyregg",
+    "type": "prideFlag",
+    "sources": [
+      {
+        "type": "news",
+        "url": "https://www.meinbezirk.at/linz/c-politik/steyregg-setzt-buntes-zeichen-gegen-identitaere-bewegung_a4793903",
+        "date": "2021-07-29"
+      },
+      {
+        "type": "news",
+        "url": "https://www.ggg.at/2021/09/10/steyregg-malt-regenbogen-zebrastreifen-vor-identitaeren-zentrale/",
+        "date": "2021-09-10"
+      }
+    ],
+    "geosource": {
+      "type": "RawCoords",
+      "coords": [
+        [
+          14.37054,
+          48.28524
+        ],
+        [
+          14.37055,
+          48.28516
+        ]
+      ]
+    },
+    "geo": {
+      "coords": [
+        [
+          14.37054,
+          48.28524
+        ],
+        [
+          14.37055,
+          48.28516
+        ]
+      ],
+      "length": 8.93
+    }
   }
 ]

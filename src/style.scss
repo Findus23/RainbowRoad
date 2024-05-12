@@ -131,18 +131,23 @@ p {
 .ol-touch .ol-control.info-button a {
   font-size: 1.5em;
 }
+
 .ol-control {
-  &.ortho-button, &.basemap-button {
+  &.ortho-button, &.basemap-button, &.accept-all-button {
     bottom: .5rem;
   }
 }
+
 .ol-control.ortho-button {
   left: 1.875rem+0.5rem;
-
 }
 
 .ol-control.basemap-button {
   left: 1.875rem*2+0.5rem;
+}
+
+.ol-control.accept-all-button {
+  left: 1.875rem*3+0.5rem;
 }
 
 

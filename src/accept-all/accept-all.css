@@ -1,0 +1,418 @@
+:root {
+    --paddingBorderFrom: 14px;
+    --paddingBorderTo: 10px;
+    --paddingBorder: 16px
+}
+
+@media screen and (min-width: 2440px) {
+    :root {
+        --paddingBorderFrom: 33px;
+        --paddingBorderTo: 27px;
+        --paddingBorder: 35px
+    }
+}
+
+#kwAcceptAllcookiePopup {
+    opacity: 0;
+    visibility: hidden;
+    z-index: 999999;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    transition: opacity .6s ease-out, visibility .6s ease-out
+}
+
+#kwAcceptAllcookiePopup.kwAcceptAllshow {
+    opacity: 1;
+    visibility: visible
+}
+
+@media only screen and (min-width: 45.5em) {
+    #kwAcceptAllcookiePopup.kwAcceptAllshow {
+        bottom: 0;
+        right: 0
+    }
+}
+
+#kwAcceptAllcookieWrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center
+}
+
+#kwAcceptAllcookieBackground {
+    width: 100vw;
+    height: 100vh;
+    background-color: #000000c0;
+    transition: transform .6s ease-out, opacity .6s ease-out, visibility .6s ease-out
+}
+
+#kwAcceptAllcookieBackground img {
+    all: unset;
+    position: absolute;
+    top: auto;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    min-width: 100%;
+    height: auto
+}
+
+#kwAcceptAllcookieContent {
+    all: unset;
+    display: flex;
+    background-color: #fff;
+    color: #000;
+    position: absolute;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 30px 25px 20px;
+    border-radius: 40px;
+    transition: transform .8s ease-out, opacity .8s ease-out, visibility .6s ease-out;
+    font-family: Helvetica, sans-serif;
+    margin: 0 16px
+}
+
+@media (min-width: 430px) {
+    #kwAcceptAllcookieContent {
+        padding: 30px 35px 20px
+    }
+}
+
+@media (min-width: 768px) {
+    #kwAcceptAllcookieContent {
+        padding: 50px 35px 30px
+    }
+}
+
+@media (min-width: 2440px) {
+    #kwAcceptAllcookieContent {
+        padding: 80px 50px 50px
+    }
+}
+
+#kwAcceptAllcookieContent h2 {
+    all: unset;
+    color: #000;
+    font-size: 1.5em;
+    width: 100%;
+    font-weight: 400;
+    line-height: 1.3;
+    text-align: center
+}
+
+@media (min-width: 1200px) {
+    #kwAcceptAllcookieContent h2 {
+        width: 80%;
+        font-size: 2em
+    }
+}
+
+@media (min-width: 2440px) {
+    #kwAcceptAllcookieContent h2 {
+        font-size: 2.75em
+    }
+}
+
+#kwAcceptAllcookieContent h2 span, #kwAcceptAllcookieContent h2 strong {
+    all: unset;
+    font-weight: 800
+}
+
+#kwAcceptAllcookieContent p {
+    all: unset;
+    color: #000;
+    font-size: 1em;
+    line-height: 1.175;
+    padding: 24px 0;
+    width: 100%;
+    text-align: center
+}
+
+@media (min-width: 768px) {
+    #kwAcceptAllcookieContent p {
+        padding: 32px 0
+    }
+}
+
+@media (min-width: 1200px) {
+    #kwAcceptAllcookieContent p {
+        width: 80%;
+        font-size: 1.2em
+    }
+}
+
+@media (min-width: 2440px) {
+    #kwAcceptAllcookieContent p {
+        font-size: 1.5em
+    }
+}
+
+#kwAcceptAllcookieContent button {
+    all: initial;
+    font-family: Helvetica, sans-serif;
+    font-weight: 800;
+    font-size: 1.2em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: none;
+    padding: 25px;
+    border-radius: 70px;
+    border: 2px solid transparent;
+    position: relative
+}
+
+@media (min-width: 1200px) {
+    #kwAcceptAllcookieContent button {
+        font-size: 1.4em
+    }
+}
+
+@media (min-width: 2440px) {
+    #kwAcceptAllcookieContent button {
+        font-size: 1.875em;
+        padding: 45px
+    }
+}
+
+#kwAcceptAllcookieContent button:before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    --width: calc(100% / 11);
+    background-image: linear-gradient(to right, #ec1d23 var(--width), #f59121 var(--width), #f59121 calc(var(--width) * 2), #fddb0f calc(var(--width) * 2), #fddb0f calc(var(--width) * 3), #029246 calc(var(--width) * 3), #029246 calc(var(--width) * 4), #242262 calc(var(--width) * 4), #242262 calc(var(--width) * 5), #804194 calc(var(--width) * 5), #804194 calc(var(--width) * 6), #60cdf5 calc(var(--width) * 6), #60cdf5 calc(var(--width) * 7), #fff calc(var(--width) * 7), #fff calc(var(--width) * 8), #f7a9b8 calc(var(--width) * 8), #f7a9b8 calc(var(--width) * 9), #000 calc(var(--width) * 9), #000 calc(var(--width) * 10), #785121 calc(var(--width) * 10), #785121 calc(var(--width) * 11));
+    border-radius: 70px;
+    box-shadow: 0 0 50px #0000002e;
+    margin: var(--paddingBorderFrom);
+    transition: margin .3s ease-in-out;
+    animation: pulse 1.3s infinite
+}
+
+#kwAcceptAllcookieContent button:focus, #kwAcceptAllcookieContent button:focus-visible {
+    border: 2px solid #000
+}
+
+#kwAcceptAllcookieContent button .sr-only {
+    position: absolute;
+    overflow: hidden;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    border: 0;
+    margin: -1px;
+    clip: rect(0, 0, 0, 0)
+}
+
+#kwAcceptAllcookieContent button .sr-only:not(caption) {
+    position: absolute
+}
+
+#kwAcceptAllcookieContent button .kwAcceptAll__buttonText {
+    background-color: #fff;
+    color: #000;
+    padding: 15px 50px;
+    border-radius: 70px;
+    z-index: 2
+}
+
+@media (min-width: 2440px) {
+    #kwAcceptAllcookieContent button .kwAcceptAll__buttonText {
+        padding: 20px 60px 22px
+    }
+}
+
+#kwAcceptAllcookieContent button:hover {
+    cursor: pointer
+}
+
+#kwAcceptAllcookieContent button:hover:before {
+    animation: hoverAnim .3s ease-in forwards
+}
+
+#kwAcceptAllcookieContent a {
+    all: unset;
+    color: #000;
+    font-size: .875em;
+    background-color: transparent;
+    border-radius: 20px;
+    border: 1px solid transparent;
+    margin-top: 16px;
+    padding: 8px 16px;
+    font-weight: 700;
+    text-decoration: underline
+}
+
+#kwAcceptAllcookieContent a:focus, #kwAcceptAllcookieContent a:focus-visible {
+    border: 1px solid #000
+}
+
+#kwAcceptAllcookieContent a:hover {
+    cursor: pointer
+}
+
+#kwAcceptAllButtonWrapper {
+    display: flex;
+    align-items: center
+}
+
+#kwAcceptAllbgImage {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%
+}
+
+#kwAcceptAllbgImage .kwAcceptAllColumn {
+    display: initial;
+    width: 9.0909090909%;
+    max-height: 100vh;
+    transition: transform 1s linear;
+    transform-origin: bottom
+}
+
+@media (min-width: 1024px) {
+    #kwAcceptAllbgImage .kwAcceptAllColumn {
+        max-height: none
+    }
+}
+
+#kwAcceptAllbgImage .kwAcceptAllColumn-0 {
+    transform: translateY(100%)
+}
+
+.kwAcceptAllTranslateIn #kwAcceptAllbgImage .kwAcceptAllColumn-0 {
+    transform: translateY(13%)
+}
+
+.kwAcceptAllTranslateOut #kwAcceptAllbgImage .kwAcceptAllColumn-0 {
+    transform: translateY(-100%)
+}
+
+#kwAcceptAllbgImage .kwAcceptAllColumn-1 {
+    transform: translateY(100%)
+}
+
+.kwAcceptAllTranslateIn #kwAcceptAllbgImage .kwAcceptAllColumn-1 {
+    transform: translateY(18%)
+}
+
+.kwAcceptAllTranslateOut #kwAcceptAllbgImage .kwAcceptAllColumn-1 {
+    transform: translateY(100%)
+}
+
+#kwAcceptAllbgImage .kwAcceptAllColumn-2 {
+    transform: translateY(-100%)
+}
+
+.kwAcceptAllTranslateIn #kwAcceptAllbgImage .kwAcceptAllColumn-2 {
+    transform: translateY(8%)
+}
+
+.kwAcceptAllTranslateOut #kwAcceptAllbgImage .kwAcceptAllColumn-2 {
+    transform: translateY(-100%)
+}
+
+#kwAcceptAllbgImage .kwAcceptAllColumn-3 {
+    transform-origin: 0 0;
+    transform: translateY(-100%)
+}
+
+.kwAcceptAllTranslateIn #kwAcceptAllbgImage .kwAcceptAllColumn-3 {
+    transform: translateY(-57%)
+}
+
+.kwAcceptAllTranslateOut #kwAcceptAllbgImage .kwAcceptAllColumn-3, #kwAcceptAllbgImage .kwAcceptAllColumn-4 {
+    transform: translateY(100%)
+}
+
+.kwAcceptAllTranslateIn #kwAcceptAllbgImage .kwAcceptAllColumn-4 {
+    transform: translateY(5%)
+}
+
+.kwAcceptAllTranslateOut #kwAcceptAllbgImage .kwAcceptAllColumn-4 {
+    transform: translateY(-100%)
+}
+
+#kwAcceptAllbgImage .kwAcceptAllColumn-5 {
+    transform: translateY(100%)
+}
+
+.kwAcceptAllTranslateIn #kwAcceptAllbgImage .kwAcceptAllColumn-5 {
+    transform: translateY(1.5%)
+}
+
+.kwAcceptAllTranslateOut #kwAcceptAllbgImage .kwAcceptAllColumn-5, #kwAcceptAllbgImage .kwAcceptAllColumn-6 {
+    transform: translateY(100%)
+}
+
+.kwAcceptAllTranslateIn #kwAcceptAllbgImage .kwAcceptAllColumn-6 {
+    transform: translateY(18%)
+}
+
+.kwAcceptAllTranslateOut #kwAcceptAllbgImage .kwAcceptAllColumn-6, #kwAcceptAllbgImage .kwAcceptAllColumn-7 {
+    transform: translateY(100%)
+}
+
+.kwAcceptAllTranslateIn #kwAcceptAllbgImage .kwAcceptAllColumn-7 {
+    transform: translateY(38.5%)
+}
+
+.kwAcceptAllTranslateOut #kwAcceptAllbgImage .kwAcceptAllColumn-7 {
+    transform: translateY(-100%)
+}
+
+#kwAcceptAllbgImage .kwAcceptAllColumn-8 {
+    transform-origin: 0 0;
+    transform: translateY(-100%)
+}
+
+.kwAcceptAllTranslateIn #kwAcceptAllbgImage .kwAcceptAllColumn-8 {
+    transform: translateY(-45%)
+}
+
+.kwAcceptAllTranslateOut #kwAcceptAllbgImage .kwAcceptAllColumn-8, #kwAcceptAllbgImage .kwAcceptAllColumn-9 {
+    transform: translateY(100%)
+}
+
+.kwAcceptAllTranslateIn #kwAcceptAllbgImage .kwAcceptAllColumn-9 {
+    transform: translateY(17%)
+}
+
+.kwAcceptAllTranslateOut #kwAcceptAllbgImage .kwAcceptAllColumn-9 {
+    transform: translateY(-100%)
+}
+
+#kwAcceptAllbgImage .kwAcceptAllColumn-10 {
+    transform-origin: 0 0;
+    transform: translateY(-100%)
+}
+
+.kwAcceptAllTranslateIn #kwAcceptAllbgImage .kwAcceptAllColumn-10 {
+    transform: translateY(-64%)
+}
+
+.kwAcceptAllTranslateOut #kwAcceptAllbgImage .kwAcceptAllColumn-10 {
+    transform: translateY(100%)
+}
+
+@keyframes pulse {
+    0%, to {
+        margin: var(--paddingBorderTo, 15px);
+        animation-timing-function: ease-in-out
+    }
+    50% {
+        margin: var(--paddingBorderFrom, 10px);
+        animation-timing-function: ease-in-out
+    }
+}
+
+@keyframes hoverAnim {
+    to {
+        margin: var(--paddingBorder, 20px)
+    }
+}

@@ -19,7 +19,7 @@ import {router} from "./router";
 import {transform, transformExtent} from "ol/proj";
 import {defaults as defaultControls} from 'ol/control';
 import {InfoButton} from "./info";
-import {BasemapControl, OrthophotoControl} from "./toggle";
+import {AcceptAllControl, BasemapControl, OrthophotoControl} from "./toggle";
 import {retina} from "./utils";
 
 
@@ -62,7 +62,12 @@ const map = new Map({
         }),
     ],
     view: viewFromArea(Wien),
-    controls: defaultControls().extend([new InfoButton({}), new OrthophotoControl(), new BasemapControl()])
+    controls: defaultControls().extend([
+        new InfoButton({}),
+        new OrthophotoControl(),
+        new BasemapControl(),
+        new AcceptAllControl()
+    ])
 });
 
 const vectorSource = new VectorSource({

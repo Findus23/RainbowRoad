@@ -2,6 +2,7 @@ import {Control} from "ol/control";
 import {Options} from "ol/control/Control";
 import {createElement} from "./domutils";
 import {router} from "./router";
+import {AcceptAll} from "./accept-all/accept-all";
 
 interface CustomOptions extends Options {
     buttonLetter: string
@@ -44,6 +45,7 @@ abstract class MapButton extends Control {
 
 export class OrthophotoControl extends MapButton {
     showingOrtho = false
+
     constructor() {
         super({
             buttonLetter: "o",
@@ -60,7 +62,6 @@ export class OrthophotoControl extends MapButton {
         orthoLayer.setVisible(this.showingOrtho)
         zebraLayer.setOpacity(this.showingOrtho ? 0.2 : 1)
     }
-
 }
 
 export class BasemapControl extends MapButton {
@@ -72,6 +73,7 @@ export class BasemapControl extends MapButton {
             buttonClass: "basemap-button"
         });
     }
+
     handleToggle() {
         const {osmLayer, basemapLayer, orthoLayer, zebraLayer} = this.mapLayers();
 
@@ -79,7 +81,27 @@ export class BasemapControl extends MapButton {
         osmLayer.setVisible(!this.showingBasemap)
         orthoLayer.setVisible(false)
         basemapLayer.setVisible(this.showingBasemap)
-        zebraLayer.setOpacity( 1)
+        zebraLayer.setOpacity(1)
+    }
+}
+
+export class AcceptAllControl extends MapButton {
+    private acceptall: any;
+
+    constructor() {
+        super({
+            buttonLetter: "a",
+            buttonClass: "accept-all-button"
+        });
     }
 
+    handleToggle() {
+        import("./accept-all/accept-all").then(module => {
+            if (typeof this.acceptall === "undefined") {
+                console.log("sfdds")
+                this.acceptall = new module.AcceptAll()
+            }
+            this.acceptall.show();
+        })
+    }
 }

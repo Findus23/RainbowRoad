@@ -2,7 +2,7 @@ import {Control} from "ol/control";
 import {Options} from "ol/control/Control";
 import {createElement} from "./domutils";
 import {router} from "./router";
-import {AcceptAll} from "./accept-all/accept-all";
+import type {AcceptAll} from "./accept-all/accept-all";
 
 interface CustomOptions extends Options {
     buttonLetter: string
@@ -86,7 +86,7 @@ export class BasemapControl extends MapButton {
 }
 
 export class AcceptAllControl extends MapButton {
-    private acceptall: any;
+    private acceptall: AcceptAll | undefined;
 
     constructor() {
         super({
@@ -97,10 +97,10 @@ export class AcceptAllControl extends MapButton {
 
     handleToggle() {
         import("./accept-all/accept-all").then(module => {
-            if (typeof this.acceptall === "undefined") {
-                console.log("sfdds")
-                this.acceptall = new module.AcceptAll()
+            if (typeof this.acceptall !== "undefined") {
+                this.acceptall.dispose()
             }
+            this.acceptall = new module.AcceptAll()
             this.acceptall.show();
         })
     }

@@ -1,5 +1,5 @@
 /*!
-
+Please check https://github.com/Findus23/RainbowRoad/tree/main/src/accept-all for information about the Accept All modal by https://www.kraftwerk.co.at/
  */
 import "./accept-all.css"
 import MicroModal, {MicroModalConfig} from "micromodal";
@@ -13,7 +13,7 @@ interface Translation {
     text: string
 }
 
-const colors = ["#ec1d23", "#f59121", "#fddb0f", "#029246", "#242262", "#804194", "#60cdf5", "#fff", "#f7a9b8", "#000", "#785121"]
+const columnColors = ["#ec1d23", "#f59121", "#fddb0f", "#029246", "#242262", "#804194", "#60cdf5", "#fff", "#f7a9b8", "#000", "#785121"]
 const translations: Translation[] = [{
     language: "de",
     buttonText: "Alle Akzeptieren",
@@ -273,7 +273,7 @@ export class AcceptAll {
         this.cookieBackground.id = "kwAcceptAllcookieBackground";
         const bgImageDiv = document.createElement("div");
         bgImageDiv.id = "kwAcceptAllbgImage"
-        colors.forEach((color, index) => {
+        columnColors.forEach((color, index) => {
             const bgImageBar = createBgImageBar(color, index);
             bgImageDiv.appendChild(bgImageBar)
         })
@@ -376,9 +376,9 @@ export class AcceptAll {
             return
         }
 
-        const o = this.showOnlyOnce ? 24 * 60 * 60 * 1000 : 1
-        const t = Date.now();
-        localStorage.setItem("kwAcceptAll_popup", `${t + o}`)
+        const maxAge = this.showOnlyOnce ? 24 * 60 * 60 * 1000 : 1
+        const now = Date.now();
+        localStorage.setItem("kwAcceptAll_popup", `${now + maxAge}`)
         this.cookieBackground.classList.remove("kwAcceptAllTranslateIn")
         this.cookieBackground.classList.add("kwAcceptAllTranslateOut");
 
@@ -407,6 +407,13 @@ export class AcceptAll {
 
     close() {
         MicroModal.close(this.cookiePopupId)
+    }
+
+    dispose() {
+        if (this.cookiePopup) {
+            this.cookiePopup.remove();
+            this.cookiePopup = undefined;
+        }
     }
 }
 

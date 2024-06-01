@@ -7,8 +7,9 @@
     "fetch": "cd commands && tsx fetch.ts",
     "stats": "cd commands && tsx stats.ts",
     "archive": "cd commands && tsx archive_sources.ts",
+    "export": "cd commands && tsx export.ts",
     "dev": "vite",
-    "build": "tsc --skipLibCheck && vite build",
+    "build": "tsc --skipLibCheck && vite build && npm run export",
     "preview": "vite preview",
     "validate": "ajv validate -s data/schema.json -d data/Wien.json"
   },

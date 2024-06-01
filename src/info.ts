@@ -56,6 +56,11 @@ export function setOverlay(): void {
         "github.com/Findus23/RainbowRoad",
         "https://github.com/Findus23/RainbowRoad"
     ))
+    content.appendChild(dlSet(
+        "Daten-Export:",
+        "/data.json",
+        "/data.json"
+    ))
     const dl = createElement("dl")
     dl.appendChild(createElementWithContent("dt", "Lizenz:"))
     const dd = createElementWithContent("dd", "GPL-3 (Code), CC BY-SA 4.0 (Daten)")

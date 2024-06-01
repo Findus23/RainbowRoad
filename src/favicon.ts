@@ -24,6 +24,10 @@ import salzburgIcon from "../assets/favicons/salzburg.svg"
 import viennaatIcon from "../assets/favicons/vienna_at.png"
 import f5minIcon from "../assets/favicons/5min.png"
 import kleinezeitungIcon from "../assets/favicons/kleinezeitung.svg"
+import instagramIcon from "../assets/favicons/instagram.svg"
+import kommunalnetIcon from "../assets/favicons/kommunalnet.png"
+import dfz21Icon from "../assets/favicons/dfz21.png"
+import mannschaftIcon from "../assets/favicons/mannschaft.svg"
 
 
 export function faviconByHostname(hostname: string, pathname: string): string | undefined {
@@ -71,6 +75,14 @@ export function faviconByHostname(hostname: string, pathname: string): string | 
             return viennaatIcon
         case "www.kleinezeitung.at":
             return kleinezeitungIcon
+        case "www.instagram.com":
+            return instagramIcon
+        case "www.kommunalnet.at":
+            return kommunalnetIcon
+        case "www.dfz21.at":
+            return dfz21Icon
+        case "mannschaft.com":
+            return mannschaftIcon
     }
 
     if (hostname.includes("spoe")) {

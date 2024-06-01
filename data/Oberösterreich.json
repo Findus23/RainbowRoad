@@ -272,5 +272,54 @@
       ],
       "length": 8.93
     }
+  },
+  {
+    "id": 109133358,
+    "name": "Hagenberg",
+    "type": "prideFlag",
+    "sources": [
+      {
+        "type": "official",
+        "url": "https://www.instagram.com/fhooe_hagenberg/p/C7EinIwJEk8/",
+        "date": "2024-05-17"
+      },
+      {
+        "type": "news",
+        "url": "https://www.heute.at/s/regenbogen-zebrastreifen-in-gemeinde-einfach-uebermalt-120037486",
+        "date": "2024-05-19"
+      },
+      {
+        "type": "news",
+        "url": "https://www.kommunalnet.at/2024/05/24/pride-monat-diese-aktionen-setzen-gemeinden/",
+        "date": "2024-05-24"
+      }
+    ],
+    "comment": "Wurde von Unbekannten übermalt",
+    "geosource": {
+      "type": "RawCoords",
+      "coords": [
+        [
+          14.51567,
+          48.36829
+        ],
+        [
+          14.51556,
+          48.36827
+        ]
+      ]
+    },
+    "geo": {
+      "coords": [
+        [
+          14.51567,
+          48.36829
+        ],
+        [
+          14.51556,
+          48.36827
+        ]
+      ],
+      "length": 8.42
+    }
   }
 ]

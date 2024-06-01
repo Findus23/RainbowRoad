@@ -126,5 +126,48 @@
       ],
       "length": 8.42
     }
+  },
+  {
+    "id": 2277225066,
+    "name": "Stainz",
+    "type": "prideFlag",
+    "sources": [
+      {
+        "type": "news",
+        "url": "https://www.meinbezirk.at/deutschlandsberg/c-lokales/ein-zebrastreifen-in-den-farben-des-regenbogens_a6719651",
+        "date": "2024-05-30"
+      },
+      {
+        "type": "news",
+        "url": "https://mannschaft.com/candy-licious-steiermark-setzt-zeichen-fuer-toleranz-mit-regenbogenzebrastreifen/",
+        "date": "2024-05-31"
+      }
+    ],
+    "geosource": {
+      "type": "RawCoords",
+      "coords": [
+        [
+          15.25853,
+          46.89499
+        ],
+        [
+          15.25846,
+          46.89489
+        ]
+      ]
+    },
+    "geo": {
+      "coords": [
+        [
+          15.25853,
+          46.89499
+        ],
+        [
+          15.25846,
+          46.89489
+        ]
+      ],
+      "length": 12.33
+    }
   }
 ]

@@ -19,11 +19,13 @@ Geplant im April: https://www.meinbezirk.at/salzburg-stadt/c-lokales/andraeviert
 
 Geplant:
 - Kufstein (zweiter): https://www.meinbezirk.at/kufstein/c-lokales/bunter-kufsteiner-zebrastreifen-fordert-diskussion_a4703126
-
+- Imst? https://www.meinbezirk.at/imst/c-lokales/graue-diskussion-um-bunte-theorie_a6697316
 Vermutlich vollständig:
 
-- NÖ
-- Burgenland
 
 Küniglberg/ORF: https://oe3.orf.at/stories/3034425/
 Ramperstorffergasse 33 ?
+
+
+Wien:
+- Prinz-Eugen-Straße vor Arbeiterkammer: https://www.facebook.com/story.php/?story_fbid=923880842521606&id=100046990966430

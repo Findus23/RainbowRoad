@@ -1881,5 +1881,73 @@
       ],
       "length": 19.79
     }
+  },
+  {
+    "id": 3312381060,
+    "name": "Jedlersdorf",
+    "type": "prideFlag",
+    "bezirk": 21,
+    "sources": [
+      {
+        "type": "news",
+        "url": "https://www.dfz21.at/dfz/bunter-zebrastreifen-nummer-2/",
+        "date": "2024-05-21"
+      }
+    ],
+    "geosource": {
+      "type": "OSMnodes",
+      "nodes": [
+        2772366955,
+        2772366953,
+        2772366949
+      ]
+    },
+    "geo": {
+      "coords": [
+        [
+          16.4088377,
+          48.2765074
+        ],
+        [
+          16.4087445,
+          48.2763513
+        ]
+      ],
+      "length": 18.68
+    }
+  },
+  {
+    "id": 3859706183,
+    "name": "Prinz-Eugen-Straße",
+    "bezirk": 4,
+    "type": "prideFlag",
+    "sources": [
+      {
+        "type": "news",
+        "url": "https://www.facebook.com/story.php/?story_fbid=923880842521606&id=100046990966430",
+        "date": "2024-02-26"
+      }
+    ],
+    "geosource": {
+      "type": "OSMnodes",
+      "nodes": [
+        3159285931,
+        3159285930,
+        3930956219
+      ]
+    },
+    "geo": {
+      "coords": [
+        [
+          16.3769595,
+          48.1946111
+        ],
+        [
+          16.3770672,
+          48.1944676
+        ]
+      ],
+      "length": 17.84
+    }
   }
 ]

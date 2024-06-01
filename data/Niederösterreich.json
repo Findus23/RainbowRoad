@@ -283,5 +283,80 @@
       ],
       "length": 10.58
     }
+  },
+  {
+    "id": 1868338783,
+    "name": "St. Pölten",
+    "type": "prideFlag",
+    "sources": [
+      {
+        "type": "news",
+        "url": "https://www.noen.at/st-poelten/zeichen-fuer-diversitaet-st-poelten-hat-ersten-regenbogenzebrastreifen-bekommen-423202508",
+        "date": "2024-05-24"
+      }
+    ],
+    "geosource": {
+      "type": "RawCoords",
+      "coords": [
+        [
+          15.62252,
+          48.2072
+        ],
+        [
+          15.6224,
+          48.20713
+        ]
+      ]
+    },
+    "geo": {
+      "coords": [
+        [
+          15.62252,
+          48.2072
+        ],
+        [
+          15.6224,
+          48.20713
+        ]
+      ],
+      "length": 11.82
+    }
+  },
+  {
+    "id": 1184323194,
+    "name": "Perchtoldsdorf",
+    "type": "prideFlag",
+    "sources": [
+      {
+        "type": "streetview",
+        "date": "2023-03-01"
+      }
+    ],
+    "geosource": {
+      "type": "RawCoords",
+      "coords": [
+        [
+          16.28126,
+          48.12391
+        ],
+        [
+          16.28126,
+          48.12381
+        ]
+      ]
+    },
+    "geo": {
+      "coords": [
+        [
+          16.28126,
+          48.12391
+        ],
+        [
+          16.28126,
+          48.12381
+        ]
+      ],
+      "length": 11.12
+    }
   }
 ]

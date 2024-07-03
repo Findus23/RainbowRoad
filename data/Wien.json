@@ -1949,5 +1949,40 @@
       ],
       "length": 17.84
     }
+  },
+  {
+    "id": 240101996,
+    "name": "Keplerplatz",
+    "bezirk": 10,
+    "type": "prideFlag",
+    "sources": [
+      {
+        "type": "news",
+        "url": "https://favoriten.gruene.at/news/allgemein/regenbogen-als-zeichen/",
+        "date": "2023-07-29"
+      }
+    ],
+    "geosource": {
+      "type": "OSMnodes",
+      "nodes": [
+        3256086026,
+        4191638995,
+        213440857,
+        3584350929
+      ]
+    },
+    "geo": {
+      "coords": [
+        [
+          16.3766514,
+          48.178118
+        ],
+        [
+          16.3767208,
+          48.1779795
+        ]
+      ],
+      "length": 16.24
+    }
   }
 ]

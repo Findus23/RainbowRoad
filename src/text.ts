@@ -7,15 +7,17 @@ export function prettyDate(isoDate: string): string {
 }
 
 export function displaySources(sources: Source[]) {
+    const urlSources = sources.filter(s => s.url)
     const sourcesBlock = createElement("div")
+    if (urlSources.length === 0) {
+        return sourcesBlock
+    }
     sourcesBlock.classList.add("sources")
+    console.log(sources)
     const heading = createElement("p")
     heading.innerText = "Weitere Infomationen:"
     sourcesBlock.appendChild(heading)
-    sources.forEach(s => {
-        if (!s.url) {
-            return
-        }
+    urlSources.forEach(s => {
         const img = createElement("img")
         const a = createElement("a")
         a.rel = "noopener"

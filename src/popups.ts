@@ -76,7 +76,9 @@ export function initPopups(map: Map, vectorSource: VectorSource) {
             content.appendChild(p)
         }
         const sourcesBlock = displaySources(crossing.sources)
-        content.appendChild(createElement("hr"))
+        if (sourcesBlock.children.length !== 0) {
+            content.appendChild(createElement("hr"))
+        }
         content.appendChild(sourcesBlock)
         overlay.setPosition(feature.getGeometry()?.getCoordinates());
 

@@ -30,7 +30,7 @@
     "micromodal": "^0.4.10",
     "navigo": "^8.11.1",
     "node-fetch": "^3.2.10",
-    "ol": "^9.0.0"
+    "ol": "^10.0.0"
   },
   "author": "",
   "license": "ISC"

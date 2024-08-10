@@ -41,7 +41,6 @@ const map = new Map({
                 url: "https://maps.lw1.at/tiles/1.0.0/tracestack/webmercator_hq/{z}/{x}/{y}.png",
                 tilePixelRatio: 5,
                 attributions: ['Data: © <a href="https://www.openstreetmap.org/copyright">OpenStreetMap contributors</a>, <a href="http://viewfinderpanoramas.org/">SRTM</a>, <a href="https://portal.opentopography.org/datasetMetadata?otCollectionID=OT.032021.4326.2">NASADEM</a>, <a href="https://worldcover2021.esa.int">ESA WorldCover</a>; Maps © <a href="https://www.tracestrack.com/">Tracestrack</a>'],
-                opaque: true,
                 crossOrigin: null
             }),
         }),

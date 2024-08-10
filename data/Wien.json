@@ -1984,5 +1984,39 @@
       ],
       "length": 16.24
     }
+  },
+  {
+    "id": 1649782075,
+    "name": "Elterleinplatz/Kalvarienberggasse Süd",
+    "type": "transFlag",
+    "comment": "persönlich gesehen, keine Informationen bekannt",
+    "sources": [
+      {
+        "type": "in person",
+        "date": "2024-08-09"
+      }
+    ],
+    "geosource": {
+      "type": "OSMnodes",
+      "nodes": [
+        2560176273,
+        2560176266,
+        2560176262,
+        2560176264
+      ]
+    },
+    "geo": {
+      "coords": [
+        [
+          16.3321885,
+          48.2180081
+        ],
+        [
+          16.3324449,
+          48.2179663
+        ]
+      ],
+      "length": 19.56
+    }
   }
 ]

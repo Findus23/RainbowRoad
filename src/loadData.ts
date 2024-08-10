@@ -3,8 +3,6 @@ import {loadData} from "./features";
 import {Crossing} from "../interfaces";
 
 export function loadAllData(vectorSource: VectorSource): void {
-    // @ts-ignore
-
     const imports = [
         import("../data/Wien.json?inline"),
         import("../data/Oberösterreich.json?inline"),

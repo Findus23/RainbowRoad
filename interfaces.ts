@@ -34,6 +34,7 @@ export interface Crossing {
     name: string
     bezirk?: number
     comment?: string
+    hidden?: boolean
     officialName?: string
     set?: string
     type: FlagType

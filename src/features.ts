@@ -14,6 +14,7 @@ export interface FeatureProperties {
 
 export function loadData(data: Crossing[], vectorSource: VectorSource): void {
     console.info(data)
+    data = data.filter(c => typeof c.hidden === "undefined" || !c.hidden)
     data.sort((a, b) => {
         /*
         put trans flag on top (so they are not covered,

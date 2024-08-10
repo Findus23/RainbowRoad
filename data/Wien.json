@@ -1848,11 +1848,16 @@
     "type": "nonbinaryFlag",
     "bezirk": 3,
     "comment": "existiert noch nicht",
+    "hidden": true,
     "sources": [
       {
         "type": "proposal",
         "url": "https://www.ggg.at/2023/09/29/exklusiv-wien-bekommt-seinen-ersten-nonbinary-zebrastreifen/",
         "date": "2023-09-29"
+      },{
+        "type": "proposal",
+        "url": "https://www.wien.gv.at/bezirke/landstrasse/politik/sitzungen/pdf/antrag-20230316-12.pdf",
+        "date": "2023-03-16"
       }
     ],
     "geosource": {

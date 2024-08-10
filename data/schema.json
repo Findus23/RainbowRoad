@@ -116,6 +116,9 @@
         "comment": {
           "type": "string"
         },
+        "hidden": {
+          "type": "boolean"
+        },
         "officialName": {
           "type": "string",
           "description": "The name used in the documents by the City of Vienna"

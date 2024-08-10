@@ -1988,6 +1988,7 @@
   {
     "id": 1649782075,
     "name": "Elterleinplatz/Kalvarienberggasse Süd",
+    "bezirk": 17,
     "type": "transFlag",
     "comment": "persönlich gesehen, keine Informationen bekannt",
     "sources": [

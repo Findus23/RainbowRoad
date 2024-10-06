@@ -2169,5 +2169,38 @@
       ],
       "length": 21.22
     }
+  },
+  {
+    "id": 566831173,
+    "name": "Friedensbrücke / Wallensteinstraße",
+    "type": "transFlag",
+    "bezirk": 20,
+    "sources": [
+      {
+        "type": "news",
+        "url": "https://links.wien/2024/07/16/erfolg-trans-zebrastreifen-in-der-brigittenau/",
+        "date": "2024-07-16"
+      }
+    ],
+    "geosource": {
+      "type": "OSMnodes",
+      "nodes": [
+        4688652540,
+        4720417054
+      ]
+    },
+    "geo": {
+      "coords": [
+        [
+          16.3664296,
+          48.2275826
+        ],
+        [
+          16.3662213,
+          48.2277517
+        ]
+      ],
+      "length": 24.32
+    }
   }
 ]

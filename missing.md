@@ -20,10 +20,15 @@ Geplant im April: https://www.meinbezirk.at/salzburg-stadt/c-lokales/andraeviert
 Geplant:
 - Kufstein (zweiter): https://www.meinbezirk.at/kufstein/c-lokales/bunter-kufsteiner-zebrastreifen-fordert-diskussion_a4703126
 - Imst? https://www.meinbezirk.at/imst/c-lokales/graue-diskussion-um-bunte-theorie_a6697316
+  - wurde abgelehnt: https://www.meinbezirk.at/imst/c-politik/die-angst-des-imster-gemeinderates-vor-dem-regenbogen_a6924966
 
 
-Küniglberg/ORF: https://oe3.orf.at/stories/3034425/
+Küniglberg/ORF: https://oe3.orf.at/stories/3034425/ (innerhalb des Geländes)
 
 Ramperstorffergasse 33 ?
 
 Langenzersdorf: https://www.noen.at/korneuburg/spoe-und-neos-antrag-ein-regenbogen-zebrastreifen-fuer-langenzersdorf-428722214 (Herbst 2024)
+
+Korneuburg (potentiel selber) abgelehnt:
+- https://www.ggg.at/2024/09/24/oevp-und-fpoe-verhindern-regenbogen-zebrastreifen-in-korneuburg/
+- https://www.noen.at/korneuburg/gemeinderat-oevp-und-fpoe-sagen-nein-zu-regenbogen-schutzweg-in-der-stadt-439241057

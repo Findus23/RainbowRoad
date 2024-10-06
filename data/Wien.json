@@ -1854,7 +1854,8 @@
         "type": "proposal",
         "url": "https://www.ggg.at/2023/09/29/exklusiv-wien-bekommt-seinen-ersten-nonbinary-zebrastreifen/",
         "date": "2023-09-29"
-      },{
+      },
+      {
         "type": "proposal",
         "url": "https://www.wien.gv.at/bezirke/landstrasse/politik/sitzungen/pdf/antrag-20230316-12.pdf",
         "date": "2023-03-16"
@@ -2023,6 +2024,150 @@
         ]
       ],
       "length": 19.56
+    }
+  },
+  {
+    "id": 743850766,
+    "name": "Gersthofer Platzl 1/4",
+    "set": "Gersthofer Platzl",
+    "type": "prideFlag",
+    "bezirk": 18,
+    "sources": [
+      {
+        "type": "proposal",
+        "url": "https://www.wien.gv.at/bezirke/waehring/politik/sitzungen/pdf/antrag-s349609-23.pdf",
+        "date": "2023-03-16"
+      },
+      {
+        "type": "news",
+        "url": "https://www.meinbezirk.at/waehring/c-lokales/neue-regenbogen-zebrastreifen-in-waehring_a6080487#gallery=null",
+        "date": "2023-06-02"
+      }
+    ],
+    "geosource": {
+      "type": "OSMway",
+      "wayID": 460963970
+    },
+    "geo": {
+      "coords": [
+        [
+          16.3284512,
+          48.2318553
+        ],
+        [
+          16.3284586,
+          48.2317429
+        ]
+      ],
+      "length": 12.51
+    }
+  },
+  {
+    "id": 3081951101,
+    "name": "Gersthofer Platzl 2/4",
+    "set": "Gersthofer Platzl",
+    "type": "prideFlag",
+    "bezirk": 18,
+    "sources": [
+      {
+        "type": "proposal",
+        "url": "https://www.wien.gv.at/bezirke/waehring/politik/sitzungen/pdf/antrag-s349609-23.pdf",
+        "date": "2023-03-16"
+      },
+      {
+        "type": "news",
+        "url": "https://www.meinbezirk.at/waehring/c-lokales/neue-regenbogen-zebrastreifen-in-waehring_a6080487#gallery=null",
+        "date": "2023-06-02"
+      }
+    ],
+    "geosource": {
+      "type": "OSMway",
+      "wayID": 460963971
+    },
+    "geo": {
+      "coords": [
+        [
+          16.3284943,
+          48.231711
+        ],
+        [
+          16.3286434,
+          48.2316776
+        ]
+      ],
+      "length": 11.65
+    }
+  },
+  {
+    "id": 3719378572,
+    "name": "Gersthofer Platzl 3/4",
+    "set": "Gersthofer Platzl",
+    "type": "prideFlag",
+    "bezirk": 18,
+    "sources": [
+      {
+        "type": "proposal",
+        "url": "https://www.wien.gv.at/bezirke/waehring/politik/sitzungen/pdf/antrag-s349609-23.pdf",
+        "date": "2023-03-16"
+      },
+      {
+        "type": "news",
+        "url": "https://www.meinbezirk.at/waehring/c-lokales/neue-regenbogen-zebrastreifen-in-waehring_a6080487#gallery=null",
+        "date": "2023-06-02"
+      }
+    ],
+    "geosource": {
+      "type": "OSMway",
+      "wayID": 460963969
+    },
+    "geo": {
+      "coords": [
+        [
+          16.3286353,
+          48.2318982
+        ],
+        [
+          16.3284746,
+          48.2318911
+        ]
+      ],
+      "length": 11.93
+    }
+  },
+  {
+    "id": 566191767,
+    "name": "Gersthofer Platzl 4/4",
+    "set": "Gersthofer Platzl",
+    "type": "prideFlag",
+    "bezirk": 18,
+    "sources": [
+      {
+        "type": "proposal",
+        "url": "https://www.wien.gv.at/bezirke/waehring/politik/sitzungen/pdf/antrag-s349609-23.pdf",
+        "date": "2023-03-16"
+      },
+      {
+        "type": "news",
+        "url": "https://www.meinbezirk.at/waehring/c-lokales/neue-regenbogen-zebrastreifen-in-waehring_a6080487#gallery=null",
+        "date": "2023-06-02"
+      }
+    ],
+    "geosource": {
+      "type": "OSMway",
+      "wayID": 460963967
+    },
+    "geo": {
+      "coords": [
+        [
+          16.3286953,
+          48.2318669
+        ],
+        [
+          16.328726,
+          48.2316772
+        ]
+      ],
+      "length": 21.22
     }
   }
 ]

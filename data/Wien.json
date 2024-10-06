@@ -2202,5 +2202,39 @@
       ],
       "length": 24.32
     }
+  },
+  {
+    "id": 3623874779,
+    "name": "Pilgrambrücke/Rechte Wienzeile",
+    "bezirk": 5,
+    "type": "transFlag",
+    "sources": [
+      {
+        "type": "news",
+        "url": "https://www.wien.gv.at/margareten/transpride-zebrastreifen",
+        "date": "01-06-2024"
+      }
+    ],
+    "geosource": {
+      "type": "OSMnodes",
+      "nodes": [
+        280697054,
+        1361284843,
+        2592738908
+      ]
+    },
+    "geo": {
+      "coords": [
+        [
+          16.3548703,
+          48.1930224
+        ],
+        [
+          16.3550604,
+          48.1929642
+        ]
+      ],
+      "length": 15.51
+    }
   }
 ]

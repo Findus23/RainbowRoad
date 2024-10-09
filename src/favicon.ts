@@ -29,6 +29,8 @@ import kommunalnetIcon from "../assets/favicons/kommunalnet.png"
 import dfz21Icon from "../assets/favicons/dfz21.png"
 import mannschaftIcon from "../assets/favicons/mannschaft.svg"
 import linksIcon from "../assets/favicons/links.wien.svg"
+import linzaIcon from "../assets/favicons/linza.at.png"
+import linzNewsIcon from "../assets/favicons/linz.news.png"
 
 
 export function faviconByHostname(hostname: string, pathname: string): string | undefined {
@@ -86,6 +88,10 @@ export function faviconByHostname(hostname: string, pathname: string): string | 
             return mannschaftIcon
         case "links.wien":
             return linksIcon
+        case "www.linza.at":
+            return linzaIcon
+        case "linz.news":
+            return linzNewsIcon
     }
 
     if (hostname.includes("spoe")) {

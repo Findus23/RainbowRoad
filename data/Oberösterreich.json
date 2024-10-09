@@ -321,5 +321,177 @@
       ],
       "length": 8.42
     }
+  },
+  {
+    "id": 2534930837,
+    "name": "Stifterstraße / Hafnerstraße 1/4",
+    "set": "Stifterstraße / Hafnerstraße",
+    "type": "transFlag",
+    "sources": [
+      {
+        "type": "news",
+        "url": "https://www.linza.at/transzebra/",
+        "date": "2023-06-21"
+      },
+      {
+        "type": "news",
+        "url": "https://linz.news/2023/06/neuer-trans-pride-zebrastreifen/",
+        "date": "2023-06-20"
+      },
+      {
+        "type": "news",
+        "url": "https://linz.news/2024/06/trans-pride-zebrastreifen-feiert-geburtstag/",
+        "date": "2024-06-20"
+      }
+    ],
+    "geosource": {
+      "type": "OSMnodes",
+      "nodes": [
+        1571463507,
+        1562029468
+      ]
+    },
+    "geo": {
+      "coords": [
+        [
+          14.2855387,
+          48.2994981
+        ],
+        [
+          14.2856045,
+          48.2995062
+        ]
+      ],
+      "length": 4.95
+    }
+  },
+  {
+    "id": 1895175935,
+    "name": "Stifterstraße / Hafnerstraße 2/4",
+    "set": "Stifterstraße / Hafnerstraße",
+    "type": "transFlag",
+    "sources": [
+      {
+        "type": "news",
+        "url": "https://www.linza.at/transzebra/",
+        "date": "2023-06-21"
+      },
+      {
+        "type": "news",
+        "url": "https://linz.news/2023/06/neuer-trans-pride-zebrastreifen/",
+        "date": "2023-06-20"
+      },
+      {
+        "type": "news",
+        "url": "https://linz.news/2024/06/trans-pride-zebrastreifen-feiert-geburtstag/",
+        "date": "2024-06-20"
+      }
+    ],
+    "geosource": {
+      "type": "OSMnodes",
+      "nodes": [
+        1562029468,
+        1568545239
+      ]
+    },
+    "geo": {
+      "coords": [
+        [
+          14.2856045,
+          48.2995062
+        ],
+        [
+          14.2856184,
+          48.2994562
+        ]
+      ],
+      "length": 5.65
+    }
+  },
+  {
+    "id": 1992327458,
+    "name": "Stifterstraße / Hafnerstraße 3/4",
+    "set": "Stifterstraße / Hafnerstraße",
+    "type": "transFlag",
+    "sources": [
+      {
+        "type": "news",
+        "url": "https://www.linza.at/transzebra/",
+        "date": "2023-06-21"
+      },
+      {
+        "type": "news",
+        "url": "https://linz.news/2023/06/neuer-trans-pride-zebrastreifen/",
+        "date": "2023-06-20"
+      },
+      {
+        "type": "news",
+        "url": "https://linz.news/2024/06/trans-pride-zebrastreifen-feiert-geburtstag/",
+        "date": "2024-06-20"
+      }
+    ],
+    "geosource": {
+      "type": "OSMnodes",
+      "nodes": [
+        1568545239,
+        1571613467
+      ]
+    },
+    "geo": {
+      "coords": [
+        [
+          14.2856184,
+          48.2994562
+        ],
+        [
+          14.2855463,
+          48.2994387
+        ]
+      ],
+      "length": 5.68
+    }
+  },
+  {
+    "id": 1892264173,
+    "name": "Stifterstraße / Hafnerstraße 4/4",
+    "set": "Stifterstraße / Hafnerstraße",
+    "type": "transFlag",
+    "sources": [
+      {
+        "type": "news",
+        "url": "https://www.linza.at/transzebra/",
+        "date": "2023-06-21"
+      },
+      {
+        "type": "news",
+        "url": "https://linz.news/2023/06/neuer-trans-pride-zebrastreifen/",
+        "date": "2023-06-20"
+      },
+      {
+        "type": "news",
+        "url": "https://linz.news/2024/06/trans-pride-zebrastreifen-feiert-geburtstag/",
+        "date": "2024-06-20"
+      }
+    ],
+    "geosource": {
+      "type": "OSMnodes",
+      "nodes": [
+        1571613467,
+        1571463507
+      ]
+    },
+    "geo": {
+      "coords": [
+        [
+          14.2855463,
+          48.2994387
+        ],
+        [
+          14.2855387,
+          48.2994981
+        ]
+      ],
+      "length": 6.63
+    }
   }
 ]

@@ -358,5 +358,39 @@
       ],
       "length": 11.12
     }
+  },
+  {
+    "id": 1216404675,
+    "name": "Langenzersdorf",
+    "type": "prideFlag",
+    "sources": [
+      {
+        "type": "news",
+        "url": "https://www.meinbezirk.at/korneuburg/c-lokales/langenzersdorf-hat-einen-regenbogen-zebrastreifen_a6943889",
+        "date": "2024-10-10"
+      }
+    ],
+    "geosource": {
+      "type": "OSMnodes",
+      "nodes": [
+        12462910181,
+        12462910182,
+        5036807683,
+        9450666590
+      ]
+    },
+    "geo": {
+      "coords": [
+        [
+          16.3552789,
+          48.3078049
+        ],
+        [
+          16.355384,
+          48.3077378
+        ]
+      ],
+      "length": 10.77
+    }
   }
 ]

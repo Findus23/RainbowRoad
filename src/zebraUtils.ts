@@ -4,6 +4,8 @@ import {FlagType} from "../interfaces";
 export const prideFlagColors = ["#e40303", "#ff8c00", "#ffed00", "#008026", "#004dff", "#750787"]
 export const transFlagColors = ["#5BCEFA", "#F5A9B8"]
 export const nonbinaryFlagColors = ["#FFF433", "#9B59D0", "#2D2D2D"] // I assume they will skip the white stripe
+export const portschachRainbowColors = ["#e40303", "#004dff", "#008026", "#ff8c00",
+]
 export type PatternFunction = (i: number) => string
 
 export function zebraPattern(i: number): string {
@@ -24,11 +26,13 @@ export function generateFlagZebraPattern(colors: string[]): PatternFunction {
 export const prideZebraPattern = generateFlagZebraPattern(prideFlagColors)
 export const transZebraPattern = generateFlagZebraPattern(transFlagColors)
 export const nonbinaryZebraPattern = generateFlagZebraPattern(nonbinaryFlagColors)
+export const portschachZebraPattern = generateFlagZebraPattern(portschachRainbowColors)
 
 export const zebraPatterns: { [d in FlagType]: PatternFunction } = {
     "prideFlag": prideZebraPattern,
     "transFlag": transZebraPattern,
-    "nonbinaryFlag": nonbinaryZebraPattern
+    "nonbinaryFlag": nonbinaryZebraPattern,
+    "portschachRainbow": portschachZebraPattern
 }
 
 

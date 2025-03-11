@@ -4,15 +4,15 @@ import {Crossing} from "../interfaces";
 
 export function loadAllData(vectorSource: VectorSource): void {
     const imports = [
-        import("../data/Wien.json?inline"),
-        import("../data/Oberösterreich.json?inline"),
-        import("../data/Niederösterreich.json?inline"),
-        import("../data/Steiermark.json?inline"),
-        import("../data/Tirol.json?inline"),
-        import("../data/Burgenland.json?inline"),
-        import("../data/Salzburg.json?inline"),
-        import("../data/Vorarlberg.json?inline"),
-        import("../data/Kärnten.json?inline")
+        import("../data/Wien.json"),
+        import("../data/Oberösterreich.json"),
+        import("../data/Niederösterreich.json"),
+        import("../data/Steiermark.json"),
+        import("../data/Tirol.json"),
+        import("../data/Burgenland.json"),
+        import("../data/Salzburg.json"),
+        import("../data/Vorarlberg.json"),
+        import("../data/Kärnten.json")
     ]
     imports.forEach(imp => {
         imp.then(data => {

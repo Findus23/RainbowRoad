@@ -141,6 +141,7 @@ const vectorLineLayer = new VectorLayer({
         }
         switch (crossing.type) {
             case "prideFlag":
+            case "portschachRainbow":
                 return prideFlagStyle
             case "transFlag":
                 return transFlagStyle

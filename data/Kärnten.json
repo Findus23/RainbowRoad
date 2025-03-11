@@ -172,5 +172,53 @@
       ],
       "length": 13.54
     }
+  },
+  {
+    "id": 3588962403,
+    "type": "portschachRainbow",
+    "name": "Pörtschach",
+    "sources": [
+      {
+        "type": "news",
+        "url": "https://www.meinbezirk.at/klagenfurt-land/c-lokales/zebrastreifen-vor-gemeindeamt-nach-fast-zehn-jahren-fertig_a6950570",
+        "date": "2024-10-15"
+      },
+      {
+        "type": "news",
+        "url": "https://www.meinbezirk.at/klagenfurt-land/c-lokales/in-poertschach-hat-regenbogenschutzweg-vier-farben_a6955481",
+        "date": "2024-10-17"
+      },
+      {
+        "type": "news",
+        "url": "https://www.ggg.at/2024/10/18/poertschach-hat-fast-einen-regenbogen-zebrastreifen-bekommen/",
+        "date": "2024-10-18"
+      }
+    ],
+    "geosource": {
+      "type": "RawCoords",
+      "coords": [
+        [
+          14.146279,
+          46.635388
+        ],
+        [
+          14.146263,
+          46.635297
+        ]
+      ]
+    },
+    "geo": {
+      "coords": [
+        [
+          14.146279,
+          46.635388
+        ],
+        [
+          14.146263,
+          46.635297
+        ]
+      ],
+      "length": 10.19
+    }
   }
 ]

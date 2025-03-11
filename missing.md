@@ -27,7 +27,6 @@ Küniglberg/ORF: https://oe3.orf.at/stories/3034425/ (innerhalb des Geländes)
 
 Ramperstorffergasse 33 ?
 
-Langenzersdorf: https://www.noen.at/korneuburg/spoe-und-neos-antrag-ein-regenbogen-zebrastreifen-fuer-langenzersdorf-428722214 (Herbst 2024)
 
 Korneuburg (potentiel selber) abgelehnt:
 - https://www.ggg.at/2024/09/24/oevp-und-fpoe-verhindern-regenbogen-zebrastreifen-in-korneuburg/

@@ -1,4 +1,4 @@
-export type FlagType = "prideFlag" | "transFlag" | "nonbinaryFlag"
+export type FlagType = "prideFlag" | "transFlag" | "nonbinaryFlag" | "portschachRainbow"
 
 export type Coord = number[]
 export type Coords = Coord[]

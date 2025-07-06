@@ -1,3 +1,9 @@
+## Wien
+
+- Irgendwo zwischen Schönbrunn und Schmelz?
+- Operngasse Karlsplatz
+
+
 Unbekannter Trans-Pride-Streifen in Rudolfsheim-Fünfhaus
 https://www.wien.gv.at/bezirke/rudolfsheim-fuenfhaus/politik/sitzungen/pdf/20210701-antrag-pride-schutzweg.pdf
 

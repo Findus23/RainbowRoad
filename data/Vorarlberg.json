@@ -10,6 +10,12 @@
         "date": "2021-07-06"
       },
       {
+        "type": "news",
+        "url": "https://vorarlberg.orf.at/stories/3111794/",
+        "title": "Regenbogen-Zebrastreifen beschmiert",
+        "date": "2021-07-07"
+      },
+      {
         "type": "official",
         "url": "https://www.schlins.at/Erster_Regenbogen-Zebrastreifen_in_Schlins",
         "date": "2021-06-28"
@@ -122,6 +128,52 @@
         ]
       ],
       "length": 8.99
+    }
+  },
+  {
+    "id": 2655723114,
+    "name": "Dornbirn",
+    "type": "prideFlag",
+    "sources": [
+      {
+        "type": "streetview",
+        "date": "2023-10-01"
+      },
+      {
+        "type": "news",
+        "url": "https://vorarlberg.orf.at/stories/3111137/",
+        "title": "Achtung ein Regenbogen-Zebrastreifen",
+        "date": "2021-07-02"
+      },
+      {
+        "type": "news",
+        "url": "https://www.ggg.at/2025/05/26/regenbogen-zebrastreifen-in-dornbirn-mit-hakenkreuzen-beschmiert/",
+        "title": "Regenbogen-Zebrastreifen in Dornbirn mit Hakenkreuzen beschmiert",
+        "date": "2025-05-26"
+      },
+      {
+        "type": "news",
+        "url": "https://vorarlberg.orf.at/stories/3307846/",
+        "title": "Grüne entfernten Hakenkreuze in Dornbirn",
+        "date": "2025-06-01"
+      }
+    ],
+    "geosource": {
+      "type": "OSMway",
+      "wayID": 1395885733
+    },
+    "geo": {
+      "coords": [
+        [
+          9.7396346,
+          47.4153139
+        ],
+        [
+          9.7397329,
+          47.4152123
+        ]
+      ],
+      "length": 13.5
     }
   }
 ]

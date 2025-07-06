@@ -35,6 +35,9 @@ export function displaySources(sources: Source[]) {
             a.innerText = a.hostname
         }
         a.title = prettyDate(s.date) + ": " + a.hostname
+        if (s.title){
+            a.title = a.title + " (" + s.title + ")"
+        }
         a.setAttribute("aria-label", a.title)
         sourcesBlock.appendChild(a)
     })

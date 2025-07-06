@@ -175,8 +175,14 @@
         "type": "news",
         "url": "https://www.meinbezirk.at/ried/c-lokales/stadt-ried-hat-einen-regenbogen-zebrastreifen_a5628343",
         "date": "2022-10-04"
+      },
+      {
+        "type": "news",
+        "url": "https://www.meinbezirk.at/ried/c-lokales/beschaemende-szenen-bei-der-sanierung_a7385069",
+        "date": "2025-06-16"
       }
     ],
+    "comment": "2025 saniert",
     "geosource": {
       "type": "OSMnodes",
       "nodes": [

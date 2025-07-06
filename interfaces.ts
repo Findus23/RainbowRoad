@@ -22,6 +22,7 @@ export interface Source {
     type: "news" | "official" | "proposal" | "photo" | "streetview" | "in person"
     date: string
     url?: string
+    title?: string
 }
 
 export interface GeoData {

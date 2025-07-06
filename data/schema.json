@@ -79,6 +79,9 @@
         "url": {
           "type": "string"
         },
+        "title": {
+          "type": "string"
+        },
         "note": {
           "type": "string"
         }

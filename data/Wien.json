@@ -2236,5 +2236,36 @@
       ],
       "length": 15.51
     }
+  },
+  {
+    "id": 906965431,
+    "name": "Alfred-Adler-Straße/Maria-Lassnig-Straße",
+    "bezirk": 10,
+    "type": "prideFlag",
+    "sources": [
+      {
+        "type": "news",
+        "url": "https://cape10.at/ein-regenbogen-zebrastreifen-vor-cape-10/",
+        "date": "2025-10-02",
+        "title": "Ein Regenbogen-Zebrastreifen vor CAPE 10"
+      }
+    ],
+    "geosource": {
+      "type": "OSMway",
+      "wayID": 931984280
+    },
+    "geo": {
+      "coords": [
+        [
+          16.3824098,
+          48.1826691
+        ],
+        [
+          16.3821277,
+          48.1825482
+        ]
+      ],
+      "length": 24.86
+    }
   }
 ]

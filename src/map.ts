@@ -180,5 +180,16 @@ import("./popups").then(popups => {
 })
 
 map.on('click', function (evt) {
-    console.log(transform(evt.coordinate, 'EPSG:3857', 'EPSG:4326'));
+    const clickedCoords = transform(evt.coordinate, 'EPSG:3857', 'EPSG:4326')
+    console.log(clickedCoords);
+    const roundedCoords = clickedCoords.map(n => n.toFixed(5))
+    console.log(roundedCoords)
+    if (import.meta.env.DEV) {
+        const type = "text/plain";
+        const clipboardItemData = {
+            [type]: roundedCoords.toString(),
+        };
+        const clipboardItem = new ClipboardItem(clipboardItemData);
+        navigator.clipboard.write([clipboardItem]);
+    }
 });

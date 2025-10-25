@@ -31,6 +31,7 @@ import mannschaftIcon from "../assets/favicons/mannschaft.svg"
 import linksIcon from "../assets/favicons/links.wien.svg"
 import linzaIcon from "../assets/favicons/linza.at.png"
 import linzNewsIcon from "../assets/favicons/linz.news.png"
+import cape10Icon from "../assets/favicons/cape10.at.png"
 
 
 export function faviconByHostname(hostname: string, pathname: string): string | undefined {
@@ -92,6 +93,8 @@ export function faviconByHostname(hostname: string, pathname: string): string | 
             return linzaIcon
         case "linz.news":
             return linzNewsIcon
+        case "cape10.at":
+            return cape10Icon
     }
 
     if (hostname.includes("spoe")) {

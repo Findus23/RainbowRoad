@@ -54,12 +54,11 @@ async function runfetch(filename: string) {
             const max = 2 ** 32
             d.id = Math.floor(Math.random() * max);
         }
-        if (typeof d.geo !== "undefined") {
+        if (typeof d.geo !== "undefined" && d.geosource.type!="RawCoords") {
             d.geo.length = lineLengthInM(d.geo.coords[0], d.geo.coords[1])
             continue
         }
         const geosource = d.geosource
-        console.log("fetching")
         let coords: number[][];
         switch (geosource.type) {
             case "OSMway":
@@ -70,7 +69,6 @@ async function runfetch(filename: string) {
                 break
             case "RawCoords":
                 coords = geosource.coords
-                console.info(geosource.coords)
                 break
         }
         d.geo = {

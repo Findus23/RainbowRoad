@@ -392,5 +392,44 @@
       ],
       "length": 10.77
     }
+  },
+  {
+    "id": 3734685209,
+    "name": "Maria Enzersdorf",
+    "type": "prideFlag",
+    "sources": [
+      {
+        "type": "news",
+        "url": "https://www.noen.at/moedling/kindergemeinderat-bunte-zebrastreifen-in-maria-enzersdorf-feierlich-eingeweiht-488815225",
+        "date": "2025-07-05",
+        "title": "Bunte Zebrastreifen in Maria Enzersdorf feierlich eingeweiht"
+      }
+    ],
+    "geosource": {
+      "type": "RawCoords",
+      "coords": [
+        [
+          16.28367,
+          48.09742
+        ],
+        [
+          16.28367,
+          48.09748
+        ]
+      ]
+    },
+    "geo": {
+      "coords": [
+        [
+          16.28367,
+          48.09742
+        ],
+        [
+          16.28367,
+          48.09748
+        ]
+      ],
+      "length": 6.67
+    }
   }
 ]

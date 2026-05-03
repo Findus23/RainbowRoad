@@ -212,5 +212,41 @@
       ],
       "length": 11.35
     }
+  },
+  {
+    "id": 265953550,
+    "name": "Innsbruck Südtiroler Platz",
+    "type": "transFlag",
+    "sources": [
+      {
+        "type": "streetview",
+        "date": "2025-08-31"
+      },
+      {
+        "type": "news",
+        "url": "https://www.meinbezirk.at/innsbruck/c-lokales/blau-rosa-und-weiss-als-zeichen-gegen-diskriminierung_a6613164",
+        "date": "2024-04-01"
+      }
+    ],
+    "geosource": {
+      "type": "OSMnodes",
+      "nodes": [
+        587098308,
+        7809964926
+      ]
+    },
+    "geo": {
+      "coords": [
+        [
+          11.3998646,
+          47.2636192
+        ],
+        [
+          11.3999915,
+          47.2636025
+        ]
+      ],
+      "length": 9.75
+    }
   }
 ]

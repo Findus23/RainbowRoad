@@ -1,13 +1,20 @@
 import axios from 'axios'
-import {URLSearchParams} from "url";
+import { URLSearchParams } from "url";
 
 const overpassURL = "https://overpass-api.de/api/interpreter?data="
 
 
 export async function overpassAPI(query: string) {
-    return axios.post(overpassURL, new URLSearchParams({
-        data: query
-    }))
+    return axios.post(
+        overpassURL,
+        new URLSearchParams({
+            data: query
+        }),
+        {
+            headers: {
+                'User-Agent': 'rainbowroad (rainbowroad.lw1.at)'
+            }
+        })
 }
 
 export async function wayData(wayID: number) {

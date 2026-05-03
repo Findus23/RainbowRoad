@@ -18,9 +18,8 @@ https://www.meinbezirk.at/freistadt/c-lokales/freistadt-bekommt-regenbogen-zebra
 - Efferding: https://www.meinbezirk.at/grieskirchen-eferding/c-politik/wir-wollen-ein-zeichen-fuer-toleranz-setzen_a5674603
 
 Salzburg:
-Geplant im April: https://www.meinbezirk.at/salzburg-stadt/c-lokales/andraeviertel-bekommt-neuen-regenbogen-zebrastreifen_a5830102
 
-3x um Traiskirchen: https://www.meinbezirk.at/baden/c-lokales/traiskirchen-hat-bunte-regenbogen-zebrastreifen_a6398346
+3x um Traiskirchen: https://www.meinbezirk.at/baden/c-lokales/traiskirchen-hat-bunte-regenbogen-zebrastreifen_a6398346 (andere zwei sind nicht zu finden)
 
 
 Geplant:

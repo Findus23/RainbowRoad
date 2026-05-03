@@ -431,5 +431,44 @@
       ],
       "length": 6.67
     }
+  },
+  {
+    "id": 1559118284,
+    "type": "prideFlag",
+    "name": "Traiskirchen",
+    "sources": [
+      {
+        "type": "news",
+        "url": "https://www.meinbezirk.at/baden/c-lokales/traiskirchen-hat-bunte-regenbogen-zebrastreifen_a6398346#gallery=null",
+        "date": "2023-11-24",
+        "note": "Traiskirchen hat bunte Regenbogen-Zebrastreifen"
+      }
+    ],
+    "geosource": {
+      "type": "RawCoords",
+      "coords": [
+        [
+          16.29081,
+          48.01607
+        ],
+        [
+          16.29069,
+          48.016
+        ]
+      ]
+    },
+    "geo": {
+      "coords": [
+        [
+          16.29081,
+          48.01607
+        ],
+        [
+          16.29069,
+          48.016
+        ]
+      ],
+      "length": 11.84
+    }
   }
 ]
